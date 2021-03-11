@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Database {
     private Connection connection;
-    public Database () throws SQLException {
+    public Database () throws  SQLException {
         connection = DriverManager.getConnection(DatabaseConfig.CONNECTION_URL, DatabaseConfig.USERNAME,DatabaseConfig.PASSWORD);
     }
     public ArrayList<User> selectAllUsers () {
