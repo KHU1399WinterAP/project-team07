@@ -5,6 +5,10 @@
  */
 package gui;
 
+import database.Database;
+import javax.swing.JFrame;
+import models.User;
+
 /**
  *
  * @author adel
@@ -14,6 +18,11 @@ public class LoginForm extends javax.swing.JFrame {
     /**
      * Creates new form LoginForm
      */
+public LoginForm(JFrame previousFrame) {
+        
+        this.previousFrame = previousFrame;
+        
+    }
     public LoginForm() {
         initComponents();
     }
@@ -40,9 +49,19 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib.jpg"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(51, 102, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rmb.jpg"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(204, 255, 102));
         jTextField1.setText("username");
@@ -118,6 +137,27 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+         String username =jTextField1.getText();
+        String password =String.valueOf(jPasswordField1.getPassword());
+        User user=Database.getuser(username);
+        if(user!=null && user.password.equals(password)){
+        Dashbord dashbord =new Dashbord();
+        dashbord.showpanel();
+            this.dispose();
+          
+        }
+            
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+       this.dispose();
+            previousFrame.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -154,6 +194,7 @@ public class LoginForm extends javax.swing.JFrame {
     }
 public void showpanel(){
         setVisible(true);}
+private JFrame previousFrame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
