@@ -19,14 +19,14 @@ public class SigninForm extends javax.swing.JFrame {
     /**
      * Creates new form SigninForm
      */
-    
+    private JFrame previousFrame;
     public SigninForm(JFrame previousFrame) {
         
-        this.previousFrame = previousFrame;
+        
         
     }
     public SigninForm() {
-        
+        this.previousFrame = previousFrame;
         initComponents();
         
     }
@@ -190,8 +190,9 @@ public class SigninForm extends javax.swing.JFrame {
         });
     }
 public void showpanel(){
+    setResizable(false);
         setVisible(true);}
-private JFrame previousFrame;
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
