@@ -7,18 +7,22 @@ package gui;
 
 import java.io.*;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author adel
  */
 public class Dashboard extends javax.swing.JFrame {
-private JFrame previousFrame;
+
+    private JFrame previousFrame;
+
     public Dashboard(JFrame previousFrame) {
-        
+
         this.previousFrame = previousFrame;
-        
+
     }
+
     /**
      * Creates new form Dashboard
      */
@@ -45,7 +49,7 @@ private JFrame previousFrame;
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
 
@@ -84,10 +88,23 @@ private JFrame previousFrame;
         );
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/singleplayer.jpg"))); // NOI18N
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multiplayer.jpg"))); // NOI18N
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/settings.jpg"))); // NOI18N
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -95,6 +112,7 @@ private JFrame previousFrame;
         });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashexit.jpg"))); // NOI18N
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -152,7 +170,7 @@ private JFrame previousFrame;
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-            previousFrame.setVisible(true);
+        previousFrame.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -160,6 +178,34 @@ private JFrame previousFrame;
         Settings s = new Settings();
         s.showpanel();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+// TODO add your handling code here:n
+        if (Settings.choice1==null) {
+            JOptionPane.showMessageDialog(null,
+                    "You must choose a theme from settings!",
+                    "WARNING",
+                    JOptionPane.WARNING_MESSAGE);
+        } else if (Settings.getTheme().equals("spring")) {
+            SpringMap sm = new SpringMap();
+            sm.showpanel();
+        } else if (Settings.getTheme().equals("summer")) {
+            SummerMap sum = new SummerMap();
+            sum.showpanel();
+        } else if (Settings.getTheme().equals("fall")) {
+            FallMap fm = new FallMap();
+            fm.showpanel();
+        } else if (Settings.getTheme().equals("winter")) {
+            WinterMap wm = new WinterMap();
+            wm.showpanel();
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,7 +216,7 @@ private JFrame previousFrame;
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -195,15 +241,13 @@ private JFrame previousFrame;
             }
         });
     }
-    
 
-public void showpanel(){
-    setResizable(false);
-    setVisible(true);
-  
-      jLabel3.setText("welcome \n" + LoginForm.getUname());
-  }
+    public void showpanel() {
+        setResizable(false);
+        setVisible(true);
 
+        jLabel3.setText("welcome \n" + LoginForm.getUname());
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

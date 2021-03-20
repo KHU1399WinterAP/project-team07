@@ -21,15 +21,14 @@ public class LoginForm extends javax.swing.JFrame {
     /**
      * Creates new form LoginForm
      */
-    
-public LoginForm(JFrame previousFrame) {
-        
-        
+    public LoginForm(JFrame previousFrame) {
+
         this.previousFrame = previousFrame;
-        
+
     }
+
     public LoginForm() {
-       
+
         initComponents();
     }
 
@@ -55,6 +54,7 @@ public LoginForm(JFrame previousFrame) {
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib.jpg"))); // NOI18N
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -63,6 +63,7 @@ public LoginForm(JFrame previousFrame) {
 
         jButton2.setBackground(new java.awt.Color(51, 102, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rmb.jpg"))); // NOI18N
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -150,30 +151,29 @@ public LoginForm(JFrame previousFrame) {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String username =jTextField1.getText();
-        String password =String.valueOf(jPasswordField1.getPassword());
-        if(username.equals("admin")&&password.equals("admin"))
-            {
-               Dashboard  dashboard=new Dashboard();
-            
-                dashboard.showpanel();
-             
-            }else{
-         
-        User user=Database.getUserByUsername(username);
-        if(user!=null && user.password.equals(password)){
-        Dashboard dashbord =new Dashboard();
-        dashbord.showpanel();
-            this.dispose();
+        String username = jTextField1.getText();
+        String password = String.valueOf(jPasswordField1.getPassword());
+        if (username.equals("admin") && password.equals("admin")) {
+            Dashboard dashboard = new Dashboard();
+
+            dashboard.showpanel();
+
+        } else {
+
+            User user = Database.getUserByUsername(username);
+            if (user != null && user.password.equals(password)) {
+                Dashboard dashbord = new Dashboard();
+                dashbord.showpanel();
+                this.dispose();
+            }
         }
-        }
-          
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-       this.dispose();
-            previousFrame.setVisible(true);
+        this.dispose();
+        previousFrame.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
@@ -189,7 +189,7 @@ public LoginForm(JFrame previousFrame) {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -215,20 +215,18 @@ public LoginForm(JFrame previousFrame) {
             }
         });
     }
-    
-public void showpanel(){
-     setResizable(false);
+
+    public void showpanel() {
+        setResizable(false);
         setVisible(true);
-}
-private JFrame previousFrame;
+    }
+    private JFrame previousFrame;
 
+    public static String getUname() {
+        String uname = jTextField1.getText();
+        return uname;
+    }
 
-
-public static String getUname(){
-String uname=jTextField1.getText();
-return uname;
-}
- 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
