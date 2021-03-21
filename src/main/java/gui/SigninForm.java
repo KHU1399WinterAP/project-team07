@@ -19,14 +19,9 @@ public class SigninForm extends javax.swing.JFrame {
     /**
      * Creates new form SigninForm
      */
-    private JFrame previousFrame;
-    public SigninForm(JFrame previousFrame) {
-        
-        
-        
-    }
+
     public SigninForm() {
-        this.previousFrame = previousFrame;
+
         initComponents();
         
     }
@@ -144,17 +139,27 @@ public class SigninForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        User user = new User(jTextField1.getText(), jPasswordField1.getPassword());
+        String username=jTextField1.getText();
+        String password=String.valueOf(jPasswordField1.getPassword());
+        if(username.equals("")||password.equals("")){
+            errors.Errors.emptyFields();
+        }else{
+        User user = new User(username, jPasswordField1.getPassword());
 
   Database.insertIntoUser(user);
             this.dispose();
-            previousFrame.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+            MainMenu mm = new MainMenu();
+            mm.showpanel();
+    }
+    }
+
+    //GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-            previousFrame.setVisible(true);
+        MainMenu mm= new MainMenu();
+        mm.showpanel();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

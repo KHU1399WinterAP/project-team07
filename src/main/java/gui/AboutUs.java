@@ -16,9 +16,9 @@ public class AboutUs extends javax.swing.JFrame {
     /**
      * Creates new form AboutUs
      */
-       private JFrame previousFrame;
+
     public AboutUs() {
-        this.previousFrame = previousFrame;
+
         initComponents();
     }
 
@@ -92,7 +92,8 @@ public class AboutUs extends javax.swing.JFrame {
                                            
         // TODO add your handling code here:
         this.dispose();
-            previousFrame.setVisible(true);
+            MainMenu mm=new MainMenu();
+            mm.showpanel();
                                            
 
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -132,6 +133,7 @@ public class AboutUs extends javax.swing.JFrame {
         });
     }
 public void showpanel() {
+
     setResizable(false);
     setVisible(true);
   }

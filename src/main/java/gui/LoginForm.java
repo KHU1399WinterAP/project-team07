@@ -11,6 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 import models.User;
+import javax.swing.*;
 
 /**
  *
@@ -21,11 +22,7 @@ public class LoginForm extends javax.swing.JFrame {
     /**
      * Creates new form LoginForm
      */
-    public LoginForm(JFrame previousFrame) {
 
-        this.previousFrame = previousFrame;
-
-    }
 
     public LoginForm() {
 
@@ -153,7 +150,10 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username = jTextField1.getText();
         String password = String.valueOf(jPasswordField1.getPassword());
-        if (username.equals("admin") && password.equals("admin")) {
+        if (username.equals("") || password.equals("")){
+            errors.Errors.emptyFields();
+        }else if (username.equals("admin") && password.equals("admin")) {
+            this.dispose();
             Dashboard dashboard = new Dashboard();
 
             dashboard.showpanel();
@@ -165,6 +165,8 @@ public class LoginForm extends javax.swing.JFrame {
                 Dashboard dashbord = new Dashboard();
                 dashbord.showpanel();
                 this.dispose();
+            }else{
+                errors.Errors.incorrectInfo();
             }
         }
 
@@ -173,7 +175,8 @@ public class LoginForm extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        previousFrame.setVisible(true);
+        MainMenu mm= new MainMenu();
+        mm.showpanel();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
@@ -220,7 +223,7 @@ public class LoginForm extends javax.swing.JFrame {
         setResizable(false);
         setVisible(true);
     }
-    private JFrame previousFrame;
+
 
     public static String getUname() {
         String uname = jTextField1.getText();

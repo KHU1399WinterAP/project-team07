@@ -17,9 +17,9 @@ public class Settings extends javax.swing.JFrame {
     /**
      * Creates new form Settings
      */
-    private JFrame previousFrame;
+
     public Settings() {
-        this.previousFrame = previousFrame;
+
         initComponents();
     }
 
@@ -144,7 +144,8 @@ public class Settings extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        previousFrame.setVisible(true);
+        Dashboard d =new Dashboard();
+        d.showpanel();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

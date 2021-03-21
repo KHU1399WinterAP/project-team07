@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.*;
+
 /**
  *
  * @author adel
@@ -33,8 +35,6 @@ public class MainMenu extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
 
@@ -121,6 +121,7 @@ public class MainMenu extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
         LoginForm lf = new LoginForm();
             lf.showpanel();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -132,6 +133,7 @@ public class MainMenu extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+this.dispose();
         AboutUs au = new AboutUs();
         au.showpanel();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -174,11 +176,13 @@ public void showpanel(){
     setResizable(false);
         setVisible(true);
 jButton3.addActionListener(((e) -> {
+    this.dispose();
             SigninForm sif = new SigninForm();
             sif.showpanel();
         }));
         
     }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -15,13 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class Dashboard extends javax.swing.JFrame {
 
-    private JFrame previousFrame;
 
-    public Dashboard(JFrame previousFrame) {
-
-        this.previousFrame = previousFrame;
-
-    }
 
     /**
      * Creates new form Dashboard
@@ -170,11 +164,13 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        previousFrame.setVisible(true);
+        MainMenu mm=new MainMenu();
+        mm.showpanel();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
         Settings s = new Settings();
         s.showpanel();
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -183,10 +179,7 @@ public class Dashboard extends javax.swing.JFrame {
 
 // TODO add your handling code here:n
         if (Settings.choice1==null) {
-            JOptionPane.showMessageDialog(null,
-                    "You must choose a theme from settings!",
-                    "WARNING",
-                    JOptionPane.WARNING_MESSAGE);
+            errors.Errors.nullTheme();
         } else if (Settings.getTheme().equals("spring")) {
             SpringMap sm = new SpringMap();
             sm.showpanel();
