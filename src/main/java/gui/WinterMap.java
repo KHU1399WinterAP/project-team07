@@ -5,6 +5,10 @@
  */
 package gui;
 
+import java.security.SecureRandom;
+import java.util.Timer;
+import java.util.TimerTask;
+
 /**
  *
  * @author adel
@@ -35,6 +39,22 @@ public class WinterMap extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -96,6 +116,70 @@ public class WinterMap extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 657));
         jPanel2.setLayout(null);
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/1.png"))); // NOI18N
+        jPanel2.add(jLabel4);
+        jLabel4.setBounds(120, 20, 50, 120);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/2.png"))); // NOI18N
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(390, 0, 50, 120);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/3.png"))); // NOI18N
+        jPanel2.add(jLabel7);
+        jLabel7.setBounds(630, 40, 50, 120);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/10.png"))); // NOI18N
+        jPanel2.add(jLabel14);
+        jLabel14.setBounds(350, 350, 50, 120);
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/13.png"))); // NOI18N
+        jPanel2.add(jLabel17);
+        jLabel17.setBounds(90, 510, 60, 120);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/7.png"))); // NOI18N
+        jPanel2.add(jLabel11);
+        jLabel11.setBounds(700, 160, 50, 130);
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/15.png"))); // NOI18N
+        jPanel2.add(jLabel19);
+        jLabel19.setBounds(650, 500, 50, 120);
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))); // NOI18N
+        jPanel2.add(jLabel20);
+        jLabel20.setBounds(840, 530, 50, 120);
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/11.png"))); // NOI18N
+        jPanel2.add(jLabel15);
+        jLabel15.setBounds(660, 360, 50, 120);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/5.png"))); // NOI18N
+        jPanel2.add(jLabel9);
+        jLabel9.setBounds(100, 160, 50, 120);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/9.png"))); // NOI18N
+        jPanel2.add(jLabel13);
+        jLabel13.setBounds(160, 340, 50, 130);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/12.png"))); // NOI18N
+        jPanel2.add(jLabel16);
+        jLabel16.setBounds(850, 330, 50, 140);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/8.png"))); // NOI18N
+        jPanel2.add(jLabel12);
+        jLabel12.setBounds(900, 160, 50, 120);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/6.png"))); // NOI18N
+        jPanel2.add(jLabel10);
+        jLabel10.setBounds(330, 180, 50, 130);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/14.png"))); // NOI18N
+        jPanel2.add(jLabel18);
+        jLabel18.setBounds(350, 520, 50, 120);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/4.png"))); // NOI18N
+        jPanel2.add(jLabel8);
+        jLabel8.setBounds(810, 10, 50, 120);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wintermap.jpg"))); // NOI18N
         jPanel2.add(jLabel2);
         jLabel2.setBounds(0, 0, 1000, 660);
@@ -106,8 +190,8 @@ public class WinterMap extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,13 +278,77 @@ public void showpanel() {
     setVisible(true);
     addItemC1();
   }
+    static int[] urn (int n){
+        int [] a=new int[n];
+        for (int i=0;i<n;i++){
+            a[i]=i;
+        }
+        int result[]=new int[n];
+        int x=n;
+        SecureRandom rd=new SecureRandom();
+        for (int i = 0;i<n;i++){
+            int num=rd.nextInt(x);
+            result[i]=a[num];
+            a[num]=a[x-1];
+            x--;
+        }
+        return result;
+    }
+    public void swap(){
+        int loc[][]={{110, 20, 50, 120},
+                {380, 0, 50, 120},
+                {620, 40, 50, 120},
+                {800, 10, 50, 120},
+                {90, 160, 50, 120},
+                {320, 180, 50, 130},
+                {690, 160, 50, 130},
+                {890, 160, 50, 120},
+                {150, 340, 50, 130},
+                {340, 350, 50, 120},
+                {650, 360, 50, 120},
+                {840, 330, 50, 140},
+                {80, 510, 60, 120},
+                {340, 520, 50, 120},
+                {640, 500, 50, 120},
+                {830, 530, 50, 120}
+
+        };
+        Timer timer = new Timer();
+        TimerTask task=new TimerTask() {
+            @Override
+            public void run() {
+                int[] randomLoc=urn(16);
+                for (int i=0;i<4;i++){
+
+                }
+            }
+        };
+        timer.schedule(task,30000);
+
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Choice choice1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
