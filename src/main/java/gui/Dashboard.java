@@ -180,19 +180,11 @@ public class Dashboard extends javax.swing.JFrame {
 // TODO add your handling code here:n
         if (Settings.choice1==null) {
             errors.Errors.nullTheme();
-        } else if (Settings.getTheme().equals("spring")) {
-            SpringMap sm = new SpringMap();
+        } else {
+            SinglePlayerMap sm = new SinglePlayerMap();
             sm.showpanel();
-        } else if (Settings.getTheme().equals("summer")) {
-            SummerMap sum = new SummerMap();
-            sum.showpanel();
-        } else if (Settings.getTheme().equals("fall")) {
-            FallMap fm = new FallMap();
-            fm.showpanel();
-        } else if (Settings.getTheme().equals("winter")) {
-            WinterMap wm = new WinterMap();
-            wm.showpanel();
         }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
