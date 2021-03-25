@@ -59,11 +59,30 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jButton18 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -71,6 +90,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         jButton1.setText("shoot");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bullets.png"))); // NOI18N
 
@@ -101,7 +125,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/7.png"))); // NOI18N
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(700, 160, 50, 130);
+        jLabel11.setBounds(700, 170, 50, 130);
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/12.png"))); // NOI18N
         jPanel2.add(jLabel16);
@@ -147,6 +171,230 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jPanel2.add(jLabel7);
         jLabel7.setBounds(630, 40, 50, 120);
 
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton18.setBorder(null);
+        jButton18.setBorderPainted(false);
+        jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton18.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton18.setEnabled(false);
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton18);
+        jButton18.setBounds(130, 510, 30, 20);
+
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton17.setBorder(null);
+        jButton17.setBorderPainted(false);
+        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton17.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton17.setEnabled(false);
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton17);
+        jButton17.setBounds(290, 500, 30, 20);
+
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton16.setBorder(null);
+        jButton16.setBorderPainted(false);
+        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton16.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton16.setEnabled(false);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton16);
+        jButton16.setBounds(710, 550, 30, 20);
+
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton15.setBorder(null);
+        jButton15.setBorderPainted(false);
+        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton15.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton15.setEnabled(false);
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton15);
+        jButton15.setBounds(800, 590, 30, 20);
+
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton14.setBorder(null);
+        jButton14.setBorderPainted(false);
+        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton14.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton14.setEnabled(false);
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton14);
+        jButton14.setBounds(940, 450, 30, 20);
+
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton13.setBorder(null);
+        jButton13.setBorderPainted(false);
+        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton13.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton13.setEnabled(false);
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton13);
+        jButton13.setBounds(700, 370, 30, 20);
+
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton12.setBorder(null);
+        jButton12.setBorderPainted(false);
+        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton12.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton12.setEnabled(false);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton12);
+        jButton12.setBounds(440, 390, 30, 20);
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton11.setBorder(null);
+        jButton11.setBorderPainted(false);
+        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton11.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton11.setEnabled(false);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton11);
+        jButton11.setBounds(20, 440, 30, 20);
+
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton10.setBorder(null);
+        jButton10.setBorderPainted(false);
+        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton10.setEnabled(false);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton10);
+        jButton10.setBounds(970, 240, 30, 20);
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton9.setBorder(null);
+        jButton9.setBorderPainted(false);
+        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton9.setEnabled(false);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton9);
+        jButton9.setBounds(710, 170, 30, 20);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton8.setBorder(null);
+        jButton8.setBorderPainted(false);
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton8.setEnabled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton8);
+        jButton8.setBounds(380, 180, 30, 20);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton7.setBorder(null);
+        jButton7.setBorderPainted(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton7.setEnabled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton7);
+        jButton7.setBounds(20, 160, 30, 20);
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton6.setEnabled(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton6);
+        jButton6.setBounds(760, 60, 30, 20);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton5.setBorder(null);
+        jButton5.setBorderPainted(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton5.setEnabled(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton5);
+        jButton5.setBounds(510, 10, 30, 20);
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton4.setEnabled(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton4);
+        jButton4.setBounds(330, 50, 30, 20);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        jButton3.setEnabled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3);
+        jButton3.setBounds(80, 10, 30, 20);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg"))); // NOI18N
         jPanel2.add(jLabel2);
         jLabel2.setBounds(0, -10, 1000, 670);
@@ -176,45 +424,75 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jPanel3.add(jLabel23);
         jLabel23.setBounds(240, 10, 40, 40);
 
+        jButton2.setText("quit");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel24.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jLabel24.setText("exploded bombs:");
+
+        jLabel25.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jLabel25.setText("defused bombs:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(66, 66, 66)
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel25))
+                .addGap(54, 54, 54)
                 .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1))
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 932, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addGap(19, 19, 19)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel24))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jButton1)
+                                    .addComponent(jLabel25)))
+                            .addComponent(jLabel3)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel3)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1)))))
+                        .addContainerGap()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,6 +501,82 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        Dashboard d = new Dashboard();
+        d.showpanel();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,6 +651,13 @@ public class SinglePlayerMap extends javax.swing.JFrame {
     public void showpanel() {
         setResizable(false);
         setVisible(true);
+        JButton[] bombs={jButton3,jButton4,jButton5,jButton6,
+                jButton7,jButton8,jButton9,jButton10,
+                jButton11,jButton12,jButton13,jButton14,
+                jButton15,jButton16,jButton17,jButton18
+
+        };
+
         ImageIcon[] maps={
                 new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg")),
                 new javax.swing.ImageIcon(getClass().getResource("/summermap.jpg")),
@@ -306,21 +667,35 @@ public class SinglePlayerMap extends javax.swing.JFrame {
        if (Settings.getTheme().equals("spring")) {
            jPanel1.setBackground(new java.awt.Color(255, 204, 204));
             jLabel2.setIcon(maps[0]);
+            for(int j = 0;j<=15;j++){
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg")));
+           }
+
         } else if (Settings.getTheme().equals("summer")) {
            jPanel1.setBackground(new java.awt.Color(255, 255, 153));
             jLabel2.setIcon(maps[1]);
+           for(int j = 0;j<=15;j++) {
+               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sudBomb.jpg")));
+           }
+           bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su4.jpg")));
+           bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su8.jpg")));
         } else if (Settings.getTheme().equals("fall")) {
            jPanel1.setBackground(new java.awt.Color(255, 153, 0));
             jLabel2.setIcon(maps[2]);
+           for(int j = 0;j<=15;j++) {
+               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/fdBomb.jpg")));
+           }
         } else if (Settings.getTheme().equals("winter")) {
            jPanel1.setBackground(new java.awt.Color(0, 153, 153));
             jLabel2.setIcon(maps[3]);
-
+           for(int j = 0;j<=15;j++) {
+               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
+           }
         }
         addItemC1();
 
         swap();
-
+        
     }
     static int[] uniqueNumberGenerator (int n){
         int [] a=new int[n];
@@ -342,7 +717,14 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
 
     }
+
     public void swap(){
+        JLabel labels[]={
+                jLabel4,jLabel5,jLabel7,jLabel8,
+                jLabel9,jLabel10,jLabel11,jLabel12,
+                jLabel13,jLabel14,jLabel15,jLabel16,
+                jLabel17,jLabel18,jLabel19,jLabel20
+        };
         ImageIcon[] chars={
                 new javax.swing.ImageIcon(getClass().getResource("/characters/1.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/2.png")),
@@ -361,16 +743,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 new javax.swing.ImageIcon(getClass().getResource("/characters/15.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))
         };
-
-
-        JLabel labels[]={
-                jLabel4,jLabel5,jLabel7,jLabel8,
-                jLabel9,jLabel10,jLabel11,jLabel12,
-                jLabel13,jLabel14,jLabel15,jLabel16,
-                jLabel17,jLabel18,jLabel19,jLabel20
-        };
-
-
                 SecureRandom rd=new SecureRandom();
                 int[] random=uniqueNumberGenerator(16);
                 int[] swapingChars=new int[16];
@@ -405,6 +777,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 labels[d].setIcon(chars[c]);
                 labels[bomber].setIcon(chars[m]);
                 labels[m].setIcon(chars[bomber]);
+
             }
         };
         TimerTask phase2=new TimerTask() {
@@ -429,36 +802,56 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 labels[o].setIcon(chars[bomber]);
             }
         };
-        timer.schedule(phase1,30000);
+        timer.schedule(phase1,45000);
         timer.schedule(phase2,60000);
-        timer.schedule(phase3,90000);
+        timer.schedule(phase3,75000);
     }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Choice choice1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
+    private static javax.swing.JLabel jLabel10;
+    private static javax.swing.JLabel jLabel11;
+    private static javax.swing.JLabel jLabel12;
+    private static javax.swing.JLabel jLabel13;
+    private static javax.swing.JLabel jLabel14;
+    private static javax.swing.JLabel jLabel15;
+    private static javax.swing.JLabel jLabel16;
+    private static javax.swing.JLabel jLabel17;
+    private static javax.swing.JLabel jLabel18;
+    private static javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
+    private static javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private static javax.swing.JLabel jLabel4;
+    private static javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private static javax.swing.JLabel jLabel7;
+    private static javax.swing.JLabel jLabel8;
+    private static javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

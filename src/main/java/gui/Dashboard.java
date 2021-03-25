@@ -181,6 +181,7 @@ public class Dashboard extends javax.swing.JFrame {
         if (Settings.choice1==null) {
             errors.Errors.nullTheme();
         } else {
+            this.dispose();
             SinglePlayerMap sm = new SinglePlayerMap();
             sm.showpanel();
         }

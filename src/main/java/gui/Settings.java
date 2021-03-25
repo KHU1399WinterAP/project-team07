@@ -205,7 +205,6 @@ choice1.add("spring");
     
     public void addItemC2(){
         choice2.add("easy");
-        choice2.add("normal");
         choice2.add("hard");
 
 
