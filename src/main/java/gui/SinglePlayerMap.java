@@ -755,7 +755,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 new javax.swing.ImageIcon(getClass().getResource("/characters/15.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))
         };
-                SecureRandom rd=new SecureRandom();
+
                 int[] random=uniqueNumberGenerator(16);
                 int[] swapingChars=new int[16];
                 for(int i=0 ; i<16 ;i++){
@@ -821,6 +821,61 @@ jLabel26.setText(y.toString());
         timer.schedule(phase1,10000);
         timer.schedule(phase2,20000);
         timer.schedule(phase3,30000);
+
+    }
+
+
+    public void plantingBombs(){
+
+        JButton bombs[]={
+                jButton3, jButton4, jButton5, jButton6,
+                jButton7, jButton8, jButton9, jButton10,
+                jButton11, jButton12,jButton13, jButton14,
+                jButton15, jButton16, jButton17, jButton18
+        };
+
+        int[] random=uniqueNumberGenerator(16);
+        int[] selectedBlocks=new int[16];
+        for(int i=0 ; i<16 ;i++){
+            selectedBlocks[i]=random[i];
+
+        }
+
+        int a=selectedBlocks[0];
+        int b=selectedBlocks[1];
+        int c=selectedBlocks[2];
+        int d=selectedBlocks[3];
+
+        Timer timer = new Timer();
+        TimerTask bombA=new TimerTask() {
+            @Override
+            public void run() {
+                bombs[a].setEnabled(true);
+            }
+        };
+        TimerTask bombB=new TimerTask() {
+            @Override
+            public void run() {
+                bombs[b].setEnabled(true);
+            }
+        };
+        TimerTask bombC=new TimerTask() {
+            @Override
+            public void run() {
+                bombs[c].setEnabled(true);
+            }
+        };
+        TimerTask bombD=new TimerTask() {
+            @Override
+            public void run() {
+                bombs[d].setEnabled(true);
+            }
+        };
+
+        timer.schedule(bombA,10000);
+        timer.schedule(bombB,20000);
+        timer.schedule(bombC,30000);
+        timer.schedule(bombD,40000);
 
     }
 
