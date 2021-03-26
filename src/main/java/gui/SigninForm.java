@@ -9,6 +9,8 @@ import database.Database;
 import javax.swing.JFrame;
 import models.User;
 
+import java.awt.*;
+
 /**
  *
  * @author adel
@@ -198,7 +200,9 @@ public class SigninForm extends javax.swing.JFrame {
     }
 public void showpanel(){
     setResizable(false);
-        setVisible(true);}
+        setVisible(true);
+    Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+    this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

@@ -42,6 +42,7 @@ public class Database {
             statement.setString(1, user.username);
             statement.setString(2, user.password);
 
+
             statement.executeUpdate();
         } catch (SQLException throwables) {
             throwables.printStackTrace();

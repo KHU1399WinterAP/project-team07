@@ -6,6 +6,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -175,6 +176,8 @@ this.dispose();
 public void showpanel(){
     setResizable(false);
         setVisible(true);
+    Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+    this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
 jButton3.addActionListener(((e) -> {
     this.dispose();
             SigninForm sif = new SigninForm();

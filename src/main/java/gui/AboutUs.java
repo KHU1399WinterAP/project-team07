@@ -6,6 +6,7 @@
 package gui;
 
 import javax.swing.JFrame;
+import java.awt.*;
 
 /**
  *
@@ -40,7 +41,7 @@ public class AboutUs extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aboutus.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/aboutus.jpg"))); // NOI18N
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rmb2.jpg"))); // NOI18N
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -136,6 +137,8 @@ public void showpanel() {
 
     setResizable(false);
     setVisible(true);
+    Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+    this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
   }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

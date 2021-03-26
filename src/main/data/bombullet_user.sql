@@ -36,7 +36,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('643','fdg'),('ad','da'),('Adel','11111'),('Ali','11111'),('d','jPasswordField1'),('dghg','sad'),('dina','12'),('fs','sgdf'),('hasan','55'),('mahdi','5555'),('mmd','333'),('mohammad','12345'),('ramin','34'),('s',''),('sadra','99'),('sina','243'),('ss','ss'),('taha','00'),('userame','jPasswordField1'),('username','jPasswordField1'),('usernamedd','jPasswordField1'),('yy','t');
+INSERT INTO `user` VALUES ('643','fdg'),('ad','da'),('Adel','11111'),('Ali','11111'),('d','jPasswordField1'),('dghg','sad'),('dina','12'),('fs','sgdf'),('hasan','55'),('john','1234'),('mahdi','5555'),('mmd','333'),('mohammad','12345'),('qqq','wwww'),('ramin','34'),('s',''),('sadra','99'),('sina','243'),('ss','ss'),('taha','00'),('userame','jPasswordField1'),('username','jPasswordField1'),('usernamedd','jPasswordField1'),('yy','t');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-21 23:29:05
+-- Dump completed on 2021-03-27  0:20:18

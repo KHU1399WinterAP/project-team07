@@ -6,6 +6,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 import java.security.SecureRandom;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -454,9 +455,12 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel25))
-                .addGap(54, 54, 54)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addGap(54, 54, 54))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
@@ -487,8 +491,8 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -578,7 +582,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        String selected=choice1.getItem(choice1.getSelectedIndex());
+        if(selected.equals(jLabel26.getText())){
+            
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -654,6 +661,8 @@ public class SinglePlayerMap extends javax.swing.JFrame {
     public void showpanel() {
         setResizable(false);
         setVisible(true);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         JButton[] bombs={jButton3,jButton4,jButton5,jButton6,
                 jButton7,jButton8,jButton9,jButton10,
                 jButton11,jButton12,jButton13,jButton14,
@@ -698,7 +707,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         addItemC1();
 
         swap();
-        
+
     }
     static int[] uniqueNumberGenerator (int n){
         int [] a=new int[n];

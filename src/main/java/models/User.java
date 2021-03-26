@@ -6,6 +6,7 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+
     }
     public User(String username, char[] password) {
         this(username,String.valueOf(password));
@@ -14,7 +15,8 @@ public class User {
         public String toString() {
         return "User{" +
                 "username:" + username +
-                ",password:" + password + '}';
+                ",password:" + password +
+                '}';
 }
 
 
