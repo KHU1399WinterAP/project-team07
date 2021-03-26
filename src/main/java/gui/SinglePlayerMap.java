@@ -80,6 +80,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -423,6 +424,8 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jLabel23.setText("jLabel21");
         jPanel3.add(jLabel23);
         jLabel23.setBounds(240, 10, 40, 40);
+        jPanel3.add(jLabel26);
+        jLabel26.setBounds(490, 340, 0, 0);
 
         jButton2.setText("quit");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -767,6 +770,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         int n=swapingChars[13];
         int o=swapingChars[14];
 
+Integer y =new Integer(bomber+1);
+jLabel26.setText(y.toString());
+
+
         Timer timer = new Timer();
         TimerTask phase1=new TimerTask() {
             @Override
@@ -802,9 +809,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 labels[o].setIcon(chars[bomber]);
             }
         };
-        timer.schedule(phase1,45000);
-        timer.schedule(phase2,60000);
-        timer.schedule(phase3,75000);
+        timer.schedule(phase1,10000);
+        timer.schedule(phase2,20000);
+        timer.schedule(phase3,30000);
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -845,6 +853,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private static javax.swing.JLabel jLabel4;
     private static javax.swing.JLabel jLabel5;
