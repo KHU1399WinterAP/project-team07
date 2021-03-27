@@ -582,10 +582,14 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+int bullet = 2 ;
         String selected=choice1.getItem(choice1.getSelectedIndex());
         if(selected.equals(jLabel26.getText())){
-            
+           JOptionPane.showMessageDialog(null , "You Won !",  "Bravo!",  JOptionPane.INFORMATION_MESSAGE );
         }
+else{
+bullet--;
+}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
