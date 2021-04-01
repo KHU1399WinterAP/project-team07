@@ -40,10 +40,10 @@ public class Settings extends javax.swing.JFrame {
         seasonLabel = new javax.swing.JLabel();
         difficultyLabel = new javax.swing.JLabel();
         settingsLabel = new javax.swing.JLabel();
-        springLabel = new javax.swing.JLabel();
-        summerLabel = new javax.swing.JLabel();
-        fallLabel = new javax.swing.JLabel();
-        winterLabel = new javax.swing.JLabel();
+        springPreview = new javax.swing.JLabel();
+        summerPreview = new javax.swing.JLabel();
+        fallPreview = new javax.swing.JLabel();
+        winterPreview = new javax.swing.JLabel();
         returnButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -58,13 +58,13 @@ public class Settings extends javax.swing.JFrame {
 
         settingsLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/settingst.png"))); // NOI18N
 
-        springLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/smm.jpg"))); // NOI18N
+        springPreview.setIcon(new javax.swing.ImageIcon(getClass().getResource("/smm.jpg"))); // NOI18N
 
-        summerLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/summ.jpg"))); // NOI18N
+        summerPreview.setIcon(new javax.swing.ImageIcon(getClass().getResource("/summ.jpg"))); // NOI18N
 
-        fallLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fmm.jpg"))); // NOI18N
+        fallPreview.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fmm.jpg"))); // NOI18N
 
-        winterLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wmm.jpg"))); // NOI18N
+        winterPreview.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wmm.jpg"))); // NOI18N
 
         returnButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rd.jpg"))); // NOI18N
         returnButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -77,67 +77,67 @@ public class Settings extends javax.swing.JFrame {
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(returnButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(springLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(summerLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fallLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(winterLabel))
-                            .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addComponent(seasonLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seasonChoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addComponent(difficultyLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(difficultyChoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(settingsLabel)))
-                .addGap(22, 22, 22))
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(returnButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                                .addGap(10, 10, 10)
+                                                                .addComponent(springPreview)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(summerPreview)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(fallPreview)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(winterPreview))
+                                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                                .addComponent(seasonLabel)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(seasonChoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                                .addComponent(difficultyLabel)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(difficultyChoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                .addGap(80, 80, 80)
+                                                .addComponent(settingsLabel)))
+                                .addGap(22, 22, 22))
         );
         mainPanelLayout.setVerticalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(settingsLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(seasonLabel)
-                    .addComponent(seasonChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(winterLabel)
-                    .addComponent(springLabel)
-                    .addComponent(summerLabel)
-                    .addComponent(fallLabel))
-                .addGap(26, 26, 26)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(difficultyLabel)
-                    .addComponent(difficultyChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addComponent(settingsLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(seasonLabel)
+                                        .addComponent(seasonChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(winterPreview)
+                                        .addComponent(springPreview)
+                                        .addComponent(summerPreview)
+                                        .addComponent(fallPreview))
+                                .addGap(26, 26, 26)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(difficultyLabel)
+                                        .addComponent(difficultyChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(19, 19, 19)
+                                .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -146,8 +146,8 @@ public class Settings extends javax.swing.JFrame {
     private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        Dashboard d = new Dashboard();
-        d.showpanel();
+        Dashboard dashboard = new Dashboard();
+        dashboard.showpanel();
     }//GEN-LAST:event_returnButtonActionPerformed
 
     /**
@@ -205,24 +205,23 @@ public class Settings extends javax.swing.JFrame {
         String theme = seasonChoice.getItem(seasonChoice.getSelectedIndex());
         return theme;
     }
+
     public void addItemC2() {
         difficultyChoice.add("easy");
         difficultyChoice.add("hard");
-
-
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static java.awt.Choice difficultyChoice;
     private javax.swing.JLabel difficultyLabel;
-    private javax.swing.JLabel fallLabel;
+    private javax.swing.JLabel fallPreview;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton returnButton;
     public static java.awt.Choice seasonChoice;
     private javax.swing.JLabel seasonLabel;
     private javax.swing.JLabel settingsLabel;
-    private javax.swing.JLabel springLabel;
-    private javax.swing.JLabel summerLabel;
-    private javax.swing.JLabel winterLabel;
+    private javax.swing.JLabel springPreview;
+    private javax.swing.JLabel summerPreview;
+    private javax.swing.JLabel winterPreview;
     // End of variables declaration//GEN-END:variables
 }

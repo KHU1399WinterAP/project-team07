@@ -51,13 +51,13 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                  <Component id="springLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="springPreview" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="summerLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="summerPreview" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fallLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fallPreview" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="winterLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="winterPreview" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="seasonLabel" min="-2" max="-2" attributes="0"/>
@@ -92,10 +92,10 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="winterLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="springLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="summerLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="fallLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="winterPreview" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="springPreview" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="summerPreview" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="fallPreview" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -145,28 +145,28 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="springLabel">
+        <Component class="javax.swing.JLabel" name="springPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/smm.jpg"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="summerLabel">
+        <Component class="javax.swing.JLabel" name="summerPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/summ.jpg"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="fallLabel">
+        <Component class="javax.swing.JLabel" name="fallPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/fmm.jpg"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="winterLabel">
+        <Component class="javax.swing.JLabel" name="winterPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/wmm.jpg"/>

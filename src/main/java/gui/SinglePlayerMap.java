@@ -16,7 +16,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- *
  * @author adel
  */
 public class SinglePlayerMap extends javax.swing.JFrame {
@@ -37,111 +36,107 @@ public class SinglePlayerMap extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        mainPanel = new javax.swing.JPanel();
         shootButton = new javax.swing.JButton();
-        choice1 = new java.awt.Choice();
+        target = new java.awt.Choice();
         bullets = new javax.swing.JLabel();
         countdown = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
+        mainScreen = new javax.swing.JPanel();
+        sniperScope = new javax.swing.JScrollPane();
+        sniperView = new javax.swing.JPanel();
+        character6 = new javax.swing.JLabel();
+        character16 = new javax.swing.JLabel();
+        character9 = new javax.swing.JLabel();
+        character8 = new javax.swing.JLabel();
+        character7 = new javax.swing.JLabel();
+        character12 = new javax.swing.JLabel();
+        character15 = new javax.swing.JLabel();
+        character1 = new javax.swing.JLabel();
+        character10 = new javax.swing.JLabel();
+        character14 = new javax.swing.JLabel();
+        character2 = new javax.swing.JLabel();
+        character13 = new javax.swing.JLabel();
+        character4 = new javax.swing.JLabel();
+        character5 = new javax.swing.JLabel();
+        character11 = new javax.swing.JLabel();
+        character3 = new javax.swing.JLabel();
+        bomb16 = new javax.swing.JButton();
+        bomb15 = new javax.swing.JButton();
+        bomb14 = new javax.swing.JButton();
+        bomb13 = new javax.swing.JButton();
+        bomb12 = new javax.swing.JButton();
+        bomb11 = new javax.swing.JButton();
+        bomb10 = new javax.swing.JButton();
+        bomb9 = new javax.swing.JButton();
+        bomb8 = new javax.swing.JButton();
+        bomb7 = new javax.swing.JButton();
+        bomb6 = new javax.swing.JButton();
+        bomb5 = new javax.swing.JButton();
+        bomb4 = new javax.swing.JButton();
+        bomb3 = new javax.swing.JButton();
+        bomb2 = new javax.swing.JButton();
+        bomb1 = new javax.swing.JButton();
+        map = new javax.swing.JLabel();
+        downAim = new javax.swing.JLabel();
+        leftAim = new javax.swing.JLabel();
+        rightAim = new javax.swing.JLabel();
+        upAim = new javax.swing.JLabel();
+        bomberId = new javax.swing.JLabel();
+        wireB6 = new javax.swing.JButton();
+        wireB7 = new javax.swing.JButton();
+        wireB8 = new javax.swing.JButton();
+        wireB9 = new javax.swing.JButton();
+        wireB10 = new javax.swing.JButton();
+        wireB5 = new javax.swing.JButton();
+        wireB4 = new javax.swing.JButton();
+        wireB3 = new javax.swing.JButton();
+        wireB2 = new javax.swing.JButton();
+        wireB1 = new javax.swing.JButton();
         bombStatus4 = new javax.swing.JLabel();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
-        jButton33 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
-        jButton35 = new javax.swing.JButton();
-        jButton36 = new javax.swing.JButton();
-        jButton37 = new javax.swing.JButton();
-        jButton38 = new javax.swing.JButton();
+        wireD6 = new javax.swing.JButton();
+        wireD7 = new javax.swing.JButton();
+        wireD8 = new javax.swing.JButton();
+        wireD9 = new javax.swing.JButton();
+        wireD10 = new javax.swing.JButton();
+        wireD5 = new javax.swing.JButton();
+        wireD4 = new javax.swing.JButton();
+        wireD3 = new javax.swing.JButton();
+        wireD2 = new javax.swing.JButton();
+        wireD1 = new javax.swing.JButton();
         bombStatus1 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jButton39 = new javax.swing.JButton();
-        jButton40 = new javax.swing.JButton();
-        jButton41 = new javax.swing.JButton();
-        jButton42 = new javax.swing.JButton();
-        jButton43 = new javax.swing.JButton();
-        jButton44 = new javax.swing.JButton();
-        jButton45 = new javax.swing.JButton();
-        jButton46 = new javax.swing.JButton();
-        jButton47 = new javax.swing.JButton();
-        jButton48 = new javax.swing.JButton();
+        bombD = new javax.swing.JLabel();
+        bombB = new javax.swing.JLabel();
+        wireA6 = new javax.swing.JButton();
+        wireA7 = new javax.swing.JButton();
+        wireA8 = new javax.swing.JButton();
+        wireA9 = new javax.swing.JButton();
+        wireA10 = new javax.swing.JButton();
+        wireA5 = new javax.swing.JButton();
+        wireA4 = new javax.swing.JButton();
+        wireA3 = new javax.swing.JButton();
+        wireA2 = new javax.swing.JButton();
+        wireA1 = new javax.swing.JButton();
         bombStatus2 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jButton49 = new javax.swing.JButton();
-        jButton50 = new javax.swing.JButton();
-        jButton51 = new javax.swing.JButton();
-        jButton52 = new javax.swing.JButton();
-        jButton53 = new javax.swing.JButton();
-        jButton54 = new javax.swing.JButton();
-        jButton55 = new javax.swing.JButton();
-        jButton56 = new javax.swing.JButton();
-        jButton57 = new javax.swing.JButton();
-        jButton58 = new javax.swing.JButton();
+        bombA = new javax.swing.JLabel();
+        wireC6 = new javax.swing.JButton();
+        wireC7 = new javax.swing.JButton();
+        wireC8 = new javax.swing.JButton();
+        wireC9 = new javax.swing.JButton();
+        wireC10 = new javax.swing.JButton();
+        wireC5 = new javax.swing.JButton();
+        wireC4 = new javax.swing.JButton();
+        wireC3 = new javax.swing.JButton();
+        wireC2 = new javax.swing.JButton();
+        wireC1 = new javax.swing.JButton();
         bombStatus3 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
+        bombC = new javax.swing.JLabel();
         quitButton = new javax.swing.JButton();
-        jLabel25 = new javax.swing.JLabel();
+        defusedLabel = new javax.swing.JLabel();
         defused = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+        mainPanel.setBackground(new java.awt.Color(255, 204, 204));
 
         shootButton.setText("shoot");
         shootButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -156,990 +151,974 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         countdown.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 48)); // NOI18N
         countdown.setText("90");
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setLayout(null);
+        mainScreen.setBackground(new java.awt.Color(0, 0, 0));
+        mainScreen.setLayout(null);
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(1000, 657));
-        jPanel2.setLayout(null);
+        sniperView.setPreferredSize(new java.awt.Dimension(1000, 657));
+        sniperView.setLayout(null);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/6.png"))); // NOI18N
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(330, 180, 50, 130);
+        character6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/6.png"))); // NOI18N
+        sniperView.add(character6);
+        character6.setBounds(330, 180, 50, 130);
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))); // NOI18N
-        jPanel2.add(jLabel20);
-        jLabel20.setBounds(840, 530, 50, 120);
+        character16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))); // NOI18N
+        sniperView.add(character16);
+        character16.setBounds(840, 530, 50, 120);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/9.png"))); // NOI18N
-        jPanel2.add(jLabel13);
-        jLabel13.setBounds(160, 340, 50, 130);
+        character9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/9.png"))); // NOI18N
+        sniperView.add(character9);
+        character9.setBounds(160, 340, 50, 130);
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/8.png"))); // NOI18N
-        jPanel2.add(jLabel12);
-        jLabel12.setBounds(900, 160, 50, 120);
+        character8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/8.png"))); // NOI18N
+        sniperView.add(character8);
+        character8.setBounds(900, 160, 50, 120);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/7.png"))); // NOI18N
-        jPanel2.add(jLabel11);
-        jLabel11.setBounds(700, 170, 50, 130);
+        character7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/7.png"))); // NOI18N
+        sniperView.add(character7);
+        character7.setBounds(700, 180, 50, 130);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/12.png"))); // NOI18N
-        jPanel2.add(jLabel16);
-        jLabel16.setBounds(850, 330, 50, 140);
+        character12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/12.png"))); // NOI18N
+        sniperView.add(character12);
+        character12.setBounds(850, 330, 50, 140);
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/15.png"))); // NOI18N
-        jPanel2.add(jLabel19);
-        jLabel19.setBounds(650, 500, 50, 120);
+        character15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/15.png"))); // NOI18N
+        sniperView.add(character15);
+        character15.setBounds(650, 500, 50, 120);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/1.png"))); // NOI18N
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(120, 20, 50, 120);
+        character1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/1.png"))); // NOI18N
+        sniperView.add(character1);
+        character1.setBounds(120, 20, 50, 120);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/10.png"))); // NOI18N
-        jPanel2.add(jLabel14);
-        jLabel14.setBounds(350, 350, 50, 120);
+        character10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/10.png"))); // NOI18N
+        sniperView.add(character10);
+        character10.setBounds(350, 350, 50, 120);
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/14.png"))); // NOI18N
-        jPanel2.add(jLabel18);
-        jLabel18.setBounds(350, 520, 50, 120);
+        character14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/14.png"))); // NOI18N
+        sniperView.add(character14);
+        character14.setBounds(350, 520, 50, 120);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/2.png"))); // NOI18N
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(390, 0, 50, 120);
+        character2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/2.png"))); // NOI18N
+        sniperView.add(character2);
+        character2.setBounds(390, 0, 50, 120);
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/13.png"))); // NOI18N
-        jPanel2.add(jLabel17);
-        jLabel17.setBounds(90, 510, 60, 120);
+        character13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/13.png"))); // NOI18N
+        sniperView.add(character13);
+        character13.setBounds(90, 510, 60, 120);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/4.png"))); // NOI18N
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(810, 10, 50, 120);
+        character4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/4.png"))); // NOI18N
+        sniperView.add(character4);
+        character4.setBounds(810, 10, 50, 120);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/5.png"))); // NOI18N
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(100, 160, 50, 120);
+        character5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/5.png"))); // NOI18N
+        sniperView.add(character5);
+        character5.setBounds(100, 160, 50, 120);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/11.png"))); // NOI18N
-        jPanel2.add(jLabel15);
-        jLabel15.setBounds(660, 360, 50, 120);
+        character11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/11.png"))); // NOI18N
+        sniperView.add(character11);
+        character11.setBounds(660, 360, 50, 120);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/3.png"))); // NOI18N
-        jPanel2.add(jLabel7);
-        jLabel7.setBounds(630, 40, 50, 120);
+        character3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/characters/3.png"))); // NOI18N
+        sniperView.add(character3);
+        character3.setBounds(630, 40, 50, 120);
 
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton18.setBorder(null);
-        jButton18.setBorderPainted(false);
-        jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton18.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton18.setEnabled(false);
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        bomb16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb16.setBorder(null);
+        bomb16.setBorderPainted(false);
+        bomb16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb16.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb16.setEnabled(false);
+        bomb16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                bomb16ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton18);
-        jButton18.setBounds(130, 510, 30, 20);
+        sniperView.add(bomb16);
+        bomb16.setBounds(130, 510, 30, 20);
 
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton17.setBorder(null);
-        jButton17.setBorderPainted(false);
-        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton17.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton17.setEnabled(false);
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        bomb15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb15.setBorder(null);
+        bomb15.setBorderPainted(false);
+        bomb15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb15.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb15.setEnabled(false);
+        bomb15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                bomb15ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17);
-        jButton17.setBounds(290, 500, 30, 20);
+        sniperView.add(bomb15);
+        bomb15.setBounds(290, 500, 30, 20);
 
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton16.setBorder(null);
-        jButton16.setBorderPainted(false);
-        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton16.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton16.setEnabled(false);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        bomb14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb14.setBorder(null);
+        bomb14.setBorderPainted(false);
+        bomb14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb14.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb14.setEnabled(false);
+        bomb14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                bomb14ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton16);
-        jButton16.setBounds(710, 550, 30, 20);
+        sniperView.add(bomb14);
+        bomb14.setBounds(710, 550, 30, 20);
 
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton15.setBorder(null);
-        jButton15.setBorderPainted(false);
-        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton15.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton15.setEnabled(false);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        bomb13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb13.setBorder(null);
+        bomb13.setBorderPainted(false);
+        bomb13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb13.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb13.setEnabled(false);
+        bomb13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                bomb13ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton15);
-        jButton15.setBounds(800, 590, 30, 20);
+        sniperView.add(bomb13);
+        bomb13.setBounds(800, 590, 30, 20);
 
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton14.setBorder(null);
-        jButton14.setBorderPainted(false);
-        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton14.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton14.setEnabled(false);
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        bomb12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb12.setBorder(null);
+        bomb12.setBorderPainted(false);
+        bomb12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb12.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb12.setEnabled(false);
+        bomb12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                bomb12ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton14);
-        jButton14.setBounds(940, 450, 30, 20);
+        sniperView.add(bomb12);
+        bomb12.setBounds(940, 450, 30, 20);
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton13.setBorder(null);
-        jButton13.setBorderPainted(false);
-        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton13.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton13.setEnabled(false);
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        bomb11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb11.setBorder(null);
+        bomb11.setBorderPainted(false);
+        bomb11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb11.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb11.setEnabled(false);
+        bomb11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                bomb11ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13);
-        jButton13.setBounds(700, 370, 30, 20);
+        sniperView.add(bomb11);
+        bomb11.setBounds(700, 370, 30, 20);
 
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton12.setBorder(null);
-        jButton12.setBorderPainted(false);
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton12.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton12.setEnabled(false);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        bomb10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb10.setBorder(null);
+        bomb10.setBorderPainted(false);
+        bomb10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb10.setEnabled(false);
+        bomb10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                bomb10ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12);
-        jButton12.setBounds(440, 390, 30, 20);
+        sniperView.add(bomb10);
+        bomb10.setBounds(440, 390, 30, 20);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton11.setBorder(null);
-        jButton11.setBorderPainted(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton11.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton11.setEnabled(false);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        bomb9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb9.setBorder(null);
+        bomb9.setBorderPainted(false);
+        bomb9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb9.setEnabled(false);
+        bomb9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                bomb9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton11);
-        jButton11.setBounds(20, 440, 30, 20);
+        sniperView.add(bomb9);
+        bomb9.setBounds(20, 440, 30, 20);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton10.setBorder(null);
-        jButton10.setBorderPainted(false);
-        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton10.setEnabled(false);
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        bomb8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb8.setBorder(null);
+        bomb8.setBorderPainted(false);
+        bomb8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb8.setEnabled(false);
+        bomb8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                bomb8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton10);
-        jButton10.setBounds(970, 240, 30, 20);
+        sniperView.add(bomb8);
+        bomb8.setBounds(970, 240, 30, 20);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton9.setBorder(null);
-        jButton9.setBorderPainted(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton9.setEnabled(false);
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        bomb7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb7.setBorder(null);
+        bomb7.setBorderPainted(false);
+        bomb7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb7.setEnabled(false);
+        bomb7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                bomb7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9);
-        jButton9.setBounds(710, 170, 30, 20);
+        sniperView.add(bomb7);
+        bomb7.setBounds(710, 170, 30, 20);
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton8.setBorder(null);
-        jButton8.setBorderPainted(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton8.setEnabled(false);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        bomb6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb6.setBorder(null);
+        bomb6.setBorderPainted(false);
+        bomb6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb6.setEnabled(false);
+        bomb6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                bomb6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8);
-        jButton8.setBounds(380, 180, 30, 20);
+        sniperView.add(bomb6);
+        bomb6.setBounds(380, 180, 30, 20);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton7.setEnabled(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        bomb5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb5.setBorder(null);
+        bomb5.setBorderPainted(false);
+        bomb5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb5.setEnabled(false);
+        bomb5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                bomb5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7);
-        jButton7.setBounds(20, 160, 30, 20);
+        sniperView.add(bomb5);
+        bomb5.setBounds(20, 160, 30, 20);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton6.setEnabled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        bomb4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb4.setBorder(null);
+        bomb4.setBorderPainted(false);
+        bomb4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb4.setEnabled(false);
+        bomb4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                bomb4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6);
-        jButton6.setBounds(760, 60, 30, 20);
+        sniperView.add(bomb4);
+        bomb4.setBounds(760, 60, 30, 20);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton5.setEnabled(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        bomb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb3.setBorder(null);
+        bomb3.setBorderPainted(false);
+        bomb3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb3.setEnabled(false);
+        bomb3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                bomb3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5);
-        jButton5.setBounds(510, 10, 30, 20);
+        sniperView.add(bomb3);
+        bomb3.setBounds(510, 10, 30, 20);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton4.setEnabled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        bomb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb2.setBorder(null);
+        bomb2.setBorderPainted(false);
+        bomb2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb2.setEnabled(false);
+        bomb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bomb2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4);
-        jButton4.setBounds(330, 50, 30, 20);
+        sniperView.add(bomb2);
+        bomb2.setBounds(330, 50, 30, 20);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
-        jButton3.setEnabled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        bomb1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb1.setBorder(null);
+        bomb1.setBorderPainted(false);
+        bomb1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bomb1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb1.setEnabled(false);
+        bomb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                bomb1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3);
-        jButton3.setBounds(80, 10, 30, 20);
+        sniperView.add(bomb1);
+        bomb1.setBounds(80, 10, 30, 20);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg"))); // NOI18N
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(0, -10, 1000, 670);
+        map.setIcon(new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg"))); // NOI18N
+        sniperView.add(map);
+        map.setBounds(0, -10, 1000, 670);
 
-        jLabel27.setText("jLabel27");
-        jPanel2.add(jLabel27);
-        jLabel27.setBounds(20, 10, 41, 14);
+        sniperScope.setViewportView(sniperView);
 
-        jLabel28.setText("jLabel28");
-        jPanel2.add(jLabel28);
-        jLabel28.setBounds(20, 40, 41, 14);
+        mainScreen.add(sniperScope);
+        sniperScope.setBounds(210, 50, 440, 260);
 
-        jLabel29.setText("jLabel29");
-        jPanel2.add(jLabel29);
-        jLabel29.setBounds(20, 70, 41, 14);
+        downAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
+        downAim.setText("jLabel21");
+        mainScreen.add(downAim);
+        downAim.setBounds(400, 310, 40, 40);
 
-        jLabel31.setText("jLabel31");
-        jPanel2.add(jLabel31);
-        jLabel31.setBounds(20, 110, 41, 14);
+        leftAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
+        leftAim.setText("jLabel6");
+        mainScreen.add(leftAim);
+        leftAim.setBounds(170, 160, 40, 30);
 
-        jScrollPane1.setViewportView(jPanel2);
+        rightAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
+        rightAim.setText("jLabel6");
+        mainScreen.add(rightAim);
+        rightAim.setBounds(650, 160, 40, 30);
 
-        jPanel3.add(jScrollPane1);
-        jScrollPane1.setBounds(210, 50, 440, 260);
+        upAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
+        upAim.setText("jLabel21");
+        mainScreen.add(upAim);
+        upAim.setBounds(400, 10, 40, 40);
+        mainScreen.add(bomberId);
+        bomberId.setBounds(490, 340, 0, 0);
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
-        jLabel21.setText("jLabel21");
-        jPanel3.add(jLabel21);
-        jLabel21.setBounds(400, 310, 40, 40);
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
-        jLabel6.setText("jLabel6");
-        jPanel3.add(jLabel6);
-        jLabel6.setBounds(170, 160, 40, 30);
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
-        jLabel22.setText("jLabel6");
-        jPanel3.add(jLabel22);
-        jLabel22.setBounds(650, 160, 40, 30);
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
-        jLabel23.setText("jLabel21");
-        jPanel3.add(jLabel23);
-        jLabel23.setBounds(400, 10, 40, 40);
-        jPanel3.add(jLabel26);
-        jLabel26.setBounds(490, 340, 0, 0);
-
-        jButton19.setBorder(null);
-        jButton19.setBorderPainted(false);
-        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton19.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton19.setEnabled(false);
-        jButton19.setFocusable(false);
-        jButton19.setRequestFocusEnabled(false);
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        wireB6.setBorder(null);
+        wireB6.setBorderPainted(false);
+        wireB6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB6.setEnabled(false);
+        wireB6.setFocusable(false);
+        wireB6.setRequestFocusEnabled(false);
+        wireB6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                wireB6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19);
-        jButton19.setBounds(730, 150, 10, 20);
+        mainScreen.add(wireB6);
+        wireB6.setBounds(730, 150, 10, 20);
 
-        jButton20.setBorder(null);
-        jButton20.setBorderPainted(false);
-        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton20.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton20.setEnabled(false);
-        jButton20.setFocusable(false);
-        jButton20.setRequestFocusEnabled(false);
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        wireB7.setBorder(null);
+        wireB7.setBorderPainted(false);
+        wireB7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB7.setEnabled(false);
+        wireB7.setFocusable(false);
+        wireB7.setRequestFocusEnabled(false);
+        wireB7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                wireB7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton20);
-        jButton20.setBounds(750, 150, 10, 20);
+        mainScreen.add(wireB7);
+        wireB7.setBounds(750, 150, 10, 20);
 
-        jButton21.setBorder(null);
-        jButton21.setBorderPainted(false);
-        jButton21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton21.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton21.setEnabled(false);
-        jButton21.setFocusable(false);
-        jButton21.setRequestFocusEnabled(false);
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        wireB8.setBorder(null);
+        wireB8.setBorderPainted(false);
+        wireB8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB8.setEnabled(false);
+        wireB8.setFocusable(false);
+        wireB8.setRequestFocusEnabled(false);
+        wireB8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                wireB8ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton21);
-        jButton21.setBounds(770, 150, 10, 20);
+        mainScreen.add(wireB8);
+        wireB8.setBounds(770, 150, 10, 20);
 
-        jButton22.setBorder(null);
-        jButton22.setBorderPainted(false);
-        jButton22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton22.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton22.setEnabled(false);
-        jButton22.setFocusable(false);
-        jButton22.setRequestFocusEnabled(false);
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        wireB9.setBorder(null);
+        wireB9.setBorderPainted(false);
+        wireB9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB9.setEnabled(false);
+        wireB9.setFocusable(false);
+        wireB9.setRequestFocusEnabled(false);
+        wireB9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                wireB9ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton22);
-        jButton22.setBounds(790, 150, 10, 20);
+        mainScreen.add(wireB9);
+        wireB9.setBounds(790, 150, 10, 20);
 
-        jButton23.setBorder(null);
-        jButton23.setBorderPainted(false);
-        jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton23.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton23.setEnabled(false);
-        jButton23.setFocusPainted(false);
-        jButton23.setFocusable(false);
-        jButton23.setRequestFocusEnabled(false);
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        wireB10.setBorder(null);
+        wireB10.setBorderPainted(false);
+        wireB10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB10.setEnabled(false);
+        wireB10.setFocusPainted(false);
+        wireB10.setFocusable(false);
+        wireB10.setRequestFocusEnabled(false);
+        wireB10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                wireB10ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton23);
-        jButton23.setBounds(810, 150, 10, 20);
+        mainScreen.add(wireB10);
+        wireB10.setBounds(810, 150, 10, 20);
 
-        jButton24.setBorder(null);
-        jButton24.setBorderPainted(false);
-        jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton24.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton24.setEnabled(false);
-        jButton24.setFocusable(false);
-        jButton24.setRequestFocusEnabled(false);
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        wireB5.setBorder(null);
+        wireB5.setBorderPainted(false);
+        wireB5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB5.setEnabled(false);
+        wireB5.setFocusable(false);
+        wireB5.setRequestFocusEnabled(false);
+        wireB5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                wireB5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton24);
-        jButton24.setBounds(810, 10, 10, 30);
+        mainScreen.add(wireB5);
+        wireB5.setBounds(810, 10, 10, 30);
 
-        jButton25.setBorder(null);
-        jButton25.setBorderPainted(false);
-        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton25.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton25.setEnabled(false);
-        jButton25.setFocusable(false);
-        jButton25.setRequestFocusEnabled(false);
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        wireB4.setBorder(null);
+        wireB4.setBorderPainted(false);
+        wireB4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB4.setEnabled(false);
+        wireB4.setFocusable(false);
+        wireB4.setRequestFocusEnabled(false);
+        wireB4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                wireB4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton25);
-        jButton25.setBounds(790, 10, 10, 30);
+        mainScreen.add(wireB4);
+        wireB4.setBounds(790, 10, 10, 30);
 
-        jButton26.setBorder(null);
-        jButton26.setBorderPainted(false);
-        jButton26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton26.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton26.setEnabled(false);
-        jButton26.setFocusable(false);
-        jButton26.setRequestFocusEnabled(false);
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        wireB3.setBorder(null);
+        wireB3.setBorderPainted(false);
+        wireB3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB3.setEnabled(false);
+        wireB3.setFocusable(false);
+        wireB3.setRequestFocusEnabled(false);
+        wireB3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                wireB3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton26);
-        jButton26.setBounds(770, 10, 10, 30);
+        mainScreen.add(wireB3);
+        wireB3.setBounds(770, 10, 10, 30);
 
-        jButton27.setBorder(null);
-        jButton27.setBorderPainted(false);
-        jButton27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton27.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton27.setEnabled(false);
-        jButton27.setFocusable(false);
-        jButton27.setRequestFocusEnabled(false);
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        wireB2.setBorder(null);
+        wireB2.setBorderPainted(false);
+        wireB2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB2.setEnabled(false);
+        wireB2.setFocusable(false);
+        wireB2.setRequestFocusEnabled(false);
+        wireB2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                wireB2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton27);
-        jButton27.setBounds(750, 10, 10, 30);
+        mainScreen.add(wireB2);
+        wireB2.setBounds(750, 10, 10, 30);
 
-        jButton28.setBorder(null);
-        jButton28.setBorderPainted(false);
-        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton28.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton28.setEnabled(false);
-        jButton28.setFocusable(false);
-        jButton28.setRequestFocusEnabled(false);
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        wireB1.setBorder(null);
+        wireB1.setBorderPainted(false);
+        wireB1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireB1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireB1.setEnabled(false);
+        wireB1.setFocusable(false);
+        wireB1.setRequestFocusEnabled(false);
+        wireB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                wireB1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton28);
-        jButton28.setBounds(730, 10, 10, 30);
+        mainScreen.add(wireB1);
+        wireB1.setBounds(730, 10, 10, 30);
 
         bombStatus4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus4.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus4.setText("XXX");
-        jPanel3.add(bombStatus4);
+        mainScreen.add(bombStatus4);
         bombStatus4.setBounds(740, 40, 90, 40);
 
-        jButton29.setBorder(null);
-        jButton29.setBorderPainted(false);
-        jButton29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton29.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton29.setEnabled(false);
-        jButton29.setFocusable(false);
-        jButton29.setRequestFocusEnabled(false);
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        wireD6.setBorder(null);
+        wireD6.setBorderPainted(false);
+        wireD6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD6.setEnabled(false);
+        wireD6.setFocusable(false);
+        wireD6.setRequestFocusEnabled(false);
+        wireD6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                wireD6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton29);
-        jButton29.setBounds(730, 320, 10, 20);
+        mainScreen.add(wireD6);
+        wireD6.setBounds(730, 320, 10, 20);
 
-        jButton30.setBorder(null);
-        jButton30.setBorderPainted(false);
-        jButton30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton30.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton30.setEnabled(false);
-        jButton30.setFocusable(false);
-        jButton30.setRequestFocusEnabled(false);
-        jButton30.addActionListener(new java.awt.event.ActionListener() {
+        wireD7.setBorder(null);
+        wireD7.setBorderPainted(false);
+        wireD7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD7.setEnabled(false);
+        wireD7.setFocusable(false);
+        wireD7.setRequestFocusEnabled(false);
+        wireD7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton30ActionPerformed(evt);
+                wireD7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton30);
-        jButton30.setBounds(750, 320, 10, 20);
+        mainScreen.add(wireD7);
+        wireD7.setBounds(750, 320, 10, 20);
 
-        jButton31.setBorder(null);
-        jButton31.setBorderPainted(false);
-        jButton31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton31.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton31.setEnabled(false);
-        jButton31.setFocusable(false);
-        jButton31.setRequestFocusEnabled(false);
-        jButton31.addActionListener(new java.awt.event.ActionListener() {
+        wireD8.setBorder(null);
+        wireD8.setBorderPainted(false);
+        wireD8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD8.setEnabled(false);
+        wireD8.setFocusable(false);
+        wireD8.setRequestFocusEnabled(false);
+        wireD8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton31ActionPerformed(evt);
+                wireD8ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton31);
-        jButton31.setBounds(770, 320, 10, 20);
+        mainScreen.add(wireD8);
+        wireD8.setBounds(770, 320, 10, 20);
 
-        jButton32.setBorder(null);
-        jButton32.setBorderPainted(false);
-        jButton32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton32.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton32.setEnabled(false);
-        jButton32.setFocusable(false);
-        jButton32.setRequestFocusEnabled(false);
-        jButton32.addActionListener(new java.awt.event.ActionListener() {
+        wireD9.setBorder(null);
+        wireD9.setBorderPainted(false);
+        wireD9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD9.setEnabled(false);
+        wireD9.setFocusable(false);
+        wireD9.setRequestFocusEnabled(false);
+        wireD9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton32ActionPerformed(evt);
+                wireD9ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton32);
-        jButton32.setBounds(790, 320, 10, 20);
+        mainScreen.add(wireD9);
+        wireD9.setBounds(790, 320, 10, 20);
 
-        jButton33.setBorder(null);
-        jButton33.setBorderPainted(false);
-        jButton33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton33.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton33.setEnabled(false);
-        jButton33.setFocusPainted(false);
-        jButton33.setFocusable(false);
-        jButton33.setRequestFocusEnabled(false);
-        jButton33.addActionListener(new java.awt.event.ActionListener() {
+        wireD10.setBorder(null);
+        wireD10.setBorderPainted(false);
+        wireD10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD10.setEnabled(false);
+        wireD10.setFocusPainted(false);
+        wireD10.setFocusable(false);
+        wireD10.setRequestFocusEnabled(false);
+        wireD10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton33ActionPerformed(evt);
+                wireD10ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton33);
-        jButton33.setBounds(810, 320, 10, 20);
+        mainScreen.add(wireD10);
+        wireD10.setBounds(810, 320, 10, 20);
 
-        jButton34.setBorder(null);
-        jButton34.setBorderPainted(false);
-        jButton34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton34.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton34.setEnabled(false);
-        jButton34.setFocusable(false);
-        jButton34.setRequestFocusEnabled(false);
-        jButton34.addActionListener(new java.awt.event.ActionListener() {
+        wireD5.setBorder(null);
+        wireD5.setBorderPainted(false);
+        wireD5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD5.setEnabled(false);
+        wireD5.setFocusable(false);
+        wireD5.setRequestFocusEnabled(false);
+        wireD5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton34ActionPerformed(evt);
+                wireD5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton34);
-        jButton34.setBounds(810, 180, 10, 30);
+        mainScreen.add(wireD5);
+        wireD5.setBounds(810, 180, 10, 30);
 
-        jButton35.setBorder(null);
-        jButton35.setBorderPainted(false);
-        jButton35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton35.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton35.setEnabled(false);
-        jButton35.setFocusable(false);
-        jButton35.setRequestFocusEnabled(false);
-        jButton35.addActionListener(new java.awt.event.ActionListener() {
+        wireD4.setBorder(null);
+        wireD4.setBorderPainted(false);
+        wireD4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD4.setEnabled(false);
+        wireD4.setFocusable(false);
+        wireD4.setRequestFocusEnabled(false);
+        wireD4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton35ActionPerformed(evt);
+                wireD4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton35);
-        jButton35.setBounds(790, 180, 10, 30);
+        mainScreen.add(wireD4);
+        wireD4.setBounds(790, 180, 10, 30);
 
-        jButton36.setBorder(null);
-        jButton36.setBorderPainted(false);
-        jButton36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton36.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton36.setEnabled(false);
-        jButton36.setFocusable(false);
-        jButton36.setRequestFocusEnabled(false);
-        jButton36.addActionListener(new java.awt.event.ActionListener() {
+        wireD3.setBorder(null);
+        wireD3.setBorderPainted(false);
+        wireD3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD3.setEnabled(false);
+        wireD3.setFocusable(false);
+        wireD3.setRequestFocusEnabled(false);
+        wireD3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton36ActionPerformed(evt);
+                wireD3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton36);
-        jButton36.setBounds(770, 180, 10, 30);
+        mainScreen.add(wireD3);
+        wireD3.setBounds(770, 180, 10, 30);
 
-        jButton37.setBorder(null);
-        jButton37.setBorderPainted(false);
-        jButton37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton37.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton37.setEnabled(false);
-        jButton37.setFocusable(false);
-        jButton37.setRequestFocusEnabled(false);
-        jButton37.addActionListener(new java.awt.event.ActionListener() {
+        wireD2.setBorder(null);
+        wireD2.setBorderPainted(false);
+        wireD2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD2.setEnabled(false);
+        wireD2.setFocusable(false);
+        wireD2.setRequestFocusEnabled(false);
+        wireD2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton37ActionPerformed(evt);
+                wireD2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton37);
-        jButton37.setBounds(750, 180, 10, 30);
+        mainScreen.add(wireD2);
+        wireD2.setBounds(750, 180, 10, 30);
 
-        jButton38.setBorder(null);
-        jButton38.setBorderPainted(false);
-        jButton38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton38.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton38.setEnabled(false);
-        jButton38.setFocusable(false);
-        jButton38.setRequestFocusEnabled(false);
-        jButton38.addActionListener(new java.awt.event.ActionListener() {
+        wireD1.setBorder(null);
+        wireD1.setBorderPainted(false);
+        wireD1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireD1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireD1.setEnabled(false);
+        wireD1.setFocusable(false);
+        wireD1.setRequestFocusEnabled(false);
+        wireD1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton38ActionPerformed(evt);
+                wireD1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton38);
-        jButton38.setBounds(730, 180, 10, 30);
+        mainScreen.add(wireD1);
+        wireD1.setBounds(730, 180, 10, 30);
 
         bombStatus1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus1.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus1.setText("XXX");
-        jPanel3.add(bombStatus1);
+        mainScreen.add(bombStatus1);
         bombStatus1.setBounds(740, 210, 90, 40);
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
-        jPanel3.add(jLabel32);
-        jLabel32.setBounds(700, 180, 150, 160);
+        bombD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        mainScreen.add(bombD);
+        bombD.setBounds(700, 180, 150, 160);
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
-        jPanel3.add(jLabel33);
-        jLabel33.setBounds(700, 10, 150, 160);
+        bombB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        mainScreen.add(bombB);
+        bombB.setBounds(700, 10, 150, 160);
 
-        jButton39.setBorder(null);
-        jButton39.setBorderPainted(false);
-        jButton39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton39.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton39.setEnabled(false);
-        jButton39.setFocusable(false);
-        jButton39.setRequestFocusEnabled(false);
-        jButton39.addActionListener(new java.awt.event.ActionListener() {
+        wireA6.setBorder(null);
+        wireA6.setBorderPainted(false);
+        wireA6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA6.setEnabled(false);
+        wireA6.setFocusable(false);
+        wireA6.setRequestFocusEnabled(false);
+        wireA6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton39ActionPerformed(evt);
+                wireA6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton39);
-        jButton39.setBounds(40, 150, 10, 20);
+        mainScreen.add(wireA6);
+        wireA6.setBounds(40, 150, 10, 20);
 
-        jButton40.setBorder(null);
-        jButton40.setBorderPainted(false);
-        jButton40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton40.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton40.setEnabled(false);
-        jButton40.setFocusable(false);
-        jButton40.setRequestFocusEnabled(false);
-        jButton40.addActionListener(new java.awt.event.ActionListener() {
+        wireA7.setBorder(null);
+        wireA7.setBorderPainted(false);
+        wireA7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA7.setEnabled(false);
+        wireA7.setFocusable(false);
+        wireA7.setRequestFocusEnabled(false);
+        wireA7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton40ActionPerformed(evt);
+                wireA7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton40);
-        jButton40.setBounds(60, 150, 10, 20);
+        mainScreen.add(wireA7);
+        wireA7.setBounds(60, 150, 10, 20);
 
-        jButton41.setBorder(null);
-        jButton41.setBorderPainted(false);
-        jButton41.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton41.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton41.setEnabled(false);
-        jButton41.setFocusable(false);
-        jButton41.setRequestFocusEnabled(false);
-        jButton41.addActionListener(new java.awt.event.ActionListener() {
+        wireA8.setBorder(null);
+        wireA8.setBorderPainted(false);
+        wireA8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA8.setEnabled(false);
+        wireA8.setFocusable(false);
+        wireA8.setRequestFocusEnabled(false);
+        wireA8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton41ActionPerformed(evt);
+                wireA8ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton41);
-        jButton41.setBounds(80, 150, 10, 20);
+        mainScreen.add(wireA8);
+        wireA8.setBounds(80, 150, 10, 20);
 
-        jButton42.setBorder(null);
-        jButton42.setBorderPainted(false);
-        jButton42.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton42.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton42.setEnabled(false);
-        jButton42.setFocusable(false);
-        jButton42.setRequestFocusEnabled(false);
-        jButton42.addActionListener(new java.awt.event.ActionListener() {
+        wireA9.setBorder(null);
+        wireA9.setBorderPainted(false);
+        wireA9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA9.setEnabled(false);
+        wireA9.setFocusable(false);
+        wireA9.setRequestFocusEnabled(false);
+        wireA9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton42ActionPerformed(evt);
+                wireA9ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton42);
-        jButton42.setBounds(100, 150, 10, 20);
+        mainScreen.add(wireA9);
+        wireA9.setBounds(100, 150, 10, 20);
 
-        jButton43.setBorder(null);
-        jButton43.setBorderPainted(false);
-        jButton43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton43.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton43.setEnabled(false);
-        jButton43.setFocusPainted(false);
-        jButton43.setFocusable(false);
-        jButton43.setRequestFocusEnabled(false);
-        jButton43.addActionListener(new java.awt.event.ActionListener() {
+        wireA10.setBorder(null);
+        wireA10.setBorderPainted(false);
+        wireA10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA10.setEnabled(false);
+        wireA10.setFocusPainted(false);
+        wireA10.setFocusable(false);
+        wireA10.setRequestFocusEnabled(false);
+        wireA10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton43ActionPerformed(evt);
+                wireA10ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton43);
-        jButton43.setBounds(120, 150, 10, 20);
+        mainScreen.add(wireA10);
+        wireA10.setBounds(120, 150, 10, 20);
 
-        jButton44.setBorder(null);
-        jButton44.setBorderPainted(false);
-        jButton44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton44.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton44.setEnabled(false);
-        jButton44.setFocusable(false);
-        jButton44.setRequestFocusEnabled(false);
-        jButton44.addActionListener(new java.awt.event.ActionListener() {
+        wireA5.setBorder(null);
+        wireA5.setBorderPainted(false);
+        wireA5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA5.setEnabled(false);
+        wireA5.setFocusable(false);
+        wireA5.setRequestFocusEnabled(false);
+        wireA5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton44ActionPerformed(evt);
+                wireA5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton44);
-        jButton44.setBounds(120, 10, 10, 30);
+        mainScreen.add(wireA5);
+        wireA5.setBounds(120, 10, 10, 30);
 
-        jButton45.setBorder(null);
-        jButton45.setBorderPainted(false);
-        jButton45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton45.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton45.setEnabled(false);
-        jButton45.setFocusable(false);
-        jButton45.setRequestFocusEnabled(false);
-        jButton45.addActionListener(new java.awt.event.ActionListener() {
+        wireA4.setBorder(null);
+        wireA4.setBorderPainted(false);
+        wireA4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA4.setEnabled(false);
+        wireA4.setFocusable(false);
+        wireA4.setRequestFocusEnabled(false);
+        wireA4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton45ActionPerformed(evt);
+                wireA4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton45);
-        jButton45.setBounds(100, 10, 10, 30);
+        mainScreen.add(wireA4);
+        wireA4.setBounds(100, 10, 10, 30);
 
-        jButton46.setBorder(null);
-        jButton46.setBorderPainted(false);
-        jButton46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton46.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton46.setEnabled(false);
-        jButton46.setFocusable(false);
-        jButton46.setRequestFocusEnabled(false);
-        jButton46.addActionListener(new java.awt.event.ActionListener() {
+        wireA3.setBorder(null);
+        wireA3.setBorderPainted(false);
+        wireA3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA3.setEnabled(false);
+        wireA3.setFocusable(false);
+        wireA3.setRequestFocusEnabled(false);
+        wireA3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton46ActionPerformed(evt);
+                wireA3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton46);
-        jButton46.setBounds(80, 10, 10, 30);
+        mainScreen.add(wireA3);
+        wireA3.setBounds(80, 10, 10, 30);
 
-        jButton47.setBorder(null);
-        jButton47.setBorderPainted(false);
-        jButton47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton47.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton47.setEnabled(false);
-        jButton47.setFocusable(false);
-        jButton47.setRequestFocusEnabled(false);
-        jButton47.addActionListener(new java.awt.event.ActionListener() {
+        wireA2.setBorder(null);
+        wireA2.setBorderPainted(false);
+        wireA2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA2.setEnabled(false);
+        wireA2.setFocusable(false);
+        wireA2.setRequestFocusEnabled(false);
+        wireA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton47ActionPerformed(evt);
+                wireA2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton47);
-        jButton47.setBounds(60, 10, 10, 30);
+        mainScreen.add(wireA2);
+        wireA2.setBounds(60, 10, 10, 30);
 
-        jButton48.setBorder(null);
-        jButton48.setBorderPainted(false);
-        jButton48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton48.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton48.setEnabled(false);
-        jButton48.setFocusable(false);
-        jButton48.setRequestFocusEnabled(false);
-        jButton48.addActionListener(new java.awt.event.ActionListener() {
+        wireA1.setBorder(null);
+        wireA1.setBorderPainted(false);
+        wireA1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireA1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireA1.setEnabled(false);
+        wireA1.setFocusable(false);
+        wireA1.setRequestFocusEnabled(false);
+        wireA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton48ActionPerformed(evt);
+                wireA1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton48);
-        jButton48.setBounds(40, 10, 10, 30);
+        mainScreen.add(wireA1);
+        wireA1.setBounds(40, 10, 10, 30);
 
         bombStatus2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus2.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus2.setText("XXX");
-        jPanel3.add(bombStatus2);
+        mainScreen.add(bombStatus2);
         bombStatus2.setBounds(50, 40, 90, 40);
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
-        jPanel3.add(jLabel34);
-        jLabel34.setBounds(10, 10, 150, 160);
+        bombA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        mainScreen.add(bombA);
+        bombA.setBounds(10, 10, 150, 160);
 
-        jButton49.setBorder(null);
-        jButton49.setBorderPainted(false);
-        jButton49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton49.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton49.setEnabled(false);
-        jButton49.setFocusable(false);
-        jButton49.setRequestFocusEnabled(false);
-        jButton49.addActionListener(new java.awt.event.ActionListener() {
+        wireC6.setBorder(null);
+        wireC6.setBorderPainted(false);
+        wireC6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC6.setEnabled(false);
+        wireC6.setFocusable(false);
+        wireC6.setRequestFocusEnabled(false);
+        wireC6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton49ActionPerformed(evt);
+                wireC6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton49);
-        jButton49.setBounds(40, 320, 10, 20);
+        mainScreen.add(wireC6);
+        wireC6.setBounds(40, 320, 10, 20);
 
-        jButton50.setBorder(null);
-        jButton50.setBorderPainted(false);
-        jButton50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton50.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton50.setEnabled(false);
-        jButton50.setFocusable(false);
-        jButton50.setRequestFocusEnabled(false);
-        jButton50.addActionListener(new java.awt.event.ActionListener() {
+        wireC7.setBorder(null);
+        wireC7.setBorderPainted(false);
+        wireC7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC7.setEnabled(false);
+        wireC7.setFocusable(false);
+        wireC7.setRequestFocusEnabled(false);
+        wireC7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton50ActionPerformed(evt);
+                wireC7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton50);
-        jButton50.setBounds(60, 320, 10, 20);
+        mainScreen.add(wireC7);
+        wireC7.setBounds(60, 320, 10, 20);
 
-        jButton51.setBorder(null);
-        jButton51.setBorderPainted(false);
-        jButton51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton51.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton51.setEnabled(false);
-        jButton51.setFocusable(false);
-        jButton51.setRequestFocusEnabled(false);
-        jButton51.addActionListener(new java.awt.event.ActionListener() {
+        wireC8.setBorder(null);
+        wireC8.setBorderPainted(false);
+        wireC8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC8.setEnabled(false);
+        wireC8.setFocusable(false);
+        wireC8.setRequestFocusEnabled(false);
+        wireC8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton51ActionPerformed(evt);
+                wireC8ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton51);
-        jButton51.setBounds(80, 320, 10, 20);
+        mainScreen.add(wireC8);
+        wireC8.setBounds(80, 320, 10, 20);
 
-        jButton52.setBorder(null);
-        jButton52.setBorderPainted(false);
-        jButton52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton52.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton52.setEnabled(false);
-        jButton52.setFocusable(false);
-        jButton52.setRequestFocusEnabled(false);
-        jButton52.addActionListener(new java.awt.event.ActionListener() {
+        wireC9.setBorder(null);
+        wireC9.setBorderPainted(false);
+        wireC9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC9.setEnabled(false);
+        wireC9.setFocusable(false);
+        wireC9.setRequestFocusEnabled(false);
+        wireC9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton52ActionPerformed(evt);
+                wireC9ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton52);
-        jButton52.setBounds(100, 320, 10, 20);
+        mainScreen.add(wireC9);
+        wireC9.setBounds(100, 320, 10, 20);
 
-        jButton53.setBorder(null);
-        jButton53.setBorderPainted(false);
-        jButton53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton53.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton53.setEnabled(false);
-        jButton53.setFocusPainted(false);
-        jButton53.setFocusable(false);
-        jButton53.setRequestFocusEnabled(false);
-        jButton53.addActionListener(new java.awt.event.ActionListener() {
+        wireC10.setBorder(null);
+        wireC10.setBorderPainted(false);
+        wireC10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC10.setEnabled(false);
+        wireC10.setFocusPainted(false);
+        wireC10.setFocusable(false);
+        wireC10.setRequestFocusEnabled(false);
+        wireC10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton53ActionPerformed(evt);
+                wireC10ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton53);
-        jButton53.setBounds(120, 320, 10, 20);
+        mainScreen.add(wireC10);
+        wireC10.setBounds(120, 320, 10, 20);
 
-        jButton54.setBorder(null);
-        jButton54.setBorderPainted(false);
-        jButton54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton54.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton54.setEnabled(false);
-        jButton54.setFocusable(false);
-        jButton54.setRequestFocusEnabled(false);
-        jButton54.addActionListener(new java.awt.event.ActionListener() {
+        wireC5.setBorder(null);
+        wireC5.setBorderPainted(false);
+        wireC5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC5.setEnabled(false);
+        wireC5.setFocusable(false);
+        wireC5.setRequestFocusEnabled(false);
+        wireC5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton54ActionPerformed(evt);
+                wireC5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton54);
-        jButton54.setBounds(120, 180, 10, 30);
+        mainScreen.add(wireC5);
+        wireC5.setBounds(120, 180, 10, 30);
 
-        jButton55.setBorder(null);
-        jButton55.setBorderPainted(false);
-        jButton55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton55.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton55.setEnabled(false);
-        jButton55.setFocusable(false);
-        jButton55.setRequestFocusEnabled(false);
-        jButton55.addActionListener(new java.awt.event.ActionListener() {
+        wireC4.setBorder(null);
+        wireC4.setBorderPainted(false);
+        wireC4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC4.setEnabled(false);
+        wireC4.setFocusable(false);
+        wireC4.setRequestFocusEnabled(false);
+        wireC4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton55ActionPerformed(evt);
+                wireC4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton55);
-        jButton55.setBounds(100, 180, 10, 30);
+        mainScreen.add(wireC4);
+        wireC4.setBounds(100, 180, 10, 30);
 
-        jButton56.setBorder(null);
-        jButton56.setBorderPainted(false);
-        jButton56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton56.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton56.setEnabled(false);
-        jButton56.setFocusable(false);
-        jButton56.setRequestFocusEnabled(false);
-        jButton56.addActionListener(new java.awt.event.ActionListener() {
+        wireC3.setBorder(null);
+        wireC3.setBorderPainted(false);
+        wireC3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC3.setEnabled(false);
+        wireC3.setFocusable(false);
+        wireC3.setRequestFocusEnabled(false);
+        wireC3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton56ActionPerformed(evt);
+                wireC3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton56);
-        jButton56.setBounds(80, 180, 10, 30);
+        mainScreen.add(wireC3);
+        wireC3.setBounds(80, 180, 10, 30);
 
-        jButton57.setBorder(null);
-        jButton57.setBorderPainted(false);
-        jButton57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton57.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton57.setEnabled(false);
-        jButton57.setFocusable(false);
-        jButton57.setRequestFocusEnabled(false);
-        jButton57.addActionListener(new java.awt.event.ActionListener() {
+        wireC2.setBorder(null);
+        wireC2.setBorderPainted(false);
+        wireC2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC2.setEnabled(false);
+        wireC2.setFocusable(false);
+        wireC2.setRequestFocusEnabled(false);
+        wireC2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton57ActionPerformed(evt);
+                wireC2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton57);
-        jButton57.setBounds(60, 180, 10, 30);
+        mainScreen.add(wireC2);
+        wireC2.setBounds(60, 180, 10, 30);
 
-        jButton58.setBorder(null);
-        jButton58.setBorderPainted(false);
-        jButton58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton58.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
-        jButton58.setEnabled(false);
-        jButton58.setFocusable(false);
-        jButton58.setRequestFocusEnabled(false);
-        jButton58.addActionListener(new java.awt.event.ActionListener() {
+        wireC1.setBorder(null);
+        wireC1.setBorderPainted(false);
+        wireC1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        wireC1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
+        wireC1.setEnabled(false);
+        wireC1.setFocusable(false);
+        wireC1.setRequestFocusEnabled(false);
+        wireC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton58ActionPerformed(evt);
+                wireC1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton58);
-        jButton58.setBounds(40, 180, 10, 30);
+        mainScreen.add(wireC1);
+        wireC1.setBounds(40, 180, 10, 30);
 
         bombStatus3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus3.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus3.setText("XXX");
-        jPanel3.add(bombStatus3);
+        mainScreen.add(bombStatus3);
         bombStatus3.setBounds(50, 210, 90, 40);
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
-        jPanel3.add(jLabel35);
-        jLabel35.setBounds(10, 180, 150, 160);
+        bombC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        mainScreen.add(bombC);
+        bombC.setBounds(10, 180, 150, 160);
 
         quitButton.setText("quit");
         quitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1149,814 +1128,776 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
 
-        jLabel25.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-        jLabel25.setText("defused bombs:");
+        defusedLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        defusedLabel.setText("defused bombs:");
 
         defused.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         defused.setText("jLabel30");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(77, 77, 77)
-                .addComponent(bullets)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(countdown)
-                .addGap(101, 101, 101)
-                .addComponent(jLabel25)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(quitButton)
-                .addContainerGap())
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(77, 77, 77)
+                                .addComponent(bullets)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(countdown)
+                                .addGap(101, 101, 101)
+                                .addComponent(defusedLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(46, 46, 46)
+                                .addComponent(quitButton)
+                                .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(11, 11, 11)
-                                .addComponent(shootButton))
-                            .addComponent(bullets)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel25)
-                        .addComponent(defused)
-                        .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(countdown)
-                        .addGap(8, 8, 8)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
+        mainPanelLayout.setVerticalGroup(
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                .addGap(8, 8, 8)
+                                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                                .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(11, 11, 11)
+                                                                .addComponent(shootButton))
+                                                        .addComponent(bullets)))
+                                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(defusedLabel)
+                                                .addComponent(defused)
+                                                .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                                                .addComponent(countdown)
+                                                .addGap(8, 8, 8)))
+                                .addComponent(mainScreen, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void bomb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb1ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_bomb1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void bomb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb2ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_bomb2ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void bomb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb3ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_bomb3ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void bomb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb4ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_bomb4ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void bomb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb5ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_bomb5ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void bomb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb6ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_bomb6ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void bomb7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb7ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_bomb7ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void bomb8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb8ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_bomb8ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void bomb9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb9ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_bomb9ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void bomb10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb10ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_bomb10ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void bomb11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb11ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_bomb11ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void bomb12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb12ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_bomb12ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void bomb13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb13ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_bomb13ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void bomb14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb14ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_bomb14ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void bomb15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb15ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_bomb15ActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void bomb16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb16ActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_bomb16ActionPerformed
 
     private void quitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitButtonActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        Dashboard d = new Dashboard();
-        d.showpanel();
+        Dashboard dashboard = new Dashboard();
+        dashboard.showpanel();
     }//GEN-LAST:event_quitButtonActionPerformed
 
     private void shootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shootButtonActionPerformed
         // TODO add your handling code here:
 
-        String selected=choice1.getItem(choice1.getSelectedIndex());
-        if(selected.equals(jLabel26.getText())){
-           JOptionPane.showMessageDialog(null , "You Won !",  "Bravo!",  JOptionPane.INFORMATION_MESSAGE );
+        String selected = target.getItem(target.getSelectedIndex());
+        if (selected.equals(bomberId.getText())) {
+            JOptionPane.showMessageDialog(null, "You Won !", "Bravo!", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            bullet--;
+            setBulletIcon();
         }
-else{
-bullet--;
-setBulletIcon();
-}
     }//GEN-LAST:event_shootButtonActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void wireB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB6ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton19.getText();
-        if(rightWiresB>=9){
+        String wire = wireB6.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_wireB6ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void wireB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB7ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton20.getText();
-        if(rightWiresB>=9){
+        String wire = wireB7.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_wireB7ActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+    private void wireB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB8ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton21.getText();
-        if(rightWiresB>=9){
+        String wire = wireB8.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton21ActionPerformed
+    }//GEN-LAST:event_wireB8ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+    private void wireB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB9ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton22.getText();
-        if(rightWiresB>=9){
+        String wire = wireB9.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton22ActionPerformed
+    }//GEN-LAST:event_wireB9ActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+    private void wireB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB10ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton23.getText();
-        if(rightWiresB>=9){
+        String wire = wireB10.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton23ActionPerformed
+    }//GEN-LAST:event_wireB10ActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+    private void wireB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB5ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton24.getText();
-        if(rightWiresB>=9){
+        String wire = wireB5.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton24ActionPerformed
+    }//GEN-LAST:event_wireB5ActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    private void wireB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB4ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton25.getText();
-        if(rightWiresB>=9){
+        String wire = wireB4.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton25ActionPerformed
+    }//GEN-LAST:event_wireB4ActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+    private void wireB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB3ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton26.getText();
-        if(rightWiresB>=9){
+        String wire = wireB3.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton26ActionPerformed
+    }//GEN-LAST:event_wireB3ActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+    private void wireB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB2ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton27.getText();
-        if(rightWiresB>=9){
+        String wire = wireB2.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton27ActionPerformed
+    }//GEN-LAST:event_wireB2ActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+    private void wireB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB1ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton28.getText();
-        if(rightWiresB>=9){
+        String wire = wireB1.getText();
+        if (rightWiresB >= 9) {
             defuseB();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresB++;
                 setWiresB();
-
-            }else{
+            } else {
                 wrongCutB();
             }
         }
-    }//GEN-LAST:event_jButton28ActionPerformed
+    }//GEN-LAST:event_wireB1ActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+    private void wireD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD6ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton29.getText();
-        if(rightWiresD>=9){
+        String wire = wireD6.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton29ActionPerformed
+    }//GEN-LAST:event_wireD6ActionPerformed
 
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+    private void wireD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD7ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton30.getText();
-        if(rightWiresD>=9){
+        String wire = wireD7.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton30ActionPerformed
+    }//GEN-LAST:event_wireD7ActionPerformed
 
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+    private void wireD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD8ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton31.getText();
-        if(rightWiresD>=9){
+        String wire = wireD8.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton31ActionPerformed
+    }//GEN-LAST:event_wireD8ActionPerformed
 
-    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+    private void wireD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD9ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton32.getText();
-        if(rightWiresD>=9){
+        String wire = wireD9.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton32ActionPerformed
+    }//GEN-LAST:event_wireD9ActionPerformed
 
-    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+    private void wireD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD10ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton33.getText();
-        if(rightWiresD>=9){
+        String wire = wireD10.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
 
-    }//GEN-LAST:event_jButton33ActionPerformed
+    }//GEN-LAST:event_wireD10ActionPerformed
 
-    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+    private void wireD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD5ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton34.getText();
-        if(rightWiresD>=9){
+        String wire = wireD5.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton34ActionPerformed
+    }//GEN-LAST:event_wireD5ActionPerformed
 
-    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+    private void wireD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD4ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton35.getText();
-        if(rightWiresD>=9){
+        String wire = wireD4.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton35ActionPerformed
+    }//GEN-LAST:event_wireD4ActionPerformed
 
-    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+    private void wireD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD3ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton36.getText();
-        if(rightWiresD>=9){
+        String wire = wireD3.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton36ActionPerformed
+    }//GEN-LAST:event_wireD3ActionPerformed
 
-    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+    private void wireD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD2ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton37.getText();
-        if(rightWiresD>=9){
+        String wire = wireD2.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton37ActionPerformed
+    }//GEN-LAST:event_wireD2ActionPerformed
 
-    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+    private void wireD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD1ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton38.getText();
-        if(rightWiresD>=9){
+        String wire = wireD1.getText();
+        if (rightWiresD >= 9) {
             defuseD();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresD++;
                 setWiresD();
-
-            }else{
+            } else {
                 wrongCutD();
             }
         }
-    }//GEN-LAST:event_jButton38ActionPerformed
+    }//GEN-LAST:event_wireD1ActionPerformed
 
-    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+    private void wireA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA6ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton39.getText();
-        if(rightWiresA>=9){
+        String wire = wireA6.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton39ActionPerformed
+    }//GEN-LAST:event_wireA6ActionPerformed
 
-    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+    private void wireA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA7ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton40.getText();
-        if(rightWiresA>=9){
+        String wire = wireA7.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton40ActionPerformed
+    }//GEN-LAST:event_wireA7ActionPerformed
 
-    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+    private void wireA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA8ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton41.getText();
-        if(rightWiresA>=9){
+        String wire = wireA8.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton41ActionPerformed
+    }//GEN-LAST:event_wireA8ActionPerformed
 
-    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+    private void wireA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA9ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton42.getText();
-        if(rightWiresA>=9){
+        String wire = wireA9.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton42ActionPerformed
+    }//GEN-LAST:event_wireA9ActionPerformed
 
-    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+    private void wireA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA10ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton43.getText();
-        if(rightWiresA>=9){
+        String wire = wireA10.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton43ActionPerformed
+    }//GEN-LAST:event_wireA10ActionPerformed
 
-    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+    private void wireA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA5ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton44.getText();
-        if(rightWiresA>=9){
+        String wire = wireA5.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton44ActionPerformed
+    }//GEN-LAST:event_wireA5ActionPerformed
 
-    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+    private void wireA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA4ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton45.getText();
-        if(rightWiresA>=9){
+        String wire = wireA4.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton45ActionPerformed
+    }//GEN-LAST:event_wireA4ActionPerformed
 
-    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+    private void wireA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA3ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton46.getText();
-        if(rightWiresA>=9){
+        String wire = wireA3.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton46ActionPerformed
+    }//GEN-LAST:event_wireA3ActionPerformed
 
-    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+    private void wireA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA2ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton47.getText();
-        if(rightWiresA>=9){
+        String wire = wireA2.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton47ActionPerformed
+    }//GEN-LAST:event_wireA2ActionPerformed
 
-    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+    private void wireA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA1ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton48.getText();
-        if(rightWiresA>=9){
+        String wire = wireA1.getText();
+        if (rightWiresA >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresA++;
                 setWiresA();
-
-            }else{
+            } else {
                 wrongCutA();
             }
         }
-    }//GEN-LAST:event_jButton48ActionPerformed
+    }//GEN-LAST:event_wireA1ActionPerformed
 
-    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+    private void wireC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC6ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton49.getText();
-        if(rightWiresC>=9){
+        String wire = wireC6.getText();
+        if (rightWiresC >= 9) {
             defuseA();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton49ActionPerformed
+    }//GEN-LAST:event_wireC6ActionPerformed
 
-    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+    private void wireC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC7ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton50.getText();
-        if(rightWiresC>=9){
+        String wire = wireC7.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton50ActionPerformed
+    }//GEN-LAST:event_wireC7ActionPerformed
 
-    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+    private void wireC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC8ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton51.getText();
-        if(rightWiresC>=9){
+        String wire = wireC8.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton51ActionPerformed
+    }//GEN-LAST:event_wireC8ActionPerformed
 
-    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+    private void wireC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC9ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton52.getText();
-        if(rightWiresC>=9){
+        String wire = wireC9.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton52ActionPerformed
+    }//GEN-LAST:event_wireC9ActionPerformed
 
-    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+    private void wireC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC10ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton53.getText();
-        if(rightWiresC>=9){
+        String wire = wireC10.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton53ActionPerformed
+    }//GEN-LAST:event_wireC10ActionPerformed
 
-    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+    private void wireC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC5ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton54.getText();
-        if(rightWiresC>=9){
+        String wire = wireC5.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
-
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton54ActionPerformed
+    }//GEN-LAST:event_wireC5ActionPerformed
 
-    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+    private void wireC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC4ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton55.getText();
-        if(rightWiresC>=9){
+        String wire = wireC4.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
 
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton55ActionPerformed
+    }//GEN-LAST:event_wireC4ActionPerformed
 
-    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+    private void wireC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC3ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton56.getText();
-        if(rightWiresC>=9){
+        String wire = wireC3.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
 
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton56ActionPerformed
+    }//GEN-LAST:event_wireC3ActionPerformed
 
-    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+    private void wireC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC2ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton57.getText();
-        if(rightWiresC>=9){
+        String wire = wireC2.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
 
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton57ActionPerformed
+    }//GEN-LAST:event_wireC2ActionPerformed
 
-    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+    private void wireC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC1ActionPerformed
         // TODO add your handling code here:
-        String wire=jButton58.getText();
-        if(rightWiresC>=9){
+        String wire = wireC1.getText();
+        if (rightWiresC >= 9) {
             defuseC();
-        }else{
-            if(wire.equals("right")){
+        } else {
+            if (wire.equals("right")) {
                 rightWiresC++;
                 setWiresC();
 
-            }else{
+            } else {
                 wrongCutC();
             }
         }
-    }//GEN-LAST:event_jButton58ActionPerformed
+    }//GEN-LAST:event_wireC1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1995,157 +1936,132 @@ setBulletIcon();
     }
 
     public void addItemC1() {
-
-        choice1.add("1");
-        choice1.add("2");
-
-        choice1.add("3");
-
-        choice1.add("4");
-
-        choice1.add("5");
-
-        choice1.add("6");
-
-        choice1.add("7");
-
-        choice1.add("8");
-
-        choice1.add("9");
-
-        choice1.add("10");
-
-        choice1.add("11");
-
-        choice1.add("12");
-
-        choice1.add("13");
-
-        choice1.add("14");
-
-        choice1.add("15");
-
-        choice1.add("16");
-
+        target.add("1");
+        target.add("2");
+        target.add("3");
+        target.add("4");
+        target.add("5");
+        target.add("6");
+        target.add("7");
+        target.add("8");
+        target.add("9");
+        target.add("10");
+        target.add("11");
+        target.add("12");
+        target.add("13");
+        target.add("14");
+        target.add("15");
+        target.add("16");
     }
 
     public void showpanel() {
         setResizable(false);
         setVisible(true);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
-        JButton[] bombs={jButton3,jButton4,jButton5,jButton6,
-                jButton7,jButton8,jButton9,jButton10,
-                jButton11,jButton12,jButton13,jButton14,
-                jButton15,jButton16,jButton17,jButton18
-
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
+        JButton[] bombs = {bomb1, bomb2, bomb3, bomb4,
+                bomb5, bomb6, bomb7, bomb8,
+                bomb9, bomb10, bomb11, bomb12,
+                bomb13, bomb14, bomb15, bomb16
         };
-        JButton[] wires={jButton19,jButton20,jButton21,jButton22,
-                jButton23,jButton24,jButton25,jButton26,
-                jButton27,jButton28,jButton29,jButton30,
-                jButton31,jButton32,jButton33,jButton34,
-                jButton35,jButton36,jButton37,jButton38,
-                jButton39,jButton40,jButton41,jButton42,
-                jButton43,jButton44,jButton45,jButton46,
-                jButton47,jButton48,jButton49,jButton50,
-                jButton51,jButton52,jButton53,jButton54,
-                jButton55,jButton56,jButton57,jButton58,
+        JButton[] wires = {wireB6, wireB7, wireB8, wireB9,
+                wireB10, wireB5, wireB4, wireB3,
+                wireB2, wireB1, wireD6, wireD7,
+                wireD8, wireD9, wireD10, wireD5,
+                wireD4, wireD3, wireD2, wireD1,
+                wireA6, wireA7, wireA8, wireA9,
+                wireA10, wireA5, wireA4, wireA3,
+                wireA2, wireA1, wireC6, wireC7,
+                wireC8, wireC9, wireC10, wireC5,
+                wireC4, wireC3, wireC2, wireC1,
         };
-        ImageIcon[] maps={
+        ImageIcon[] maps = {
                 new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg")),
                 new javax.swing.ImageIcon(getClass().getResource("/summermap.jpg")),
                 new javax.swing.ImageIcon(getClass().getResource("/fallmap.jpg")),
                 new javax.swing.ImageIcon(getClass().getResource("/wintermap.jpg"))
         };
-       if (Settings.getTheme().equals("spring")) {
-           jPanel1.setBackground(new java.awt.Color(255, 204, 204));
-            jLabel2.setIcon(maps[0]);
-            for(int j = 0;j<=15;j++){
+        if (Settings.getTheme().equals("spring")) {
+            mainPanel.setBackground(new java.awt.Color(255, 204, 204));
+            map.setIcon(maps[0]);
+            for (int j = 0; j <= 15; j++) {
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg")));
-           }
-
+            }
         } else if (Settings.getTheme().equals("summer")) {
-           jPanel1.setBackground(new java.awt.Color(255, 255, 153));
-            jLabel2.setIcon(maps[1]);
-           for(int j = 0;j<=15;j++) {
-               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sudBomb.jpg")));
-           }
-           bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su4.jpg")));
-           bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su8.jpg")));
+            mainPanel.setBackground(new java.awt.Color(255, 255, 153));
+            map.setIcon(maps[1]);
+            for (int j = 0; j <= 15; j++) {
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sudBomb.jpg")));
+            }
+            bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su4.jpg")));
+            bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su8.jpg")));
         } else if (Settings.getTheme().equals("fall")) {
-           jPanel1.setBackground(new java.awt.Color(255, 153, 0));
-            jLabel2.setIcon(maps[2]);
-           for(int j = 0;j<=15;j++) {
-               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/fdBomb.jpg")));
-           }
+            mainPanel.setBackground(new java.awt.Color(255, 153, 0));
+            map.setIcon(maps[2]);
+            for (int j = 0; j <= 15; j++) {
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/fdBomb.jpg")));
+            }
         } else if (Settings.getTheme().equals("winter")) {
-           jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-            jLabel2.setIcon(maps[3]);
-           for(int j = 0;j<=15;j++) {
-               bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
-           }
+            mainPanel.setBackground(new java.awt.Color(0, 153, 153));
+            map.setIcon(maps[3]);
+            for (int j = 0; j <= 15; j++) {
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
+            }
         }
-       Timer timer=new Timer();
-       TimerTask mainCountdown=new TimerTask() {
-           int i =90;
-           @Override
-           public void run() {
-               i=i-1;
-               if(i>0){
-                   countdown.setText(String.valueOf(i));
-               }else{
-                   countdown.setText("XXX");
-               }
-           }
-       };
-       timer.schedule(mainCountdown,0,1000);
-        addItemC1();
+        Timer timer = new Timer();
+        TimerTask mainCountdown = new TimerTask() {
+            int i = 90;
 
-        swap();
-plantingBombs();
-setWiresA();
-setWiresB();
-setWiresC();
-setWiresD();
-defused.setText(String.valueOf(defusedBombs));
-for(int i=0;i<=49;i++) {
-    wires[i].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg")));
-}
-setBulletIcon();
-
+            @Override
+            public void run() {
+                i = i - 1;
+                if (i > 0) {
+                    countdown.setText(String.valueOf(i));
+                } else {
+                    countdown.setText("XXX");
+                }
+            }
         };
-
-    static int[] uniqueNumberGenerator (int n){
-        int [] a=new int[n];
-        for (int i=0;i<n;i++){
-            a[i]=i;
+        timer.schedule(mainCountdown, 0, 1000);
+        addItemC1();
+        swap();
+        plantingBombs();
+        setWiresA();
+        setWiresB();
+        setWiresC();
+        setWiresD();
+        defused.setText(String.valueOf(defusedBombs));
+        for (int i = 0; i <= 49; i++) {
+            wires[i].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg")));
         }
-        int result[]=new int[n];
-        int x=n;
-        SecureRandom rd=new SecureRandom();
-        for (int i = 0;i<n;i++){
-            int num=rd.nextInt(x);
-            result[i]=a[num];
-            a[num]=a[x-1];
+        setBulletIcon();
+    }
+
+    static int[] uniqueNumberGenerator(int n) {
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = i;
+        }
+        int result[] = new int[n];
+        int x = n;
+        SecureRandom rd = new SecureRandom();
+        for (int i = 0; i < n; i++) {
+            int num = rd.nextInt(x);
+            result[i] = a[num];
+            a[num] = a[x - 1];
             x--;
         }
         return result;
-
-
-
-
     }
 
-
-
-    public void swap(){
-        JLabel labels[]={
-                jLabel4,jLabel5,jLabel7,jLabel8,
-                jLabel9,jLabel10,jLabel11,jLabel12,
-                jLabel13,jLabel14,jLabel15,jLabel16,
-                jLabel17,jLabel18,jLabel19,jLabel20
+    public void swap() {
+        JLabel labels[] = {
+                character1, character2, character3, character4,
+                character5, character6, character7, character8,
+                character9, character10, character11, character12,
+                character13, character14, character15, character16
         };
-        ImageIcon[] chars={
+        ImageIcon[] chars = {
                 new javax.swing.ImageIcon(getClass().getResource("/characters/1.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/2.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/3.png")),
@@ -2163,36 +2079,31 @@ setBulletIcon();
                 new javax.swing.ImageIcon(getClass().getResource("/characters/15.png")),
                 new javax.swing.ImageIcon(getClass().getResource("/characters/16.png"))
         };
-
-                int[] random=uniqueNumberGenerator(16);
-                int[] swapingChars=new int[16];
-                for(int i=0 ; i<16 ;i++){
-                    swapingChars[i]=random[i];
-
-                }
-        int bomber=swapingChars[15];
-        int a=swapingChars[0];
-        int b=swapingChars[1];
-        int c=swapingChars[2];
-        int d=swapingChars[3];
-        int e=swapingChars[4];
-        int f=swapingChars[5];
-        int g=swapingChars[6];
-        int h=swapingChars[7];
-        int i=swapingChars[8];
-        int j=swapingChars[9];
-        int k=swapingChars[10];
-        int l=swapingChars[11];
-        int m=swapingChars[12];
-        int n=swapingChars[13];
-        int o=swapingChars[14];
-
-Integer y =new Integer(bomber);
-jLabel26.setText(y.toString());
-
-
+        int[] random = uniqueNumberGenerator(16);
+        int[] swapingChars = new int[16];
+        for (int i = 0; i < 16; i++) {
+            swapingChars[i] = random[i];
+        }
+        int bomber = swapingChars[15];
+        int a = swapingChars[0];
+        int b = swapingChars[1];
+        int c = swapingChars[2];
+        int d = swapingChars[3];
+        int e = swapingChars[4];
+        int f = swapingChars[5];
+        int g = swapingChars[6];
+        int h = swapingChars[7];
+        int i = swapingChars[8];
+        int j = swapingChars[9];
+        int k = swapingChars[10];
+        int l = swapingChars[11];
+        int m = swapingChars[12];
+        int n = swapingChars[13];
+        int o = swapingChars[14];
+        Integer y = new Integer(bomber);
+        bomberId.setText(y.toString());
         Timer timer = new Timer();
-        TimerTask phase1=new TimerTask() {
+        TimerTask phase1 = new TimerTask() {
             @Override
             public void run() {
                 labels[a].setIcon(chars[b]);
@@ -2201,10 +2112,9 @@ jLabel26.setText(y.toString());
                 labels[d].setIcon(chars[c]);
                 labels[bomber].setIcon(chars[m]);
                 labels[m].setIcon(chars[bomber]);
-
             }
         };
-        TimerTask phase2=new TimerTask() {
+        TimerTask phase2 = new TimerTask() {
             @Override
             public void run() {
                 labels[e].setIcon(chars[f]);
@@ -2215,7 +2125,7 @@ jLabel26.setText(y.toString());
                 labels[n].setIcon(chars[bomber]);
             }
         };
-        TimerTask phase3=new TimerTask() {
+        TimerTask phase3 = new TimerTask() {
             @Override
             public void run() {
                 labels[i].setIcon(chars[j]);
@@ -2226,527 +2136,494 @@ jLabel26.setText(y.toString());
                 labels[o].setIcon(chars[bomber]);
             }
         };
-        timer.schedule(phase1,10000);
-        timer.schedule(phase2,20000);
-        timer.schedule(phase3,30000);
+        timer.schedule(phase1, 10000);
+        timer.schedule(phase2, 20000);
+        timer.schedule(phase3, 30000);
 
     }
 
-
-    public static void plantingBombs(){
-
-        JButton bombs[]={
-                jButton3, jButton4, jButton5, jButton6,
-                jButton7, jButton8, jButton9, jButton10,
-                jButton11, jButton12,jButton13, jButton14,
-                jButton15, jButton16, jButton17, jButton18
+    public static void plantingBombs() {
+        JButton bombs[] = {
+                bomb1, bomb2, bomb3, bomb4,
+                bomb5, bomb6, bomb7, bomb8,
+                bomb9, bomb10, bomb11, bomb12,
+                bomb13, bomb14, bomb15, bomb16
         };
-        JButton[] wires={jButton19,jButton20,jButton21,jButton22,
-                jButton23,jButton24,jButton25,jButton26,
-                jButton27,jButton28,jButton29,jButton30,
-                jButton31,jButton32,jButton33,jButton34,
-                jButton35,jButton36,jButton37,jButton38,
-                jButton39,jButton40,jButton41,jButton42,
-                jButton43,jButton44,jButton45,jButton46,
-                jButton47,jButton48,jButton49,jButton50,
-                jButton51,jButton52,jButton53,jButton54,
-                jButton55,jButton56,jButton57,jButton58,
+        JButton[] wires = {wireB6, wireB7, wireB8, wireB9,
+                wireB10, wireB5, wireB4, wireB3,
+                wireB2, wireB1, wireD6, wireD7,
+                wireD8, wireD9, wireD10, wireD5,
+                wireD4, wireD3, wireD2, wireD1,
+                wireA6, wireA7, wireA8, wireA9,
+                wireA10, wireA5, wireA4, wireA3,
+                wireA2, wireA1, wireC6, wireC7,
+                wireC8, wireC9, wireC10, wireC5,
+                wireC4, wireC3, wireC2, wireC1,
         };
-        int[] random=uniqueNumberGenerator(16);
-        int[] selectedBlocks=new int[16];
-        for(int i=0 ; i<16 ;i++){
-            selectedBlocks[i]=random[i];
-
+        int[] random = uniqueNumberGenerator(16);
+        int[] selectedBlocks = new int[16];
+        for (int i = 0; i < 16; i++) {
+            selectedBlocks[i] = random[i];
         }
-
-        int a=selectedBlocks[0];
-        int b=selectedBlocks[1];
-        int c=selectedBlocks[2];
-        int d=selectedBlocks[3];
-TimerTask countdownBombA=new TimerTask() {
-    int i=20;
-
-    @Override
-    public void run() {
-
-        i=i-1;
-        if(i>0) {
-            bombStatus2.setText(String.valueOf(i));
-        }else{
-            bombStatus2.setText("XXX");
-            for(int i=0;i<=9;i++){
-                wires[i+20].setEnabled(false);
-            }
-            bombs[a].setEnabled(false);
-        }
-    }
-};
-        TimerTask countdownBombB=new TimerTask() {
-            int i=20;
+        int a = selectedBlocks[0];
+        int b = selectedBlocks[1];
+        int c = selectedBlocks[2];
+        int d = selectedBlocks[3];
+        TimerTask countdownBombA = new TimerTask() {
+            int i = 20;
 
             @Override
             public void run() {
+                i = i - 1;
+                if (i > 0) {
+                    bombStatus2.setText(String.valueOf(i));
+                } else {
+                    bombStatus2.setText("XXX");
+                    for (int i = 0; i <= 9; i++) {
+                        wires[i + 20].setEnabled(false);
+                    }
+                    bombs[a].setEnabled(false);
+                }
+            }
+        };
+        TimerTask countdownBombB = new TimerTask() {
+            int i = 20;
 
-                i=i-1;
-                if(i>0) {
+            @Override
+            public void run() {
+                i = i - 1;
+                if (i > 0) {
                     bombStatus4.setText(String.valueOf(i));
-                }else{
+                } else {
                     bombStatus4.setText("XXX");
-                    for(int i=0;i<=9;i++){
+                    for (int i = 0; i <= 9; i++) {
                         wires[i].setEnabled(false);
                     }
                     bombs[b].setEnabled(false);
                 }
             }
         };
-        TimerTask countdownBombC=new TimerTask() {
-            int i=20;
+        TimerTask countdownBombC = new TimerTask() {
+            int i = 20;
 
             @Override
             public void run() {
-
-                i=i-1;
-                if(i>0) {
+                i = i - 1;
+                if (i > 0) {
                     bombStatus3.setText(String.valueOf(i));
-                }else{
+                } else {
                     bombStatus3.setText("XXX");
-                    for(int i=0;i<=9;i++){
-                        wires[i+30].setEnabled(false);
+                    for (int i = 0; i <= 9; i++) {
+                        wires[i + 30].setEnabled(false);
                     }
                     bombs[c].setEnabled(false);
                 }
-
             }
         };
-        TimerTask countdownBombD=new TimerTask() {
-            int i=20;
+        TimerTask countdownBombD = new TimerTask() {
+            int i = 20;
 
             @Override
             public void run() {
-
-                i=i-1;
-                if(i>0) {
+                i = i - 1;
+                if (i > 0) {
                     bombStatus1.setText(String.valueOf(i));
-                }else{
+                } else {
                     bombStatus1.setText("XXX");
-                    for(int i=0;i<=9;i++){
-                        wires[i+10].setEnabled(false);
+                    for (int i = 0; i <= 9; i++) {
+                        wires[i + 10].setEnabled(false);
                     }
                     bombs[d].setEnabled(false);
                 }
-
             }
         };
-
         Timer timer = new Timer();
-        TimerTask bombA=new TimerTask() {
+        TimerTask bombA = new TimerTask() {
             @Override
             public void run() {
                 bombs[a].setEnabled(true);
                 timer.schedule(countdownBombA, 0, 1000);
-                for(int i=0;i<=9;i++){
-                    wires[i+20].setEnabled(true);
+                for (int i = 0; i <= 9; i++) {
+                    wires[i + 20].setEnabled(true);
                 }
             }
         };
-        TimerTask bombB=new TimerTask() {
+        TimerTask bombB = new TimerTask() {
             @Override
             public void run() {
                 bombs[b].setEnabled(true);
                 timer.schedule(countdownBombB, 0, 1000);
-                for(int i=0;i<=9;i++){
+                for (int i = 0; i <= 9; i++) {
                     wires[i].setEnabled(true);
                 }
             }
         };
-        TimerTask bombC=new TimerTask() {
+        TimerTask bombC = new TimerTask() {
             @Override
             public void run() {
                 bombs[c].setEnabled(true);
                 timer.schedule(countdownBombC, 0, 1000);
-                for(int i=0;i<=9;i++){
-                    wires[i+30].setEnabled(true);
+                for (int i = 0; i <= 9; i++) {
+                    wires[i + 30].setEnabled(true);
                 }
             }
         };
-        TimerTask bombD=new TimerTask() {
+        TimerTask bombD = new TimerTask() {
             @Override
             public void run() {
                 bombs[d].setEnabled(true);
                 timer.schedule(countdownBombD, 0, 1000);
-                for(int i=0;i<=9;i++){
-                    wires[i+10].setEnabled(true);
+                for (int i = 0; i <= 9; i++) {
+                    wires[i + 10].setEnabled(true);
                 }
             }
         };
-       
-        timer.schedule(bombA,10000);
-        timer.schedule(bombB,20000);
-        timer.schedule(bombC,30000);
-        timer.schedule(bombD,40000);
-
+        timer.schedule(bombA, 10000);
+        timer.schedule(bombB, 20000);
+        timer.schedule(bombC, 30000);
+        timer.schedule(bombD, 40000);
     }
 
-    public static void setWiresA(){
-        int[] random=uniqueNumberGenerator(10);
-        int[] wirecs=new int[10];
-        for(int i=0 ; i<10 ;i++){
-            wirecs[i]=random[i];
-
+    public static void setWiresA() {
+        int[] random = uniqueNumberGenerator(10);
+        int[] wirecs = new int[10];
+        for (int i = 0; i < 10; i++) {
+            wirecs[i] = random[i];
         }
-        JButton[] wires={jButton39,jButton40,jButton41,jButton42,
-                jButton43,jButton44,jButton45,jButton46,jButton47,jButton48};
+        JButton[] wires = {wireA6, wireA7, wireA8, wireA9,
+                wireA10, wireA5, wireA4, wireA3, wireA2, wireA1};
         Random rand = new Random();
         int r = rand.nextInt(256);
         int g = rand.nextInt(256);
         int b = rand.nextInt(256);
-        int m=23;
-        int n=23;
-        int o=23;
-        if(r>200){
-            m=-24;
+        int m = 23;
+        int n = 23;
+        int o = 23;
+        if (r > 200) {
+            m = -24;
         }
-        if(g>200){
-            n=-24;
+        if (g > 200) {
+            n = -24;
         }
-        if(b>200){
-            o=-24;
+        if (b > 200) {
+            o = -24;
         }
 
-        wires[wirecs[0]].setBackground(new java.awt.Color(r+m, g+n, b+o));
+        wires[wirecs[0]].setBackground(new java.awt.Color(r + m, g + n, b + o));
         wires[wirecs[0]].setText("right");
-        for(int i=1;i<=9;i++){
+        for (int i = 1; i <= 9; i++) {
+            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
+            wires[wirecs[i]].setText("wrong");
+        }
+    }
+
+    public static void setWiresB() {
+        int[] random = uniqueNumberGenerator(10);
+        int[] wirecs = new int[10];
+        for (int i = 0; i < 10; i++) {
+            wirecs[i] = random[i];
+        }
+        JButton[] wires = {wireB6, wireB7, wireB8, wireB9,
+                wireB10, wireB5, wireB4, wireB3, wireB2, wireB1};
+        Random rand = new Random();
+        int r = rand.nextInt(256);
+        int g = rand.nextInt(256);
+        int b = rand.nextInt(256);
+        int m = 23;
+        int n = 23;
+        int o = 23;
+        if (r > 200) {
+            m = -24;
+        }
+        if (g > 200) {
+            n = -24;
+        }
+        if (b > 200) {
+            o = -24;
+        }
+        wires[wirecs[0]].setBackground(new java.awt.Color(r + m, g + n, b + o));
+        wires[wirecs[0]].setText("right");
+        for (int i = 1; i <= 9; i++) {
+            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
+            wires[wirecs[i]].setText("wrong");
+        }
+    }
+
+    public static void setWiresC() {
+        int[] random = uniqueNumberGenerator(10);
+        int[] wirecs = new int[10];
+        for (int i = 0; i < 10; i++) {
+            wirecs[i] = random[i];
+        }
+        JButton[] wires = {wireC6, wireC7, wireC8, wireC9,
+                wireC10, wireC5, wireC4, wireC3, wireC2, wireC1};
+        Random rand = new Random();
+        int r = rand.nextInt(256);
+        int g = rand.nextInt(256);
+        int b = rand.nextInt(256);
+        int m = 23;
+        int n = 23;
+        int o = 23;
+        if (r > 200) {
+            m = -24;
+        }
+        if (g > 200) {
+            n = -24;
+        }
+        if (b > 200) {
+            o = -24;
+        }
+        wires[wirecs[0]].setBackground(new java.awt.Color(r + m, g + n, b + o));
+        wires[wirecs[0]].setText("right");
+        for (int i = 1; i <= 9; i++) {
+            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
+            wires[wirecs[i]].setText("wrong");
+        }
+    }
+
+    public static void setWiresD() {
+        int[] random = uniqueNumberGenerator(10);
+        int[] wirecs = new int[10];
+        for (int i = 0; i < 10; i++) {
+            wirecs[i] = random[i];
+        }
+        JButton[] wires = {wireD6, wireD7, wireD8, wireD9,
+                wireD10, wireD5, wireD4, wireD3, wireD2, wireD1};
+        Random rand = new Random();
+        int r = rand.nextInt(256);
+        int g = rand.nextInt(256);
+        int b = rand.nextInt(256);
+        int m = 23;
+        int n = 23;
+        int o = 23;
+        if (r > 200) {
+            m = -24;
+        }
+        if (g > 200) {
+            n = -24;
+        }
+        if (b > 200) {
+            o = -24;
+        }
+        wires[wirecs[0]].setBackground(new java.awt.Color(r + m, g + n, b + o));
+        wires[wirecs[0]].setText("right");
+        for (int i = 1; i <= 9; i++) {
             wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
             wires[wirecs[i]].setText("wrong");
         }
 
     }
-    public static void setWiresB(){
-        int[] random=uniqueNumberGenerator(10);
-        int[] wirecs=new int[10];
-        for(int i=0 ; i<10 ;i++){
-            wirecs[i]=random[i];
 
-        }
-        JButton[] wires={jButton19,jButton20,jButton21,jButton22,
-                jButton23,jButton24,jButton25,jButton26,jButton27,jButton28};
-        Random rand = new Random();
-        int r = rand.nextInt(256);
-        int g = rand.nextInt(256);
-        int b = rand.nextInt(256);
-        int m=23;
-        int n=23;
-        int o=23;
-        if(r>200){
-            m=-24;
-        }
-        if(g>200){
-            n=-24;
-        }
-        if(b>200){
-            o=-24;
-        }
+    public void wrongCutA() {
 
-        wires[wirecs[0]].setBackground(new java.awt.Color(r+m, g+n, b+o));
-        wires[wirecs[0]].setText("right");
-        for(int i=1;i<=9;i++){
-            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
-            wires[wirecs[i]].setText("wrong");
+        JButton[] wires = {
+                wireA6, wireA7, wireA8, wireA9,
+                wireA10, wireA5, wireA4, wireA3,
+                wireA2, wireA1};
+        bombStatus2.setText("XXX");
+        for (int i = 0; i <= 9; i++) {
+            wires[i].setEnabled(false);
         }
-
     }
-    public static void setWiresC(){
-        int[] random=uniqueNumberGenerator(10);
-        int[] wirecs=new int[10];
-        for(int i=0 ; i<10 ;i++){
-            wirecs[i]=random[i];
 
-        }
-        JButton[] wires={jButton49,jButton50,jButton51,jButton52,
-                jButton53,jButton54,jButton55,jButton56,jButton57,jButton58};
-        Random rand = new Random();
-        int r = rand.nextInt(256);
-        int g = rand.nextInt(256);
-        int b = rand.nextInt(256);
-        int m=23;
-        int n=23;
-        int o=23;
-        if(r>200){
-            m=-24;
-        }
-        if(g>200){
-            n=-24;
-        }
-        if(b>200){
-            o=-24;
-        }
+    public void defuseA() {
 
-        wires[wirecs[0]].setBackground(new java.awt.Color(r+m, g+n, b+o));
-        wires[wirecs[0]].setText("right");
-        for(int i=1;i<=9;i++){
-            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
-            wires[wirecs[i]].setText("wrong");
-        }
-
-    }
-    public static void setWiresD(){
-        int[] random=uniqueNumberGenerator(10);
-        int[] wirecs=new int[10];
-        for(int i=0 ; i<10 ;i++){
-            wirecs[i]=random[i];
-
-        }
-        JButton[] wires={jButton29,jButton30,jButton31,jButton32,
-                jButton33,jButton34,jButton35,jButton36,jButton37,jButton38};
-        Random rand = new Random();
-        int r = rand.nextInt(256);
-        int g = rand.nextInt(256);
-        int b = rand.nextInt(256);
-        int m=23;
-        int n=23;
-        int o=23;
-        if(r>200){
-            m=-24;
-        }
-        if(g>200){
-            n=-24;
-        }
-        if(b>200){
-            o=-24;
-        }
-
-        wires[wirecs[0]].setBackground(new java.awt.Color(r+m, g+n, b+o));
-        wires[wirecs[0]].setText("right");
-        for(int i=1;i<=9;i++){
-            wires[wirecs[i]].setBackground(new java.awt.Color(r, g, b));
-            wires[wirecs[i]].setText("wrong");
-        }
-
-    }
-    public void wrongCutA(){
-
-        JButton[] wires={
-                jButton39,jButton40,jButton41,jButton42,
-                jButton43,jButton44,jButton45,jButton46,
-                jButton47,jButton48
-        };
-
-            bombStatus2.setText("XXX");
-            for(int i=0;i<=9;i++){
-                wires[i].setEnabled(false);
-            }
-        }
-    public void defuseA(){
-
-        JButton[] wires={jButton39,jButton40,jButton41,jButton42,
-                jButton43,jButton44,jButton45,jButton46,
-                jButton47,jButton48
-        };
-
+        JButton[] wires = {wireA6, wireA7, wireA8, wireA9,
+                wireA10, wireA5, wireA4, wireA3,
+                wireA2, wireA1};
         bombStatus2.setForeground(new java.awt.Color(47, 137, 1));
         defusedBombs++;
         defused.setText(String.valueOf(defusedBombs));
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void wrongCutB(){
 
-        JButton[] wires={jButton19,jButton20,jButton21,jButton22,
-                jButton23,jButton24,jButton25,jButton26,
-                jButton27,jButton28};
+    public void wrongCutB() {
 
+        JButton[] wires = {wireB6, wireB7, wireB8, wireB9,
+                wireB10, wireB5, wireB4, wireB3, wireB2, wireB1};
         bombStatus4.setText("XXX");
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void defuseB(){
 
-        JButton[] wires={jButton19,jButton20,jButton21,jButton22,
-                jButton23,jButton24,jButton25,jButton26,
-                jButton27,jButton28
-        };
+    public void defuseB() {
 
+        JButton[] wires = {wireB6, wireB7, wireB8, wireB9,
+                wireB10, wireB5, wireB4, wireB3, wireB2, wireB1};
         bombStatus4.setForeground(new java.awt.Color(47, 137, 1));
         defusedBombs++;
         defused.setText(String.valueOf(defusedBombs));
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void wrongCutC(){
 
-        JButton[] wires={jButton49,jButton50,
-                jButton51,jButton52,jButton53,jButton54,
-                jButton55,jButton56,jButton57,jButton58,
-        };
+    public void wrongCutC() {
 
+        JButton[] wires = {wireC6, wireC7,
+                wireC8, wireC9, wireC10, wireC5,
+                wireC4, wireC3, wireC2, wireC1,};
         bombStatus3.setText("XXX");
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void defuseC(){
 
-        JButton[] wires={jButton49,jButton50,
-                jButton51,jButton52,jButton53,jButton54,
-                jButton55,jButton56,jButton57,jButton58,
-        };
+    public void defuseC() {
 
+        JButton[] wires = {wireC6, wireC7,
+                wireC8, wireC9, wireC10, wireC5,
+                wireC4, wireC3, wireC2, wireC1,};
         bombStatus2.setForeground(new java.awt.Color(47, 137, 1));
         defusedBombs++;
         defused.setText(String.valueOf(defusedBombs));
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
 
 
-    public void wrongCutD(){
+    public void wrongCutD() {
 
-        JButton[] wires={jButton29,jButton30,
-                jButton31,jButton32,jButton33,jButton34,
-                jButton35,jButton36,jButton37,jButton38
-        };
-
+        JButton[] wires = {wireD6, wireD7,
+                wireD8, wireD9, wireD10, wireD5,
+                wireD4, wireD3, wireD2, wireD1};
         bombStatus1.setText("XXX");
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void defuseD(){
 
-        JButton[] wires={jButton29,jButton30,
-                jButton31,jButton32,jButton33,jButton34,
-                jButton35,jButton36,jButton37,jButton38,
+    public void defuseD() {
 
-        };
-
+        JButton[] wires = {wireD6, wireD7,
+                wireD8, wireD9, wireD10, wireD5,
+                wireD4, wireD3, wireD2, wireD1,};
         bombStatus1.setForeground(new java.awt.Color(47, 137, 1));
         defusedBombs++;
         defused.setText(String.valueOf(defusedBombs));
-        for(int i=0;i<=9;i++){
+        for (int i = 0; i <= 9; i++) {
             wires[i].setEnabled(false);
         }
     }
-    public void setBulletIcon(){
-        if(bullet==2){
+
+    public void setBulletIcon() {
+        if (bullet == 2) {
             bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets.png")));
-        }else if(bullet==1){
+        } else if (bullet == 1) {
             bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets(-1).png")));
-        }else if(bullet==0){
+        } else if (bullet == 0) {
             bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/nobullet.png")));
             shootButton.setEnabled(false);
         }
     }
-public static int rightWiresA=0;
-    public static int rightWiresB=0;
-    public static int rightWiresC=0;
-    public static int rightWiresD=0;
-public static int defusedBombs=0;
-    public static int bullet = 2 ;
+
+    public static int rightWiresA = 0;
+    public static int rightWiresB = 0;
+    public static int rightWiresC = 0;
+    public static int rightWiresD = 0;
+    public static int defusedBombs = 0;
+    public static int bullet = 2;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JButton bomb1;
+    public static javax.swing.JButton bomb10;
+    public static javax.swing.JButton bomb11;
+    public static javax.swing.JButton bomb12;
+    public static javax.swing.JButton bomb13;
+    public static javax.swing.JButton bomb14;
+    public static javax.swing.JButton bomb15;
+    public static javax.swing.JButton bomb16;
+    public static javax.swing.JButton bomb2;
+    public static javax.swing.JButton bomb3;
+    public static javax.swing.JButton bomb4;
+    public static javax.swing.JButton bomb5;
+    public static javax.swing.JButton bomb6;
+    public static javax.swing.JButton bomb7;
+    public static javax.swing.JButton bomb8;
+    public static javax.swing.JButton bomb9;
+    private javax.swing.JLabel bombA;
+    private javax.swing.JLabel bombB;
+    private javax.swing.JLabel bombC;
+    private javax.swing.JLabel bombD;
     public static javax.swing.JLabel bombStatus1;
     public static javax.swing.JLabel bombStatus2;
     public static javax.swing.JLabel bombStatus3;
     public static javax.swing.JLabel bombStatus4;
+    private javax.swing.JLabel bomberId;
     private javax.swing.JLabel bullets;
-    private java.awt.Choice choice1;
+    private static javax.swing.JLabel character1;
+    private static javax.swing.JLabel character10;
+    private static javax.swing.JLabel character11;
+    private static javax.swing.JLabel character12;
+    private static javax.swing.JLabel character13;
+    private static javax.swing.JLabel character14;
+    private static javax.swing.JLabel character15;
+    private static javax.swing.JLabel character16;
+    private static javax.swing.JLabel character2;
+    private static javax.swing.JLabel character3;
+    private static javax.swing.JLabel character4;
+    private static javax.swing.JLabel character5;
+    private static javax.swing.JLabel character6;
+    private static javax.swing.JLabel character7;
+    private static javax.swing.JLabel character8;
+    private static javax.swing.JLabel character9;
     public static javax.swing.JLabel countdown;
     private javax.swing.JLabel defused;
-    public static javax.swing.JButton jButton10;
-    public static javax.swing.JButton jButton11;
-    public static javax.swing.JButton jButton12;
-    public static javax.swing.JButton jButton13;
-    public static javax.swing.JButton jButton14;
-    public static javax.swing.JButton jButton15;
-    public static javax.swing.JButton jButton16;
-    public static javax.swing.JButton jButton17;
-    public static javax.swing.JButton jButton18;
-    public static javax.swing.JButton jButton19;
-    public static javax.swing.JButton jButton20;
-    public static javax.swing.JButton jButton21;
-    public static javax.swing.JButton jButton22;
-    public static javax.swing.JButton jButton23;
-    public static javax.swing.JButton jButton24;
-    public static javax.swing.JButton jButton25;
-    public static javax.swing.JButton jButton26;
-    public static javax.swing.JButton jButton27;
-    public static javax.swing.JButton jButton28;
-    public static javax.swing.JButton jButton29;
-    public static javax.swing.JButton jButton3;
-    public static javax.swing.JButton jButton30;
-    public static javax.swing.JButton jButton31;
-    public static javax.swing.JButton jButton32;
-    public static javax.swing.JButton jButton33;
-    public static javax.swing.JButton jButton34;
-    public static javax.swing.JButton jButton35;
-    public static javax.swing.JButton jButton36;
-    public static javax.swing.JButton jButton37;
-    public static javax.swing.JButton jButton38;
-    public static javax.swing.JButton jButton39;
-    public static javax.swing.JButton jButton4;
-    public static javax.swing.JButton jButton40;
-    public static javax.swing.JButton jButton41;
-    public static javax.swing.JButton jButton42;
-    public static javax.swing.JButton jButton43;
-    public static javax.swing.JButton jButton44;
-    public static javax.swing.JButton jButton45;
-    public static javax.swing.JButton jButton46;
-    public static javax.swing.JButton jButton47;
-    public static javax.swing.JButton jButton48;
-    public static javax.swing.JButton jButton49;
-    public static javax.swing.JButton jButton5;
-    public static javax.swing.JButton jButton50;
-    public static javax.swing.JButton jButton51;
-    public static javax.swing.JButton jButton52;
-    public static javax.swing.JButton jButton53;
-    public static javax.swing.JButton jButton54;
-    public static javax.swing.JButton jButton55;
-    public static javax.swing.JButton jButton56;
-    public static javax.swing.JButton jButton57;
-    public static javax.swing.JButton jButton58;
-    public static javax.swing.JButton jButton6;
-    public static javax.swing.JButton jButton7;
-    public static javax.swing.JButton jButton8;
-    public static javax.swing.JButton jButton9;
-    private static javax.swing.JLabel jLabel10;
-    private static javax.swing.JLabel jLabel11;
-    private static javax.swing.JLabel jLabel12;
-    private static javax.swing.JLabel jLabel13;
-    private static javax.swing.JLabel jLabel14;
-    private static javax.swing.JLabel jLabel15;
-    private static javax.swing.JLabel jLabel16;
-    private static javax.swing.JLabel jLabel17;
-    private static javax.swing.JLabel jLabel18;
-    private static javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private static javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    public static javax.swing.JLabel jLabel27;
-    public static javax.swing.JLabel jLabel28;
-    public static javax.swing.JLabel jLabel29;
-    public static javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private static javax.swing.JLabel jLabel4;
-    private static javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private static javax.swing.JLabel jLabel7;
-    private static javax.swing.JLabel jLabel8;
-    private static javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel defusedLabel;
+    private javax.swing.JLabel downAim;
+    private javax.swing.JLabel leftAim;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JPanel mainScreen;
+    private javax.swing.JLabel map;
     private javax.swing.JButton quitButton;
+    private javax.swing.JLabel rightAim;
     private javax.swing.JButton shootButton;
+    private javax.swing.JScrollPane sniperScope;
+    private javax.swing.JPanel sniperView;
+    private java.awt.Choice target;
+    private javax.swing.JLabel upAim;
+    public static javax.swing.JButton wireA1;
+    public static javax.swing.JButton wireA10;
+    public static javax.swing.JButton wireA2;
+    public static javax.swing.JButton wireA3;
+    public static javax.swing.JButton wireA4;
+    public static javax.swing.JButton wireA5;
+    public static javax.swing.JButton wireA6;
+    public static javax.swing.JButton wireA7;
+    public static javax.swing.JButton wireA8;
+    public static javax.swing.JButton wireA9;
+    public static javax.swing.JButton wireB1;
+    public static javax.swing.JButton wireB10;
+    public static javax.swing.JButton wireB2;
+    public static javax.swing.JButton wireB3;
+    public static javax.swing.JButton wireB4;
+    public static javax.swing.JButton wireB5;
+    public static javax.swing.JButton wireB6;
+    public static javax.swing.JButton wireB7;
+    public static javax.swing.JButton wireB8;
+    public static javax.swing.JButton wireB9;
+    public static javax.swing.JButton wireC1;
+    public static javax.swing.JButton wireC10;
+    public static javax.swing.JButton wireC2;
+    public static javax.swing.JButton wireC3;
+    public static javax.swing.JButton wireC4;
+    public static javax.swing.JButton wireC5;
+    public static javax.swing.JButton wireC6;
+    public static javax.swing.JButton wireC7;
+    public static javax.swing.JButton wireC8;
+    public static javax.swing.JButton wireC9;
+    public static javax.swing.JButton wireD1;
+    public static javax.swing.JButton wireD10;
+    public static javax.swing.JButton wireD2;
+    public static javax.swing.JButton wireD3;
+    public static javax.swing.JButton wireD4;
+    public static javax.swing.JButton wireD5;
+    public static javax.swing.JButton wireD6;
+    public static javax.swing.JButton wireD7;
+    public static javax.swing.JButton wireD8;
+    public static javax.swing.JButton wireD9;
     // End of variables declaration//GEN-END:variables
 }
