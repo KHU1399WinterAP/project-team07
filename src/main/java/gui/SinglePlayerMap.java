@@ -38,10 +38,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        shootButton = new javax.swing.JButton();
         choice1 = new java.awt.Choice();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        bullets = new javax.swing.JLabel();
+        countdown = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
@@ -143,18 +143,18 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
 
-        jButton1.setText("shoot");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        shootButton.setText("shoot");
+        shootButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        shootButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                shootButtonActionPerformed(evt);
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bullets.png"))); // NOI18N
+        bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 48)); // NOI18N
-        jLabel1.setText("00:27");
+        countdown.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 48)); // NOI18N
+        countdown.setText("90");
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setLayout(null);
@@ -1160,45 +1160,46 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(75, 75, 75)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(94, 94, 94)
-                .addComponent(jLabel1)
+                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(77, 77, 77)
+                .addComponent(bullets)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(countdown)
+                .addGap(101, 101, 101)
                 .addComponent(jLabel25)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(46, 46, 46)
                 .addComponent(quitButton)
-                .addGap(55, 55, 55))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
+                        .addGap(8, 8, 8)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(11, 11, 11)
-                                .addComponent(jButton1))
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel25)
-                            .addComponent(defused)
-                            .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
+                                .addComponent(shootButton))
+                            .addComponent(bullets)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel25)
+                        .addComponent(defused)
+                        .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(countdown)
+                        .addGap(8, 8, 8)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
         );
 
@@ -1303,17 +1304,18 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         d.showpanel();
     }//GEN-LAST:event_quitButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void shootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shootButtonActionPerformed
         // TODO add your handling code here:
-int bullet = 2 ;
+
         String selected=choice1.getItem(choice1.getSelectedIndex());
         if(selected.equals(jLabel26.getText())){
            JOptionPane.showMessageDialog(null , "You Won !",  "Bravo!",  JOptionPane.INFORMATION_MESSAGE );
         }
 else{
 bullet--;
+setBulletIcon();
 }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_shootButtonActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
@@ -1989,6 +1991,7 @@ bullet--;
                 new SinglePlayerMap().setVisible(true);
             }
         });
+
     }
 
     public void addItemC1() {
@@ -2082,6 +2085,20 @@ bullet--;
                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
            }
         }
+       Timer timer=new Timer();
+       TimerTask mainCountdown=new TimerTask() {
+           int i =90;
+           @Override
+           public void run() {
+               i=i-1;
+               if(i>0){
+                   countdown.setText(String.valueOf(i));
+               }else{
+                   countdown.setText("XXX");
+               }
+           }
+       };
+       timer.schedule(mainCountdown,0,1000);
         addItemC1();
 
         swap();
@@ -2094,7 +2111,10 @@ defused.setText(String.valueOf(defusedBombs));
 for(int i=0;i<=49;i++) {
     wires[i].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg")));
 }
-    }
+setBulletIcon();
+
+        };
+
     static int[] uniqueNumberGenerator (int n){
         int [] a=new int[n];
         for (int i=0;i<n;i++){
@@ -2115,6 +2135,8 @@ for(int i=0;i<=49;i++) {
 
 
     }
+
+
 
     public void swap(){
         JLabel labels[]={
@@ -2165,7 +2187,7 @@ for(int i=0;i<=49;i++) {
         int n=swapingChars[13];
         int o=swapingChars[14];
 
-Integer y =new Integer(bomber+1);
+Integer y =new Integer(bomber);
 jLabel26.setText(y.toString());
 
 
@@ -2608,19 +2630,31 @@ TimerTask countdownBombA=new TimerTask() {
             wires[i].setEnabled(false);
         }
     }
+    public void setBulletIcon(){
+        if(bullet==2){
+            bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets.png")));
+        }else if(bullet==1){
+            bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets(-1).png")));
+        }else if(bullet==0){
+            bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/nobullet.png")));
+            shootButton.setEnabled(false);
+        }
+    }
 public static int rightWiresA=0;
     public static int rightWiresB=0;
     public static int rightWiresC=0;
     public static int rightWiresD=0;
 public static int defusedBombs=0;
+    public static int bullet = 2 ;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JLabel bombStatus1;
     public static javax.swing.JLabel bombStatus2;
     public static javax.swing.JLabel bombStatus3;
     public static javax.swing.JLabel bombStatus4;
+    private javax.swing.JLabel bullets;
     private java.awt.Choice choice1;
+    public static javax.swing.JLabel countdown;
     private javax.swing.JLabel defused;
-    private javax.swing.JButton jButton1;
     public static javax.swing.JButton jButton10;
     public static javax.swing.JButton jButton11;
     public static javax.swing.JButton jButton12;
@@ -2677,7 +2711,6 @@ public static int defusedBombs=0;
     public static javax.swing.JButton jButton7;
     public static javax.swing.JButton jButton8;
     public static javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private static javax.swing.JLabel jLabel10;
     private static javax.swing.JLabel jLabel11;
     private static javax.swing.JLabel jLabel12;
@@ -2698,7 +2731,6 @@ public static int defusedBombs=0;
     public static javax.swing.JLabel jLabel27;
     public static javax.swing.JLabel jLabel28;
     public static javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     public static javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -2715,5 +2747,6 @@ public static int defusedBombs=0;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton quitButton;
+    private javax.swing.JButton shootButton;
     // End of variables declaration//GEN-END:variables
 }
