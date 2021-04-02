@@ -93,7 +93,8 @@
                           <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="mainScreen" pref="358" max="32767" attributes="0"/>
+                  <EmptySpace pref="9" max="32767" attributes="0"/>
+                  <Component id="mainScreen" min="-2" pref="349" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1543,7 +1544,7 @@
             <Component class="javax.swing.JLabel" name="bombD">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/background/bomb.jpg"/>
+                  <Image iconType="3" name="/backgrounds/bomb.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1555,7 +1556,7 @@
             <Component class="javax.swing.JLabel" name="bombB">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/background/bomb.jpg"/>
+                  <Image iconType="3" name="/backgrounds/bomb.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1867,7 +1868,7 @@
             <Component class="javax.swing.JLabel" name="bombA">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/background/bomb.jpg"/>
+                  <Image iconType="3" name="/backgrounds/bomb.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -2179,7 +2180,7 @@
             <Component class="javax.swing.JLabel" name="bombC">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/background/bomb.jpg"/>
+                  <Image iconType="3" name="/backgrounds/bomb.jpg"/>
                 </Property>
               </Properties>
               <Constraints>

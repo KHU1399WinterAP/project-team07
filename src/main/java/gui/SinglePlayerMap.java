@@ -790,11 +790,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         mainScreen.add(bombStatus1);
         bombStatus1.setBounds(740, 210, 90, 40);
 
-        bombD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        bombD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombD);
         bombD.setBounds(700, 180, 150, 160);
 
-        bombB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        bombB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombB);
         bombB.setBounds(700, 10, 150, 160);
 
@@ -955,7 +955,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         mainScreen.add(bombStatus2);
         bombStatus2.setBounds(50, 40, 90, 40);
 
-        bombA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        bombA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombA);
         bombA.setBounds(10, 10, 150, 160);
 
@@ -1116,7 +1116,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         mainScreen.add(bombStatus3);
         bombStatus3.setBounds(50, 210, 90, 40);
 
-        bombC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/bomb.jpg"))); // NOI18N
+        bombC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombC);
         bombC.setBounds(10, 180, 150, 160);
 
@@ -1137,59 +1137,60 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
-                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(77, 77, 77)
-                                .addComponent(bullets)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(countdown)
-                                .addGap(101, 101, 101)
-                                .addComponent(defusedLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46)
-                                .addComponent(quitButton)
-                                .addContainerGap())
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(77, 77, 77)
+                .addComponent(bullets)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(countdown)
+                .addGap(101, 101, 101)
+                .addComponent(defusedLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(quitButton)
+                .addContainerGap())
         );
         mainPanelLayout.setVerticalGroup(
-                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(mainPanelLayout.createSequentialGroup()
-                                                .addGap(8, 8, 8)
-                                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(mainPanelLayout.createSequentialGroup()
-                                                                .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(11, 11, 11)
-                                                                .addComponent(shootButton))
-                                                        .addComponent(bullets)))
-                                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                .addComponent(defusedLabel)
-                                                .addComponent(defused)
-                                                .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
-                                                .addComponent(countdown)
-                                                .addGap(8, 8, 8)))
-                                .addComponent(mainScreen, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11)
+                                .addComponent(shootButton))
+                            .addComponent(bullets)))
+                    .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(defusedLabel)
+                        .addComponent(defused)
+                        .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                        .addComponent(countdown)
+                        .addGap(8, 8, 8)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -2100,8 +2101,9 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         int m = swapingChars[12];
         int n = swapingChars[13];
         int o = swapingChars[14];
-        Integer y = new Integer(bomber);
+        Integer y = new Integer(bomber+1);
         bomberId.setText(y.toString());
+        System.out.println(bomber+1);
         Timer timer = new Timer();
         TimerTask phase1 = new TimerTask() {
             @Override
@@ -2136,9 +2138,9 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 labels[o].setIcon(chars[bomber]);
             }
         };
-        timer.schedule(phase1, 10000);
-        timer.schedule(phase2, 20000);
-        timer.schedule(phase3, 30000);
+        timer.schedule(phase1, 20000);
+        timer.schedule(phase2, 50000);
+        timer.schedule(phase3, 75000);
 
     }
 
@@ -2170,7 +2172,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         int c = selectedBlocks[2];
         int d = selectedBlocks[3];
         TimerTask countdownBombA = new TimerTask() {
-            int i = 20;
+            int i = 15;
 
             @Override
             public void run() {
@@ -2187,7 +2189,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         };
         TimerTask countdownBombB = new TimerTask() {
-            int i = 20;
+            int i = 15;
 
             @Override
             public void run() {
@@ -2204,7 +2206,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         };
         TimerTask countdownBombC = new TimerTask() {
-            int i = 20;
+            int i = 15;
 
             @Override
             public void run() {
@@ -2212,7 +2214,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 if (i > 0) {
                     bombStatus3.setText(String.valueOf(i));
                 } else {
-                    bombStatus3.setText("XXX");
+                        bombStatus3.setText("XXX");
                     for (int i = 0; i <= 9; i++) {
                         wires[i + 30].setEnabled(false);
                     }
@@ -2221,7 +2223,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         };
         TimerTask countdownBombD = new TimerTask() {
-            int i = 20;
+            int i = 15;
 
             @Override
             public void run() {
@@ -2278,10 +2280,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 }
             }
         };
-        timer.schedule(bombA, 10000);
-        timer.schedule(bombB, 20000);
-        timer.schedule(bombC, 30000);
-        timer.schedule(bombD, 40000);
+        timer.schedule(bombA, 5000);
+        timer.schedule(bombB, 30000);
+        timer.schedule(bombC, 55000);
+        timer.schedule(bombD, 80000);
     }
 
     public static void setWiresA() {
