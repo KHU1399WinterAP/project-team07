@@ -5,6 +5,8 @@
  */
 package gui;
 
+import models.SoundEffectPlayer;
+
 import javax.swing.*;
 import java.awt.*;
 
