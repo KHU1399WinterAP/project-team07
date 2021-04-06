@@ -2010,15 +2010,16 @@ System.out.println("Hi");
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
             }
         }
+        mainTimer=90;
         Timer timer = new Timer();
         TimerTask mainCountdown = new TimerTask() {
-            int i = 90;
+
 
             @Override
             public void run() {
-                i = i - 1;
-                if (i > 0) {
-                    countdown.setText(String.valueOf(i));
+                mainTimer--;
+                if (mainTimer > 0) {
+                    countdown.setText(String.valueOf(mainTimer));
                 } else {
                     countdown.setText("XXX");
                 }
@@ -2480,7 +2481,7 @@ System.out.println("Hi");
         JButton[] wires = {wireC6, wireC7,
                 wireC8, wireC9, wireC10, wireC5,
                 wireC4, wireC3, wireC2, wireC1,};
-        bombStatus2.setForeground(new java.awt.Color(47, 137, 1));
+        bombStatus3.setForeground(new java.awt.Color(47, 137, 1));
         defusedBombs++;
         defused.setText(String.valueOf(defusedBombs));
         for (int i = 0; i <= 9; i++) {
@@ -2530,6 +2531,7 @@ System.out.println("Hi");
     public static int rightWiresD = 0;
     public static int defusedBombs = 0;
     public static int bullet = 2;
+    public int mainTimer;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton bomb1;
     public static javax.swing.JButton bomb10;
