@@ -47,10 +47,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="signinButton" alignment="0" min="-2" pref="290" max="-2" attributes="0"/>
-                              <Component id="returnButton" alignment="0" min="-2" pref="289" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="signinButton" min="-2" pref="290" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
@@ -65,6 +62,10 @@
                                   </Group>
                               </Group>
                           </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="returnButton" min="-2" pref="289" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="11" max="32767" attributes="0"/>
@@ -95,7 +96,7 @@
         <Component class="javax.swing.JButton" name="signinButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/sib.jpg"/>
+              <Image iconType="3" name="/buttons/sign-in.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -111,7 +112,7 @@
               <Color blue="0" green="66" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/rmb.jpg"/>
+              <Image iconType="3" name="/buttons/returntomain.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -143,14 +144,14 @@
         <Component class="javax.swing.JLabel" name="usernameLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/ul.png"/>
+              <Image iconType="3" name="/backgrounds/username.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="passwordLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pl.png"/>
+              <Image iconType="3" name="/backgrounds/password.png"/>
             </Property>
           </Properties>
         </Component>

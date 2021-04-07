@@ -445,7 +445,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb1);
         bomb1.setBounds(80, 10, 30, 20);
 
-        map.setIcon(new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg"))); // NOI18N
+        map.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/springmap.jpg"))); // NOI18N
         sniperView.add(map);
         map.setBounds(0, -10, 1000, 670);
 

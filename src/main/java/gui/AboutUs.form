@@ -67,14 +67,14 @@
         <Component class="javax.swing.JLabel" name="aboutUsLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/other/aboutus.jpg"/>
+              <Image iconType="3" name="/backgrounds/aboutus.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="returnButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/rmb2.jpg"/>
+              <Image iconType="3" name="/buttons/returntomain.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>

@@ -49,7 +49,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         bannerBackground.setBackground(new java.awt.Color(153, 255, 255));
 
-        banner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Banner.png"))); // NOI18N
+        banner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/banner.jpg"))); // NOI18N
 
         welcomeLabel.setBackground(new java.awt.Color(51, 255, 51));
         welcomeLabel.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
@@ -93,7 +93,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        singlePlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/singleplayer.jpg"))); // NOI18N
+        singlePlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/singleplayer.jpg"))); // NOI18N
         singlePlayerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         singlePlayerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +101,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        multiPlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multiplayer.jpg"))); // NOI18N
+        multiPlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/multiplayer.jpg"))); // NOI18N
         multiPlayerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         multiPlayerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +109,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        settingsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/settings.jpg"))); // NOI18N
+        settingsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/setting.jpg"))); // NOI18N
         settingsButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +117,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        logOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashexit.jpg"))); // NOI18N
+        logOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/dashexit.jpg"))); // NOI18N
         logOutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

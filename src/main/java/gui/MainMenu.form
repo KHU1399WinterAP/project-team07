@@ -88,17 +88,20 @@
         <Component class="javax.swing.JButton" name="signupButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/signup.jpg"/>
+              <Image iconType="3" name="/buttons/signup.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="signupButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="loginButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/login.jpg"/>
+              <Image iconType="3" name="/buttons/login.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -111,7 +114,7 @@
         <Component class="javax.swing.JButton" name="aboutUsButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/about.jpg"/>
+              <Image iconType="3" name="/buttons/about.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -124,14 +127,14 @@
         <Component class="javax.swing.JLabel" name="bombulletLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Untitled-4.png"/>
+              <Image iconType="3" name="/backgrounds/bombullet.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="exitButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/exit.jpg"/>
+              <Image iconType="3" name="/buttons/exit.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>

@@ -130,7 +130,7 @@
             <Component class="javax.swing.JLabel" name="banner">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Banner.png"/>
+                  <Image iconType="3" name="/backgrounds/banner.jpg"/>
                 </Property>
               </Properties>
             </Component>
@@ -165,7 +165,7 @@
         <Component class="javax.swing.JButton" name="singlePlayerButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/singleplayer.jpg"/>
+              <Image iconType="3" name="/buttons/singleplayer.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -178,7 +178,7 @@
         <Component class="javax.swing.JButton" name="multiPlayerButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/multiplayer.jpg"/>
+              <Image iconType="3" name="/buttons/multiplayer.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -191,7 +191,7 @@
         <Component class="javax.swing.JButton" name="settingsButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/settings.jpg"/>
+              <Image iconType="3" name="/buttons/setting.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -204,7 +204,7 @@
         <Component class="javax.swing.JButton" name="logOutButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/dashexit.jpg"/>
+              <Image iconType="3" name="/buttons/dashexit.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
