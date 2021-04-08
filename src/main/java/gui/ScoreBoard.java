@@ -126,11 +126,41 @@ public class ScoreBoard extends javax.swing.JFrame {
         this.setResizable(false);
         this.setVisible(true);
         setCenter();
+        rightShoot.setText(String.valueOf(rightShootCalculator()));
+        defusedBombs.setText(String.valueOf(defusedBombsCalculator()));
+        remainingBullets.setText(String.valueOf(remainingBulletsCalculator()));
+        remainingTime.setText(String.valueOf(remainingTimeCalculator()));
+        totalScoreLabel.setText(String.valueOf(totalScoreCalculator()));
     }
     
     public void setCenter() {
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dimension.width / 2 - this.getSize().width / 2, dimension.height / 2 - this.getSize().height / 2);
+    }
+
+    public int rightShootCalculator(){
+        int rightBullet = Integer.parseInt(String.valueOf(SinglePlayerMap.rightBulletScore));
+        return rightBullet*50;
+    }
+
+    public int defusedBombsCalculator(){
+        int defusedBombs = Integer.parseInt(String.valueOf(SinglePlayerMap.defusedBombs));
+        return defusedBombs*10;
+    }
+
+    public int remainingBulletsCalculator(){
+        int remainingBullet = Integer.parseInt(String.valueOf(SinglePlayerMap.remainingBulletScore));
+        return remainingBullet*20;
+    }
+
+    public int remainingTimeCalculator(){
+        int remainingTime = Integer.parseInt(String.valueOf(SinglePlayerMap.remainingTimeScore));
+        return remainingTime*1;
+    }
+
+    public int totalScoreCalculator(){
+        int score = rightShootCalculator() + defusedBombsCalculator() + remainingTimeCalculator() + remainingBulletsCalculator();
+        return score;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

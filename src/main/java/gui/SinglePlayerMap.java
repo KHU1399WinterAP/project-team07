@@ -1139,6 +1139,9 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    static int remainingTimeScore;
+    static int rightBulletScore = 0;
+    static int remainingBulletScore;
 
     private void bomb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb1ActionPerformed
         // TODO add your handling code here:
@@ -1227,12 +1230,15 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         if (selected.equals(bomberId.getText())) {
             bullet--;
             setBulletIcon();
+            rightBulletScore++;
+            remainingBulletScore = bullet;
             String message = "You found the bomber. Now try to defuse remaining bombs.";
+            remainingTimeScore = Integer.parseInt(SinglePlayerMap.countdown.getText());
             JOptionPane.showMessageDialog(null, message, "Good job!", JOptionPane.INFORMATION_MESSAGE);
         } else {
             bullet--;
             setBulletIcon();
-
+            remainingBulletScore = bullet;
         }
     }//GEN-LAST:event_shootButtonActionPerformed
 
