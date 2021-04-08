@@ -28,7 +28,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="mainPanel" min="-2" max="-2" attributes="0"/>
+          <Component id="mainPanel" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -60,14 +60,14 @@
                                   <Component id="winterPreview" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="seasonLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="seasonChoice" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="difficultyLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="difficultyChoice" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="seasonLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="seasonChoice" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -76,7 +76,7 @@
                           <Component id="settingsLabel" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -85,7 +85,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Component id="settingsLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="41" max="32767" attributes="0"/>
+                  <EmptySpace pref="32" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="seasonLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="seasonChoice" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -102,7 +102,7 @@
                       <Component id="difficultyLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="difficultyChoice" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                   <Component id="returnButton" min="-2" pref="59" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -127,56 +127,56 @@
         <Component class="javax.swing.JLabel" name="seasonLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/season.png"/>
+              <Image iconType="3" name="/other/season.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="difficultyLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/difficulty.png"/>
+              <Image iconType="3" name="/other/difficulty.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="settingsLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/settingst.png"/>
+              <Image iconType="3" name="/other/settingst.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="springPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/smm.jpg"/>
+              <Image iconType="3" name="/backgrounds/minispringmap.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="summerPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/summ.jpg"/>
+              <Image iconType="3" name="/backgrounds/minisummermap.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="fallPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/fmm.jpg"/>
+              <Image iconType="3" name="/backgrounds/minifallmap.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="winterPreview">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/wmm.jpg"/>
+              <Image iconType="3" name="/backgrounds/miniwintermap.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="returnButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/rd.jpg"/>
+              <Image iconType="3" name="/buttons/returntodash.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>

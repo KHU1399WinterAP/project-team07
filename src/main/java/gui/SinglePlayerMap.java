@@ -130,11 +130,10 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC1 = new javax.swing.JButton();
         bombStatus3 = new javax.swing.JLabel();
         bombC = new javax.swing.JLabel();
-        quitButton = new javax.swing.JButton();
         defusedLabel = new javax.swing.JLabel();
         defused = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         mainPanel.setBackground(new java.awt.Color(255, 204, 204));
 
@@ -221,11 +220,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(character3);
         character3.setBounds(630, 40, 50, 120);
 
-        bomb16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb16.setBorder(null);
         bomb16.setBorderPainted(false);
         bomb16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb16.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb16.setDisabledIcon(null);
         bomb16.setEnabled(false);
         bomb16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,11 +234,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb16);
         bomb16.setBounds(130, 510, 30, 20);
 
-        bomb15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb15.setBorder(null);
         bomb15.setBorderPainted(false);
         bomb15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb15.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb15.setDisabledIcon(null);
         bomb15.setEnabled(false);
         bomb15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,11 +248,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb15);
         bomb15.setBounds(290, 500, 30, 20);
 
-        bomb14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb14.setBorder(null);
         bomb14.setBorderPainted(false);
         bomb14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb14.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb14.setDisabledIcon(null);
         bomb14.setEnabled(false);
         bomb14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -263,11 +262,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb14);
         bomb14.setBounds(710, 550, 30, 20);
 
-        bomb13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb13.setBorder(null);
         bomb13.setBorderPainted(false);
         bomb13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb13.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb13.setDisabledIcon(null);
         bomb13.setEnabled(false);
         bomb13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,11 +276,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb13);
         bomb13.setBounds(800, 590, 30, 20);
 
-        bomb12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb12.setBorder(null);
         bomb12.setBorderPainted(false);
         bomb12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb12.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb12.setDisabledIcon(null);
         bomb12.setEnabled(false);
         bomb12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,11 +290,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb12);
         bomb12.setBounds(940, 450, 30, 20);
 
-        bomb11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb11.setBorder(null);
         bomb11.setBorderPainted(false);
         bomb11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb11.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb11.setDisabledIcon(null);
         bomb11.setEnabled(false);
         bomb11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -305,11 +304,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb11);
         bomb11.setBounds(700, 370, 30, 20);
 
-        bomb10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb10.setBorder(null);
         bomb10.setBorderPainted(false);
         bomb10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb10.setDisabledIcon(null);
         bomb10.setEnabled(false);
         bomb10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,11 +318,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb10);
         bomb10.setBounds(440, 390, 30, 20);
 
-        bomb9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb9.setBorder(null);
         bomb9.setBorderPainted(false);
         bomb9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb9.setDisabledIcon(null);
         bomb9.setEnabled(false);
         bomb9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,11 +332,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb9);
         bomb9.setBounds(20, 440, 30, 20);
 
-        bomb8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb8.setBorder(null);
         bomb8.setBorderPainted(false);
         bomb8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb8.setDisabledIcon(null);
         bomb8.setEnabled(false);
         bomb8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -347,11 +346,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb8);
         bomb8.setBounds(970, 240, 30, 20);
 
-        bomb7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb7.setBorder(null);
         bomb7.setBorderPainted(false);
         bomb7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb7.setDisabledIcon(null);
         bomb7.setEnabled(false);
         bomb7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -361,11 +360,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb7);
         bomb7.setBounds(710, 170, 30, 20);
 
-        bomb6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb6.setBorder(null);
         bomb6.setBorderPainted(false);
         bomb6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb6.setDisabledIcon(null);
         bomb6.setEnabled(false);
         bomb6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -375,11 +374,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb6);
         bomb6.setBounds(380, 180, 30, 20);
 
-        bomb5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb5.setBorder(null);
         bomb5.setBorderPainted(false);
         bomb5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb5.setDisabledIcon(null);
         bomb5.setEnabled(false);
         bomb5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -389,11 +388,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb5);
         bomb5.setBounds(20, 160, 30, 20);
 
-        bomb4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb4.setBorder(null);
         bomb4.setBorderPainted(false);
         bomb4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb4.setDisabledIcon(null);
         bomb4.setEnabled(false);
         bomb4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -403,11 +402,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb4);
         bomb4.setBounds(760, 60, 30, 20);
 
-        bomb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb3.setBorder(null);
         bomb3.setBorderPainted(false);
         bomb3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb3.setDisabledIcon(null);
         bomb3.setEnabled(false);
         bomb3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -417,11 +416,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb3);
         bomb3.setBounds(510, 10, 30, 20);
 
-        bomb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb2.setBorder(null);
         bomb2.setBorderPainted(false);
         bomb2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb2.setDisabledIcon(null);
         bomb2.setEnabled(false);
         bomb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -431,11 +430,11 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         sniperView.add(bomb2);
         bomb2.setBounds(330, 50, 30, 20);
 
-        bomb1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomb.jpg"))); // NOI18N
+        bomb1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bomb.jpg"))); // NOI18N
         bomb1.setBorder(null);
         bomb1.setBorderPainted(false);
         bomb1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bomb1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg"))); // NOI18N
+        bomb1.setDisabledIcon(null);
         bomb1.setEnabled(false);
         bomb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -454,22 +453,22 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         mainScreen.add(sniperScope);
         sniperScope.setBounds(210, 50, 440, 260);
 
-        downAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
+        downAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/vScope.png"))); // NOI18N
         downAim.setText("jLabel21");
         mainScreen.add(downAim);
         downAim.setBounds(400, 310, 40, 40);
 
-        leftAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
+        leftAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/hScope.png"))); // NOI18N
         leftAim.setText("jLabel6");
         mainScreen.add(leftAim);
         leftAim.setBounds(170, 160, 40, 30);
 
-        rightAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hScope.png"))); // NOI18N
+        rightAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/hScope.png"))); // NOI18N
         rightAim.setText("jLabel6");
         mainScreen.add(rightAim);
         rightAim.setBounds(650, 160, 40, 30);
 
-        upAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vScope.png"))); // NOI18N
+        upAim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/vScope.png"))); // NOI18N
         upAim.setText("jLabel21");
         mainScreen.add(upAim);
         upAim.setBounds(400, 10, 40, 40);
@@ -489,7 +488,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB6);
-        wireB6.setBounds(730, 150, 10, 20);
+        wireB6.setBounds(730, 160, 10, 20);
 
         wireB7.setBorder(null);
         wireB7.setBorderPainted(false);
@@ -504,7 +503,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB7);
-        wireB7.setBounds(750, 150, 10, 20);
+        wireB7.setBounds(750, 160, 10, 20);
 
         wireB8.setBorder(null);
         wireB8.setBorderPainted(false);
@@ -519,7 +518,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB8);
-        wireB8.setBounds(770, 150, 10, 20);
+        wireB8.setBounds(770, 160, 10, 20);
 
         wireB9.setBorder(null);
         wireB9.setBorderPainted(false);
@@ -534,7 +533,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB9);
-        wireB9.setBounds(790, 150, 10, 20);
+        wireB9.setBounds(790, 160, 10, 20);
 
         wireB10.setBorder(null);
         wireB10.setBorderPainted(false);
@@ -550,7 +549,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB10);
-        wireB10.setBounds(810, 150, 10, 20);
+        wireB10.setBounds(810, 160, 10, 20);
 
         wireB5.setBorder(null);
         wireB5.setBorderPainted(false);
@@ -565,7 +564,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB5);
-        wireB5.setBounds(810, 10, 10, 30);
+        wireB5.setBounds(810, 20, 10, 30);
 
         wireB4.setBorder(null);
         wireB4.setBorderPainted(false);
@@ -580,7 +579,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB4);
-        wireB4.setBounds(790, 10, 10, 30);
+        wireB4.setBounds(790, 20, 10, 30);
 
         wireB3.setBorder(null);
         wireB3.setBorderPainted(false);
@@ -595,7 +594,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB3);
-        wireB3.setBounds(770, 10, 10, 30);
+        wireB3.setBounds(770, 20, 10, 30);
 
         wireB2.setBorder(null);
         wireB2.setBorderPainted(false);
@@ -610,7 +609,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB2);
-        wireB2.setBounds(750, 10, 10, 30);
+        wireB2.setBounds(750, 20, 10, 30);
 
         wireB1.setBorder(null);
         wireB1.setBorderPainted(false);
@@ -625,13 +624,13 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireB1);
-        wireB1.setBounds(730, 10, 10, 30);
+        wireB1.setBounds(730, 20, 10, 30);
 
         bombStatus4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus4.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus4.setText("XXX");
         mainScreen.add(bombStatus4);
-        bombStatus4.setBounds(740, 40, 90, 40);
+        bombStatus4.setBounds(740, 50, 90, 40);
 
         wireD6.setBorder(null);
         wireD6.setBorderPainted(false);
@@ -646,7 +645,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD6);
-        wireD6.setBounds(730, 320, 10, 20);
+        wireD6.setBounds(730, 330, 10, 20);
 
         wireD7.setBorder(null);
         wireD7.setBorderPainted(false);
@@ -661,7 +660,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD7);
-        wireD7.setBounds(750, 320, 10, 20);
+        wireD7.setBounds(750, 330, 10, 20);
 
         wireD8.setBorder(null);
         wireD8.setBorderPainted(false);
@@ -676,7 +675,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD8);
-        wireD8.setBounds(770, 320, 10, 20);
+        wireD8.setBounds(770, 330, 10, 20);
 
         wireD9.setBorder(null);
         wireD9.setBorderPainted(false);
@@ -691,7 +690,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD9);
-        wireD9.setBounds(790, 320, 10, 20);
+        wireD9.setBounds(790, 330, 10, 20);
 
         wireD10.setBorder(null);
         wireD10.setBorderPainted(false);
@@ -707,7 +706,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD10);
-        wireD10.setBounds(810, 320, 10, 20);
+        wireD10.setBounds(810, 330, 10, 20);
 
         wireD5.setBorder(null);
         wireD5.setBorderPainted(false);
@@ -722,7 +721,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD5);
-        wireD5.setBounds(810, 180, 10, 30);
+        wireD5.setBounds(810, 190, 10, 30);
 
         wireD4.setBorder(null);
         wireD4.setBorderPainted(false);
@@ -737,7 +736,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD4);
-        wireD4.setBounds(790, 180, 10, 30);
+        wireD4.setBounds(790, 190, 10, 30);
 
         wireD3.setBorder(null);
         wireD3.setBorderPainted(false);
@@ -752,7 +751,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD3);
-        wireD3.setBounds(770, 180, 10, 30);
+        wireD3.setBounds(770, 190, 10, 30);
 
         wireD2.setBorder(null);
         wireD2.setBorderPainted(false);
@@ -767,7 +766,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD2);
-        wireD2.setBounds(750, 180, 10, 30);
+        wireD2.setBounds(750, 190, 10, 30);
 
         wireD1.setBorder(null);
         wireD1.setBorderPainted(false);
@@ -782,21 +781,21 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireD1);
-        wireD1.setBounds(730, 180, 10, 30);
+        wireD1.setBounds(730, 190, 10, 30);
 
         bombStatus1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus1.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus1.setText("XXX");
         mainScreen.add(bombStatus1);
-        bombStatus1.setBounds(740, 210, 90, 40);
+        bombStatus1.setBounds(740, 220, 90, 40);
 
         bombD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombD);
-        bombD.setBounds(700, 180, 150, 160);
+        bombD.setBounds(700, 190, 150, 160);
 
         bombB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombB);
-        bombB.setBounds(700, 10, 150, 160);
+        bombB.setBounds(700, 20, 150, 160);
 
         wireA6.setBorder(null);
         wireA6.setBorderPainted(false);
@@ -811,7 +810,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA6);
-        wireA6.setBounds(40, 150, 10, 20);
+        wireA6.setBounds(40, 160, 10, 20);
 
         wireA7.setBorder(null);
         wireA7.setBorderPainted(false);
@@ -826,7 +825,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA7);
-        wireA7.setBounds(60, 150, 10, 20);
+        wireA7.setBounds(60, 160, 10, 20);
 
         wireA8.setBorder(null);
         wireA8.setBorderPainted(false);
@@ -841,7 +840,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA8);
-        wireA8.setBounds(80, 150, 10, 20);
+        wireA8.setBounds(80, 160, 10, 20);
 
         wireA9.setBorder(null);
         wireA9.setBorderPainted(false);
@@ -856,7 +855,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA9);
-        wireA9.setBounds(100, 150, 10, 20);
+        wireA9.setBounds(100, 160, 10, 20);
 
         wireA10.setBorder(null);
         wireA10.setBorderPainted(false);
@@ -872,7 +871,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA10);
-        wireA10.setBounds(120, 150, 10, 20);
+        wireA10.setBounds(120, 160, 10, 20);
 
         wireA5.setBorder(null);
         wireA5.setBorderPainted(false);
@@ -887,7 +886,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA5);
-        wireA5.setBounds(120, 10, 10, 30);
+        wireA5.setBounds(120, 20, 10, 30);
 
         wireA4.setBorder(null);
         wireA4.setBorderPainted(false);
@@ -902,7 +901,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA4);
-        wireA4.setBounds(100, 10, 10, 30);
+        wireA4.setBounds(100, 20, 10, 30);
 
         wireA3.setBorder(null);
         wireA3.setBorderPainted(false);
@@ -917,7 +916,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA3);
-        wireA3.setBounds(80, 10, 10, 30);
+        wireA3.setBounds(80, 20, 10, 30);
 
         wireA2.setBorder(null);
         wireA2.setBorderPainted(false);
@@ -932,7 +931,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA2);
-        wireA2.setBounds(60, 10, 10, 30);
+        wireA2.setBounds(60, 20, 10, 30);
 
         wireA1.setBorder(null);
         wireA1.setBorderPainted(false);
@@ -947,17 +946,17 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireA1);
-        wireA1.setBounds(40, 10, 10, 30);
+        wireA1.setBounds(40, 20, 10, 30);
 
         bombStatus2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus2.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus2.setText("XXX");
         mainScreen.add(bombStatus2);
-        bombStatus2.setBounds(50, 40, 90, 40);
+        bombStatus2.setBounds(50, 50, 90, 40);
 
         bombA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombA);
-        bombA.setBounds(10, 10, 150, 160);
+        bombA.setBounds(10, 20, 150, 160);
 
         wireC6.setBorder(null);
         wireC6.setBorderPainted(false);
@@ -972,7 +971,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC6);
-        wireC6.setBounds(40, 320, 10, 20);
+        wireC6.setBounds(40, 330, 10, 20);
 
         wireC7.setBorder(null);
         wireC7.setBorderPainted(false);
@@ -987,7 +986,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC7);
-        wireC7.setBounds(60, 320, 10, 20);
+        wireC7.setBounds(60, 330, 10, 20);
 
         wireC8.setBorder(null);
         wireC8.setBorderPainted(false);
@@ -1002,7 +1001,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC8);
-        wireC8.setBounds(80, 320, 10, 20);
+        wireC8.setBounds(80, 330, 10, 20);
 
         wireC9.setBorder(null);
         wireC9.setBorderPainted(false);
@@ -1017,7 +1016,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC9);
-        wireC9.setBounds(100, 320, 10, 20);
+        wireC9.setBounds(100, 330, 10, 20);
 
         wireC10.setBorder(null);
         wireC10.setBorderPainted(false);
@@ -1033,7 +1032,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC10);
-        wireC10.setBounds(120, 320, 10, 20);
+        wireC10.setBounds(120, 330, 10, 20);
 
         wireC5.setBorder(null);
         wireC5.setBorderPainted(false);
@@ -1048,7 +1047,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC5);
-        wireC5.setBounds(120, 180, 10, 30);
+        wireC5.setBounds(120, 190, 10, 30);
 
         wireC4.setBorder(null);
         wireC4.setBorderPainted(false);
@@ -1063,7 +1062,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC4);
-        wireC4.setBounds(100, 180, 10, 30);
+        wireC4.setBounds(100, 190, 10, 30);
 
         wireC3.setBorder(null);
         wireC3.setBorderPainted(false);
@@ -1078,7 +1077,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC3);
-        wireC3.setBounds(80, 180, 10, 30);
+        wireC3.setBounds(80, 190, 10, 30);
 
         wireC2.setBorder(null);
         wireC2.setBorderPainted(false);
@@ -1093,7 +1092,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC2);
-        wireC2.setBounds(60, 180, 10, 30);
+        wireC2.setBounds(60, 190, 10, 30);
 
         wireC1.setBorder(null);
         wireC1.setBorderPainted(false);
@@ -1108,78 +1107,62 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         });
         mainScreen.add(wireC1);
-        wireC1.setBounds(40, 180, 10, 30);
+        wireC1.setBounds(40, 190, 10, 30);
 
         bombStatus3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         bombStatus3.setForeground(new java.awt.Color(255, 0, 0));
         bombStatus3.setText("XXX");
         mainScreen.add(bombStatus3);
-        bombStatus3.setBounds(50, 210, 90, 40);
+        bombStatus3.setBounds(50, 220, 90, 40);
 
         bombC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/bomb.jpg"))); // NOI18N
         mainScreen.add(bombC);
-        bombC.setBounds(10, 180, 150, 160);
+        bombC.setBounds(10, 190, 150, 160);
 
-        quitButton.setText("quit");
-        quitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        quitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quitButtonActionPerformed(evt);
-            }
-        });
-
-        defusedLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        defusedLabel.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
         defusedLabel.setText("defused bombs:");
 
-        defused.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
+        defused.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
         defused.setText("jLabel30");
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
                 .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(77, 77, 77)
-                .addComponent(bullets)
+                .addGap(97, 97, 97)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(target, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bullets)
+                .addGap(59, 59, 59)
                 .addComponent(countdown)
-                .addGap(101, 101, 101)
+                .addGap(65, 65, 65)
                 .addComponent(defusedLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(quitButton)
-                .addContainerGap())
+                .addGap(64, 64, 64))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
+                .addContainerGap()
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(countdown)
                     .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(11, 11, 11)
-                                .addComponent(shootButton))
-                            .addComponent(bullets)))
+                        .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(shootButton))
+                    .addComponent(bullets)
                     .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(defusedLabel)
-                        .addComponent(defused)
-                        .addComponent(quitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
-                        .addComponent(countdown)
-                        .addGap(8, 8, 8)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(defusedLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(defused)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1190,7 +1173,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -1275,13 +1258,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         // TODO add your handling code here:
 
     }//GEN-LAST:event_bomb16ActionPerformed
-
-    private void quitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitButtonActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        Dashboard dashboard = new Dashboard();
-        dashboard.showpanel();
-    }//GEN-LAST:event_quitButtonActionPerformed
 
     private void shootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shootButtonActionPerformed
         // TODO add your handling code here:
@@ -1978,36 +1954,36 @@ System.out.println("Hi");
                 wireC4, wireC3, wireC2, wireC1,
         };
         ImageIcon[] maps = {
-                new javax.swing.ImageIcon(getClass().getResource("/springmap.jpg")),
-                new javax.swing.ImageIcon(getClass().getResource("/summermap.jpg")),
-                new javax.swing.ImageIcon(getClass().getResource("/fallmap.jpg")),
-                new javax.swing.ImageIcon(getClass().getResource("/wintermap.jpg"))
+                new javax.swing.ImageIcon(getClass().getResource("/backgrounds/springmap.jpg")),
+                new javax.swing.ImageIcon(getClass().getResource("/backgrounds/summermap.jpg")),
+                new javax.swing.ImageIcon(getClass().getResource("/backgrounds/fallmap.jpg")),
+                new javax.swing.ImageIcon(getClass().getResource("/backgrounds/wintermap.jpg"))
         };
         if (Settings.getTheme().equals("spring")) {
             mainPanel.setBackground(new java.awt.Color(255, 204, 204));
             map.setIcon(maps[0]);
             for (int j = 0; j <= 15; j++) {
-                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sdBomb.jpg")));
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/springdissabledbomb.jpg")));
             }
         } else if (Settings.getTheme().equals("summer")) {
             mainPanel.setBackground(new java.awt.Color(255, 255, 153));
             map.setIcon(maps[1]);
             for (int j = 0; j <= 15; j++) {
-                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/sudBomb.jpg")));
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/summerdissabledbomb.jpg")));
             }
-            bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su4.jpg")));
-            bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/su8.jpg")));
+            bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/summerdissabledbomb4.jpg")));
+            bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/summerdissabledbomb8.jpg")));
         } else if (Settings.getTheme().equals("fall")) {
             mainPanel.setBackground(new java.awt.Color(255, 153, 0));
             map.setIcon(maps[2]);
             for (int j = 0; j <= 15; j++) {
-                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/fdBomb.jpg")));
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/falldissabledbomb.jpg")));
             }
         } else if (Settings.getTheme().equals("winter")) {
             mainPanel.setBackground(new java.awt.Color(0, 153, 153));
             map.setIcon(maps[3]);
             for (int j = 0; j <= 15; j++) {
-                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/wdBomb.jpg")));
+                bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/winterdissabledbomb.jpg")));
             }
         }
         mainTimer=90;
@@ -2583,7 +2559,6 @@ System.out.println("Hi");
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel mainScreen;
     private javax.swing.JLabel map;
-    private javax.swing.JButton quitButton;
     private javax.swing.JLabel rightAim;
     private javax.swing.JButton shootButton;
     private javax.swing.JScrollPane sniperScope;

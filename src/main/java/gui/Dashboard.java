@@ -34,140 +34,98 @@ public class Dashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         mainPanel = new javax.swing.JPanel();
-        bannerBackground = new javax.swing.JPanel();
-        banner = new javax.swing.JLabel();
+        userNameLabel = new javax.swing.JLabel();
         welcomeLabel = new javax.swing.JLabel();
-        tutorialButton = new javax.swing.JButton();
         singlePlayerButton = new javax.swing.JButton();
         multiPlayerButton = new javax.swing.JButton();
         settingsButton = new javax.swing.JButton();
         logOutButton = new javax.swing.JButton();
+        tutorialButton = new javax.swing.JButton();
+        banner = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         mainPanel.setBackground(new java.awt.Color(51, 102, 0));
+        mainPanel.setLayout(null);
 
-        bannerBackground.setBackground(new java.awt.Color(153, 255, 255));
-
-        banner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/banner.jpg"))); // NOI18N
+        userNameLabel.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        userNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        userNameLabel.setText("user");
+        mainPanel.add(userNameLabel);
+        userNameLabel.setBounds(0, 120, 610, 50);
 
         welcomeLabel.setBackground(new java.awt.Color(51, 255, 51));
-        welcomeLabel.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
+        welcomeLabel.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         welcomeLabel.setText("welcome");
+        mainPanel.add(welcomeLabel);
+        welcomeLabel.setBounds(200, 60, 230, 70);
 
-        tutorialButton.setFont(new java.awt.Font("Yu Gothic", 1, 11)); // NOI18N
-        tutorialButton.setText("tutorial");
-        tutorialButton.setContentAreaFilled(false);
-        tutorialButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        tutorialButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tutorialButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bannerBackgroundLayout = new javax.swing.GroupLayout(bannerBackground);
-        bannerBackground.setLayout(bannerBackgroundLayout);
-        bannerBackgroundLayout.setHorizontalGroup(
-            bannerBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bannerBackgroundLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(banner))
-            .addGroup(bannerBackgroundLayout.createSequentialGroup()
-                .addGroup(bannerBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bannerBackgroundLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(welcomeLabel))
-                    .addGroup(bannerBackgroundLayout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(tutorialButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        bannerBackgroundLayout.setVerticalGroup(
-            bannerBackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bannerBackgroundLayout.createSequentialGroup()
-                .addComponent(tutorialButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(welcomeLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(banner, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
-        );
-
-        singlePlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/singleplayer.jpg"))); // NOI18N
+        singlePlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/singleplayerbutton.jpg"))); // NOI18N
         singlePlayerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         singlePlayerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 singlePlayerButtonActionPerformed(evt);
             }
         });
+        mainPanel.add(singlePlayerButton);
+        singlePlayerButton.setBounds(10, 380, 140, 40);
 
-        multiPlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/multiplayer.jpg"))); // NOI18N
+        multiPlayerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/multiplayerbutton.jpg"))); // NOI18N
         multiPlayerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         multiPlayerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 multiPlayerButtonActionPerformed(evt);
             }
         });
+        mainPanel.add(multiPlayerButton);
+        multiPlayerButton.setBounds(160, 380, 140, 40);
 
-        settingsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/setting.jpg"))); // NOI18N
+        settingsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/settingsbutton.png"))); // NOI18N
         settingsButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 settingsButtonActionPerformed(evt);
             }
         });
+        mainPanel.add(settingsButton);
+        settingsButton.setBounds(310, 380, 140, 40);
 
-        logOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/dashexit.jpg"))); // NOI18N
+        logOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/exitbutton.jpg"))); // NOI18N
         logOutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOutButtonActionPerformed(evt);
             }
         });
+        mainPanel.add(logOutButton);
+        logOutButton.setBounds(460, 380, 140, 40);
 
-        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
-        mainPanel.setLayout(mainPanelLayout);
-        mainPanelLayout.setHorizontalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(singlePlayerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(settingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(multiPlayerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logOutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bannerBackground, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        mainPanelLayout.setVerticalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bannerBackground, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(multiPlayerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(singlePlayerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(settingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(logOutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        tutorialButton.setBackground(new java.awt.Color(0, 204, 255));
+        tutorialButton.setText("tutorial");
+        tutorialButton.setBorderPainted(false);
+        tutorialButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tutorialButton.setFocusable(false);
+        tutorialButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tutorialButtonActionPerformed(evt);
+            }
+        });
+        mainPanel.add(tutorialButton);
+        tutorialButton.setBounds(0, 0, 110, 30);
+
+        banner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgrounds/banner.jpg"))); // NOI18N
+        mainPanel.add(banner);
+        banner.setBounds(-10, 0, 626, 372);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 609, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 366, Short.MAX_VALUE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -252,20 +210,20 @@ public class Dashboard extends javax.swing.JFrame {
         setVisible(true);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
-        welcomeLabel.setText("welcome \n" + LoginForm.getUname());
-    tutorialButton.setBackground(new java.awt.Color(32, 171, 208));
+        userNameLabel.setText(LoginForm.getUname());
+    
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel banner;
-    private javax.swing.JPanel bannerBackground;
     private javax.swing.JButton logOutButton;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton multiPlayerButton;
     private javax.swing.JButton settingsButton;
     private javax.swing.JButton singlePlayerButton;
     private javax.swing.JButton tutorialButton;
+    private javax.swing.JLabel userNameLabel;
     private javax.swing.JLabel welcomeLabel;
     // End of variables declaration//GEN-END:variables
 }
