@@ -1139,6 +1139,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void bomb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bomb1ActionPerformed
         // TODO add your handling code here:
 
@@ -1224,10 +1225,14 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         String selected = target.getItem(target.getSelectedIndex());
         if (selected.equals(bomberId.getText())) {
-            JOptionPane.showMessageDialog(null, "You Won !", "Bravo!", JOptionPane.INFORMATION_MESSAGE);
+            bullet--;
+            setBulletIcon();
+            String message = "You found the bomber. Now try to defuse remaining bombs.";
+            JOptionPane.showMessageDialog(null, message, "Good job!", JOptionPane.INFORMATION_MESSAGE);
         } else {
             bullet--;
             setBulletIcon();
+
         }
     }//GEN-LAST:event_shootButtonActionPerformed
 
@@ -1948,6 +1953,7 @@ System.out.println("Hi");
         }
         mainTimer=90;
         Timer timer = new Timer();
+        ScoreBoard scoreBoard = new ScoreBoard();
         TimerTask mainCountdown = new TimerTask() {
 
 
@@ -1957,6 +1963,7 @@ System.out.println("Hi");
                 if (mainTimer > 0) {
                     countdown.setText(String.valueOf(mainTimer));
                 } else {
+                    scoreBoard.showPanel();
                     countdown.setText("XXX");
                 }
             }
