@@ -478,7 +478,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB6.setBorder(null);
         wireB6.setBorderPainted(false);
         wireB6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB6.setEnabled(false);
         wireB6.setFocusable(false);
         wireB6.setRequestFocusEnabled(false);
@@ -493,7 +492,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB7.setBorder(null);
         wireB7.setBorderPainted(false);
         wireB7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB7.setEnabled(false);
         wireB7.setFocusable(false);
         wireB7.setRequestFocusEnabled(false);
@@ -508,7 +506,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB8.setBorder(null);
         wireB8.setBorderPainted(false);
         wireB8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB8.setEnabled(false);
         wireB8.setFocusable(false);
         wireB8.setRequestFocusEnabled(false);
@@ -523,7 +520,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB9.setBorder(null);
         wireB9.setBorderPainted(false);
         wireB9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB9.setEnabled(false);
         wireB9.setFocusable(false);
         wireB9.setRequestFocusEnabled(false);
@@ -538,7 +534,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB10.setBorder(null);
         wireB10.setBorderPainted(false);
         wireB10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB10.setEnabled(false);
         wireB10.setFocusPainted(false);
         wireB10.setFocusable(false);
@@ -554,7 +549,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB5.setBorder(null);
         wireB5.setBorderPainted(false);
         wireB5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB5.setEnabled(false);
         wireB5.setFocusable(false);
         wireB5.setRequestFocusEnabled(false);
@@ -569,7 +563,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB4.setBorder(null);
         wireB4.setBorderPainted(false);
         wireB4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB4.setEnabled(false);
         wireB4.setFocusable(false);
         wireB4.setRequestFocusEnabled(false);
@@ -584,7 +577,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB3.setBorder(null);
         wireB3.setBorderPainted(false);
         wireB3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB3.setEnabled(false);
         wireB3.setFocusable(false);
         wireB3.setRequestFocusEnabled(false);
@@ -599,7 +591,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB2.setBorder(null);
         wireB2.setBorderPainted(false);
         wireB2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB2.setEnabled(false);
         wireB2.setFocusable(false);
         wireB2.setRequestFocusEnabled(false);
@@ -614,7 +605,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireB1.setBorder(null);
         wireB1.setBorderPainted(false);
         wireB1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireB1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireB1.setEnabled(false);
         wireB1.setFocusable(false);
         wireB1.setRequestFocusEnabled(false);
@@ -635,7 +625,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD6.setBorder(null);
         wireD6.setBorderPainted(false);
         wireD6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD6.setEnabled(false);
         wireD6.setFocusable(false);
         wireD6.setRequestFocusEnabled(false);
@@ -650,7 +639,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD7.setBorder(null);
         wireD7.setBorderPainted(false);
         wireD7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD7.setEnabled(false);
         wireD7.setFocusable(false);
         wireD7.setRequestFocusEnabled(false);
@@ -665,7 +653,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD8.setBorder(null);
         wireD8.setBorderPainted(false);
         wireD8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD8.setEnabled(false);
         wireD8.setFocusable(false);
         wireD8.setRequestFocusEnabled(false);
@@ -680,7 +667,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD9.setBorder(null);
         wireD9.setBorderPainted(false);
         wireD9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD9.setEnabled(false);
         wireD9.setFocusable(false);
         wireD9.setRequestFocusEnabled(false);
@@ -695,7 +681,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD10.setBorder(null);
         wireD10.setBorderPainted(false);
         wireD10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD10.setEnabled(false);
         wireD10.setFocusPainted(false);
         wireD10.setFocusable(false);
@@ -711,7 +696,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD5.setBorder(null);
         wireD5.setBorderPainted(false);
         wireD5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD5.setEnabled(false);
         wireD5.setFocusable(false);
         wireD5.setRequestFocusEnabled(false);
@@ -726,7 +710,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD4.setBorder(null);
         wireD4.setBorderPainted(false);
         wireD4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD4.setEnabled(false);
         wireD4.setFocusable(false);
         wireD4.setRequestFocusEnabled(false);
@@ -741,7 +724,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD3.setBorder(null);
         wireD3.setBorderPainted(false);
         wireD3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD3.setEnabled(false);
         wireD3.setFocusable(false);
         wireD3.setRequestFocusEnabled(false);
@@ -756,7 +738,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD2.setBorder(null);
         wireD2.setBorderPainted(false);
         wireD2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD2.setEnabled(false);
         wireD2.setFocusable(false);
         wireD2.setRequestFocusEnabled(false);
@@ -771,7 +752,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireD1.setBorder(null);
         wireD1.setBorderPainted(false);
         wireD1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireD1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireD1.setEnabled(false);
         wireD1.setFocusable(false);
         wireD1.setRequestFocusEnabled(false);
@@ -800,7 +780,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA6.setBorder(null);
         wireA6.setBorderPainted(false);
         wireA6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA6.setEnabled(false);
         wireA6.setFocusable(false);
         wireA6.setRequestFocusEnabled(false);
@@ -815,7 +794,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA7.setBorder(null);
         wireA7.setBorderPainted(false);
         wireA7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA7.setEnabled(false);
         wireA7.setFocusable(false);
         wireA7.setRequestFocusEnabled(false);
@@ -830,7 +808,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA8.setBorder(null);
         wireA8.setBorderPainted(false);
         wireA8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA8.setEnabled(false);
         wireA8.setFocusable(false);
         wireA8.setRequestFocusEnabled(false);
@@ -845,7 +822,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA9.setBorder(null);
         wireA9.setBorderPainted(false);
         wireA9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA9.setEnabled(false);
         wireA9.setFocusable(false);
         wireA9.setRequestFocusEnabled(false);
@@ -860,7 +836,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA10.setBorder(null);
         wireA10.setBorderPainted(false);
         wireA10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA10.setEnabled(false);
         wireA10.setFocusPainted(false);
         wireA10.setFocusable(false);
@@ -876,7 +851,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA5.setBorder(null);
         wireA5.setBorderPainted(false);
         wireA5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA5.setEnabled(false);
         wireA5.setFocusable(false);
         wireA5.setRequestFocusEnabled(false);
@@ -891,7 +865,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA4.setBorder(null);
         wireA4.setBorderPainted(false);
         wireA4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA4.setEnabled(false);
         wireA4.setFocusable(false);
         wireA4.setRequestFocusEnabled(false);
@@ -906,7 +879,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA3.setBorder(null);
         wireA3.setBorderPainted(false);
         wireA3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA3.setEnabled(false);
         wireA3.setFocusable(false);
         wireA3.setRequestFocusEnabled(false);
@@ -921,7 +893,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA2.setBorder(null);
         wireA2.setBorderPainted(false);
         wireA2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA2.setEnabled(false);
         wireA2.setFocusable(false);
         wireA2.setRequestFocusEnabled(false);
@@ -936,7 +907,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireA1.setBorder(null);
         wireA1.setBorderPainted(false);
         wireA1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireA1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireA1.setEnabled(false);
         wireA1.setFocusable(false);
         wireA1.setRequestFocusEnabled(false);
@@ -961,7 +931,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC6.setBorder(null);
         wireC6.setBorderPainted(false);
         wireC6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC6.setEnabled(false);
         wireC6.setFocusable(false);
         wireC6.setRequestFocusEnabled(false);
@@ -976,7 +945,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC7.setBorder(null);
         wireC7.setBorderPainted(false);
         wireC7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC7.setEnabled(false);
         wireC7.setFocusable(false);
         wireC7.setRequestFocusEnabled(false);
@@ -991,7 +959,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC8.setBorder(null);
         wireC8.setBorderPainted(false);
         wireC8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC8.setEnabled(false);
         wireC8.setFocusable(false);
         wireC8.setRequestFocusEnabled(false);
@@ -1006,7 +973,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC9.setBorder(null);
         wireC9.setBorderPainted(false);
         wireC9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC9.setEnabled(false);
         wireC9.setFocusable(false);
         wireC9.setRequestFocusEnabled(false);
@@ -1021,7 +987,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC10.setBorder(null);
         wireC10.setBorderPainted(false);
         wireC10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC10.setEnabled(false);
         wireC10.setFocusPainted(false);
         wireC10.setFocusable(false);
@@ -1037,7 +1002,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC5.setBorder(null);
         wireC5.setBorderPainted(false);
         wireC5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC5.setEnabled(false);
         wireC5.setFocusable(false);
         wireC5.setRequestFocusEnabled(false);
@@ -1052,7 +1016,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC4.setBorder(null);
         wireC4.setBorderPainted(false);
         wireC4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC4.setEnabled(false);
         wireC4.setFocusable(false);
         wireC4.setRequestFocusEnabled(false);
@@ -1067,7 +1030,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC3.setBorder(null);
         wireC3.setBorderPainted(false);
         wireC3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC3.setEnabled(false);
         wireC3.setFocusable(false);
         wireC3.setRequestFocusEnabled(false);
@@ -1082,7 +1044,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC2.setBorder(null);
         wireC2.setBorderPainted(false);
         wireC2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC2.setEnabled(false);
         wireC2.setFocusable(false);
         wireC2.setRequestFocusEnabled(false);
@@ -1097,7 +1058,6 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         wireC1.setBorder(null);
         wireC1.setBorderPainted(false);
         wireC1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        wireC1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg"))); // NOI18N
         wireC1.setEnabled(false);
         wireC1.setFocusable(false);
         wireC1.setRequestFocusEnabled(false);
@@ -2010,9 +1970,7 @@ System.out.println("Hi");
         setWiresC();
         setWiresD();
         defused.setText(String.valueOf(defusedBombs));
-        for (int i = 0; i <= 49; i++) {
-            wires[i].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/buttons/wires/disabledWire.jpg")));
-        }
+
         setBulletIcon();
     }
 
