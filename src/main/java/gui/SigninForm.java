@@ -152,8 +152,8 @@ public class SigninForm extends javax.swing.JFrame {
 
             Database.insertIntoUser(user);
             this.dispose();
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.showpanel();
+            Dashboard dashBoard = new Dashboard();
+            dashBoard.showpanelSignIn();
         }
     }
 
@@ -208,13 +208,18 @@ public class SigninForm extends javax.swing.JFrame {
         this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
     }
 
+    public static String getUname(){
+        String uname = usernameField.getText();
+        return uname;
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JLabel passwordLabel;
     private javax.swing.JButton returnButton;
     private javax.swing.JButton signinButton;
-    private javax.swing.JTextField usernameField;
+    private static javax.swing.JTextField usernameField;
     private javax.swing.JLabel usernameLabel;
     // End of variables declaration//GEN-END:variables
 }

@@ -211,7 +211,14 @@ public class Dashboard extends javax.swing.JFrame {
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
         userNameLabel.setText(LoginForm.getUname());
-    
+    }
+
+    public void showpanelSignIn() {
+        setResizable(false);
+        setVisible(true);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
+        userNameLabel.setText(SigninForm.getUname());
     }
 
 
