@@ -6,6 +6,7 @@
 package gui;
 
 import database.Database;
+import models.SoundEffectPlayer;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -148,6 +149,9 @@ public class Settings extends javax.swing.JFrame {
         this.dispose();
         Dashboard dashboard = new Dashboard();
         dashboard.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_returnButtonActionPerformed
 
     /**

@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 
+import models.SoundEffectPlayer;
 import models.User;
 
 import javax.swing.*;
@@ -142,8 +143,13 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username = usernameField.getText();
         String password = String.valueOf(passwordField.getPassword());
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
         if (username.equals("") || password.equals("")) {
             errors.Errors.emptyFields();
+            soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Error.wav");
+            soundEffectPlayer.play();
         } else if (username.equals("a") && password.equals("a")) {
             this.dispose();
             Dashboard dashboard = new Dashboard();
@@ -159,6 +165,8 @@ public class LoginForm extends javax.swing.JFrame {
                 this.dispose();
             } else {
                 errors.Errors.incorrectInfo();
+                soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Error.wav");
+                soundEffectPlayer.play();
             }
         }
 
@@ -166,6 +174,10 @@ public class LoginForm extends javax.swing.JFrame {
 
     private void usernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFieldActionPerformed
         // TODO add your handling code here:
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
+
     }//GEN-LAST:event_usernameFieldActionPerformed
 
     private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
@@ -173,6 +185,9 @@ public class LoginForm extends javax.swing.JFrame {
         this.dispose();
         MainMenu mainMenu = new MainMenu();
         mainMenu.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_returnButtonActionPerformed
 
     /**

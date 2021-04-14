@@ -5,6 +5,8 @@
  */
 package gui;
 
+import models.SoundEffectPlayer;
+
 import java.awt.*;
 import java.io.*;
 import javax.swing.JFrame;
@@ -136,6 +138,9 @@ public class Dashboard extends javax.swing.JFrame {
         this.dispose();
         MainMenu mainMenu = new MainMenu();
         mainMenu.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_logOutButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
@@ -143,13 +148,20 @@ public class Dashboard extends javax.swing.JFrame {
         this.dispose();
         Settings settings = new Settings();
         settings.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void singlePlayerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_singlePlayerButtonActionPerformed
-
 // TODO add your handling code here:n
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
         if (Settings.seasonChoice == null) {
             errors.Errors.nullTheme();
+            soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Error.wav");
+            soundEffectPlayer.play();
         } else {
             this.dispose();
             SinglePlayerMap singlePlayerMap = new SinglePlayerMap();
@@ -160,7 +172,9 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void multiPlayerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiPlayerButtonActionPerformed
         // TODO add your handling code here:
-
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_multiPlayerButtonActionPerformed
 
     private void tutorialButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialButtonActionPerformed
@@ -168,6 +182,9 @@ public class Dashboard extends javax.swing.JFrame {
         this.dispose();
         Tutorial tutorial = new Tutorial();
         tutorial.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_tutorialButtonActionPerformed
 
     /**

@@ -9,6 +9,7 @@ import database.Database;
 
 import javax.swing.JFrame;
 
+import models.SoundEffectPlayer;
 import models.User;
 
 import java.awt.*;
@@ -145,8 +146,13 @@ public class SigninForm extends javax.swing.JFrame {
     private void signinButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signinButtonActionPerformed
         String username = usernameField.getText();
         String password = String.valueOf(passwordField.getPassword());
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
         if (username.equals("") || password.equals("")) {
             errors.Errors.emptyFields();
+            soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Error.wav");
+            soundEffectPlayer.play();
         } else {
             User user = new User(username, passwordField.getPassword());
 
@@ -164,6 +170,9 @@ public class SigninForm extends javax.swing.JFrame {
         this.dispose();
         MainMenu mainMenu = new MainMenu();
         mainMenu.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_returnButtonActionPerformed
 
     /**

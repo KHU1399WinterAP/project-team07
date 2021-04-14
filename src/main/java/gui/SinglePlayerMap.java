@@ -5,6 +5,8 @@
  */
 package gui;
 
+import models.SoundEffectPlayer;
+
 import javax.swing.*;
 import java.awt.*;
 import java.security.SecureRandom;
@@ -1244,6 +1246,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB6ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB6.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1259,6 +1262,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB7ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB7.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1274,6 +1278,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB8ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB8.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1289,6 +1294,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB9ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB9.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1304,6 +1310,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB10ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB10.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1319,6 +1326,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB5ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB5.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1334,6 +1342,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB4ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB4.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1349,6 +1358,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB3ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB3.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1364,6 +1374,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB2ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB2.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1379,6 +1390,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB1ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireB1.getText();
         if (rightWiresB >= 9) {
             defuseB();
@@ -1394,6 +1406,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD6ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD6.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1409,6 +1422,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD7ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD7.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1424,6 +1438,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD8ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD8.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1439,6 +1454,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD9ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD9.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1454,6 +1470,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD10ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD10.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1470,6 +1487,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD5ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD5.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1485,6 +1503,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD4ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD4.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1500,6 +1519,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD3ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD3.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1515,6 +1535,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD2ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD2.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1530,6 +1551,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD1ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireD1.getText();
         if (rightWiresD >= 9) {
             defuseD();
@@ -1545,6 +1567,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA6ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA6.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1560,6 +1583,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA7ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA7.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1575,6 +1599,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA8ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA8.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1590,6 +1615,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA9ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA9.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1605,6 +1631,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA10ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA10.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1620,6 +1647,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA5ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA5.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1635,6 +1663,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA4ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA4.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1650,6 +1679,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA3ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA3.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1665,6 +1695,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA2ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA2.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1680,6 +1711,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA1ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireA1.getText();
         if (rightWiresA >= 9) {
             defuseA();
@@ -1695,6 +1727,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC6ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC6.getText();
         if (rightWiresC >= 9) {
             defuseA();
@@ -1710,6 +1743,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC7ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC7.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1725,6 +1759,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC8ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC8.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1740,6 +1775,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC9ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC9.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1755,6 +1791,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC10ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC10.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1770,6 +1807,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC5ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC5.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1785,6 +1823,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC4ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC4.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1801,6 +1840,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC3ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC3.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1817,6 +1857,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC2ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC2.getText();
         if (rightWiresC >= 9) {
             defuseC();
@@ -1833,6 +1874,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     private void wireC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC1ActionPerformed
         // TODO add your handling code here:
+
         String wire = wireC1.getText();
         if (rightWiresC >= 9) {
             defuseC();

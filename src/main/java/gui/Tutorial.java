@@ -5,6 +5,8 @@
  */
 package gui;
 
+import models.SoundEffectPlayer;
+
 import java.awt.*;
 
 /**
@@ -69,6 +71,9 @@ public class Tutorial extends javax.swing.JFrame {
         this.dispose();
         Dashboard dashboard = new Dashboard();
         dashboard.showpanel();
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\menu\\Click.wav");
+        soundEffectPlayer.play();
     }//GEN-LAST:event_returnToDashboardButtonActionPerformed
 
     /**
