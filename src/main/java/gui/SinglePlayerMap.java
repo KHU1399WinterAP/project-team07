@@ -5,6 +5,7 @@
  */
 package gui;
 
+import enums.EnumMap;
 import models.SoundEffectPlayer;
 
 import javax.swing.*;
@@ -1225,6 +1226,17 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     }//GEN-LAST:event_bomb16ActionPerformed
 
+    public void scissorSound(){
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\game play\\scissor.wav");
+        soundEffectPlayer.play();
+    }
+    public void shootSound(){
+        SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
+        soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\game play\\shoot.wav");
+        soundEffectPlayer.play();
+    }
+
     private void shootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shootButtonActionPerformed
         // TODO add your handling code here:
 
@@ -1242,6 +1254,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             setBulletIcon();
             remainingBulletScore = bullet;
         }
+        shootSound();
     }//GEN-LAST:event_shootButtonActionPerformed
 
     private void wireB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB6ActionPerformed
@@ -1258,6 +1271,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB6ActionPerformed
 
     private void wireB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB7ActionPerformed
@@ -1274,6 +1288,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB7ActionPerformed
 
     private void wireB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB8ActionPerformed
@@ -1290,6 +1305,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB8ActionPerformed
 
     private void wireB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB9ActionPerformed
@@ -1306,6 +1322,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB9ActionPerformed
 
     private void wireB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB10ActionPerformed
@@ -1322,6 +1339,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB10ActionPerformed
 
     private void wireB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB5ActionPerformed
@@ -1338,6 +1356,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB5ActionPerformed
 
     private void wireB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB4ActionPerformed
@@ -1354,6 +1373,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB4ActionPerformed
 
     private void wireB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB3ActionPerformed
@@ -1370,6 +1390,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB3ActionPerformed
 
     private void wireB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB2ActionPerformed
@@ -1385,7 +1406,9 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             } else {
                 wrongCutB();
             }
+
         }
+        scissorSound();
     }//GEN-LAST:event_wireB2ActionPerformed
 
     private void wireB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireB1ActionPerformed
@@ -1402,6 +1425,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutB();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireB1ActionPerformed
 
     private void wireD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD6ActionPerformed
@@ -1418,6 +1442,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD6ActionPerformed
 
     private void wireD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD7ActionPerformed
@@ -1434,6 +1459,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD7ActionPerformed
 
     private void wireD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD8ActionPerformed
@@ -1450,6 +1476,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD8ActionPerformed
 
     private void wireD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD9ActionPerformed
@@ -1466,6 +1493,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD9ActionPerformed
 
     private void wireD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD10ActionPerformed
@@ -1483,6 +1511,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
             }
         }
 
+        scissorSound();
     }//GEN-LAST:event_wireD10ActionPerformed
 
     private void wireD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD5ActionPerformed
@@ -1499,6 +1528,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD5ActionPerformed
 
     private void wireD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD4ActionPerformed
@@ -1515,6 +1545,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD4ActionPerformed
 
     private void wireD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD3ActionPerformed
@@ -1531,6 +1562,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD3ActionPerformed
 
     private void wireD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD2ActionPerformed
@@ -1547,6 +1579,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD2ActionPerformed
 
     private void wireD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireD1ActionPerformed
@@ -1563,6 +1596,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutD();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireD1ActionPerformed
 
     private void wireA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA6ActionPerformed
@@ -1579,6 +1613,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA6ActionPerformed
 
     private void wireA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA7ActionPerformed
@@ -1595,6 +1630,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA7ActionPerformed
 
     private void wireA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA8ActionPerformed
@@ -1611,6 +1647,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA8ActionPerformed
 
     private void wireA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA9ActionPerformed
@@ -1627,6 +1664,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA9ActionPerformed
 
     private void wireA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA10ActionPerformed
@@ -1643,6 +1681,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA10ActionPerformed
 
     private void wireA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA5ActionPerformed
@@ -1659,6 +1698,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA5ActionPerformed
 
     private void wireA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA4ActionPerformed
@@ -1675,6 +1715,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA4ActionPerformed
 
     private void wireA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA3ActionPerformed
@@ -1691,6 +1732,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA3ActionPerformed
 
     private void wireA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA2ActionPerformed
@@ -1707,6 +1749,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA2ActionPerformed
 
     private void wireA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireA1ActionPerformed
@@ -1723,6 +1766,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutA();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireA1ActionPerformed
 
     private void wireC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC6ActionPerformed
@@ -1739,6 +1783,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC6ActionPerformed
 
     private void wireC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC7ActionPerformed
@@ -1755,6 +1800,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC7ActionPerformed
 
     private void wireC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC8ActionPerformed
@@ -1771,6 +1817,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC8ActionPerformed
 
     private void wireC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC9ActionPerformed
@@ -1787,6 +1834,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC9ActionPerformed
 
     private void wireC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC10ActionPerformed
@@ -1803,6 +1851,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC10ActionPerformed
 
     private void wireC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC5ActionPerformed
@@ -1819,6 +1868,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC5ActionPerformed
 
     private void wireC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC4ActionPerformed
@@ -1836,6 +1886,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC4ActionPerformed
 
     private void wireC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC3ActionPerformed
@@ -1853,6 +1904,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC3ActionPerformed
 
     private void wireC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC2ActionPerformed
@@ -1870,6 +1922,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC2ActionPerformed
 
     private void wireC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wireC1ActionPerformed
@@ -1887,6 +1940,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
                 wrongCutC();
             }
         }
+        scissorSound();
     }//GEN-LAST:event_wireC1ActionPerformed
 
     /**
@@ -1972,13 +2026,13 @@ System.out.println("Hi");
                 new javax.swing.ImageIcon(getClass().getResource("/backgrounds/fallmap.jpg")),
                 new javax.swing.ImageIcon(getClass().getResource("/backgrounds/wintermap.jpg"))
         };
-        if (Settings.getTheme().equals("spring")) {
+        if (Settings.getTheme().equals(EnumMap.SPIRNG.name())) {
             mainPanel.setBackground(new java.awt.Color(255, 204, 204));
             map.setIcon(maps[0]);
             for (int j = 0; j <= 15; j++) {
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/springdissabledbomb.jpg")));
             }
-        } else if (Settings.getTheme().equals("summer")) {
+        } else if (Settings.getTheme().equals(EnumMap.SUMMER.name())) {
             mainPanel.setBackground(new java.awt.Color(255, 255, 153));
             map.setIcon(maps[1]);
             for (int j = 0; j <= 15; j++) {
@@ -1986,13 +2040,13 @@ System.out.println("Hi");
             }
             bombs[3].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/summerdissabledbomb4.jpg")));
             bombs[7].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/summerdissabledbomb8.jpg")));
-        } else if (Settings.getTheme().equals("fall")) {
+        } else if (Settings.getTheme().equals(EnumMap.FALL.name())) {
             mainPanel.setBackground(new java.awt.Color(255, 153, 0));
             map.setIcon(maps[2]);
             for (int j = 0; j <= 15; j++) {
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/falldissabledbomb.jpg")));
             }
-        } else if (Settings.getTheme().equals("winter")) {
+        } else if (Settings.getTheme().equals(EnumMap.WINTER.name())) {
             mainPanel.setBackground(new java.awt.Color(0, 153, 153));
             map.setIcon(maps[3]);
             for (int j = 0; j <= 15; j++) {

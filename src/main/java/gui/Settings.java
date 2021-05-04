@@ -6,6 +6,7 @@
 package gui;
 
 import database.Database;
+import enums.EnumMap;
 import models.SoundEffectPlayer;
 
 import javax.swing.JFrame;
@@ -199,10 +200,11 @@ public class Settings extends javax.swing.JFrame {
     }
 
     public void addItemC1() {
-        seasonChoice.add("spring");
-        seasonChoice.add("summer");
-        seasonChoice.add("fall");
-        seasonChoice.add("winter");
+
+        seasonChoice.add(EnumMap.SPIRNG.name());
+        seasonChoice.add(EnumMap.SUMMER.name());
+        seasonChoice.add(EnumMap.FALL.name());
+        seasonChoice.add(EnumMap.WINTER.name());
     }
 
     public static String getTheme() {
