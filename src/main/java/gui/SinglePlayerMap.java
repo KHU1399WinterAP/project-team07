@@ -2053,7 +2053,7 @@ System.out.println("Hi");
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/winterdissabledbomb.jpg")));
             }
         }
-        mainTimer=90;
+        mainTimer=100;
         Timer timer = new Timer();
         ScoreBoard scoreBoard = new ScoreBoard();
         TimerTask mainCountdown = new TimerTask() {
