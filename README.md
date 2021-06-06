@@ -1,12 +1,35 @@
-# Project-team07
+
+# 💣 BOMBULLET 💣
 <img src="/src/main/resources/logo/logo.jpg" width="550" >
 
+# Project-team07
 # About game
  ❇️ There is a bomber in the park. You are a high rated security agent and you have to avoid incoming terrors. You have 2 important duties --->
 * Defuse the bombs 💣
 * Find the bomber and take him/her out ☠️
  
 We also put a game tutorial in the dashboard that you can read and enjoy the game 🌹🌹
+
+# Libraries that we used
+here are some libraries that we used some of their methodes in our game
+
+* gui
+
+* java.util
+
+* java.util.logging
+
+* java.util.concurrent
+
+* java.sql
+
+* javax.swing
+
+* java.awt
+
+* java.io
+
+* java.security
 
 # Members
  ❇️ We are a four-member team who decided to build and expand this game as our university project, together
