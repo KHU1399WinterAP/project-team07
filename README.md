@@ -11,7 +11,7 @@
 We also put a game tutorial in the dashboard that you can read and enjoy the game 🌹🌹
 
 # Libraries that we used
-here are some libraries that we used some of their methodes in our game
+Here are some libraries that we used some of their methodes in our game
 
 * gui
 
@@ -34,7 +34,7 @@ here are some libraries that we used some of their methodes in our game
 # Members
  ❇️ We are a four-member team who decided to build and expand this game as our university project, together
 
-our full names and uni codes 👇🏻
+Our full names and SID 👇🏻
 * Parsa Farahani 992023024
 
 * Adel Noroozi 992023036 
