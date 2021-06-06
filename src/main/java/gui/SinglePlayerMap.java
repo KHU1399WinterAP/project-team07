@@ -14,9 +14,6 @@ import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author adel
@@ -142,11 +139,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
         shootButton.setText("shoot");
         shootButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        shootButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                shootButtonActionPerformed(evt);
-            }
-        });
+        shootButton.addActionListener(evt -> shootButtonActionPerformed(evt));
 
         bullets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other/bullets.png"))); // NOI18N
 
@@ -229,11 +222,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         bomb16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bomb16.setDisabledIcon(null);
         bomb16.setEnabled(false);
-        bomb16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bomb16ActionPerformed(evt);
-            }
-        });
+        bomb16.addActionListener(evt -> bomb16ActionPerformed(evt));
         sniperView.add(bomb16);
         bomb16.setBounds(130, 510, 30, 20);
 
@@ -243,11 +232,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         bomb15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bomb15.setDisabledIcon(null);
         bomb15.setEnabled(false);
-        bomb15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bomb15ActionPerformed(evt);
-            }
-        });
+        bomb15.addActionListener(this::bomb15ActionPerformed);
         sniperView.add(bomb15);
         bomb15.setBounds(290, 500, 30, 20);
 
@@ -285,11 +270,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         bomb12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bomb12.setDisabledIcon(null);
         bomb12.setEnabled(false);
-        bomb12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bomb12ActionPerformed(evt);
-            }
-        });
+        bomb12.addActionListener(evt -> bomb12ActionPerformed(evt));
         sniperView.add(bomb12);
         bomb12.setBounds(940, 450, 30, 20);
 
@@ -1091,52 +1072,52 @@ public class SinglePlayerMap extends javax.swing.JFrame {
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
-                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(target, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(bullets)
-                .addGap(59, 59, 59)
-                .addComponent(countdown)
-                .addGap(65, 65, 65)
-                .addComponent(defusedLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(97, 97, 97)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(target, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(shootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(bullets)
+                                .addGap(59, 59, 59)
+                                .addComponent(countdown)
+                                .addGap(65, 65, 65)
+                                .addComponent(defusedLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(defused, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(64, 64, 64))
         );
         mainPanelLayout.setVerticalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(countdown)
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(shootButton))
-                    .addComponent(bullets)
-                    .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(defusedLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(defused)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE))
+                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(countdown)
+                                        .addGroup(mainPanelLayout.createSequentialGroup()
+                                                .addComponent(target, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(11, 11, 11)
+                                                .addComponent(shootButton))
+                                        .addComponent(bullets)
+                                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(defusedLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(defused)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                                .addComponent(mainScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -1226,12 +1207,13 @@ public class SinglePlayerMap extends javax.swing.JFrame {
 
     }//GEN-LAST:event_bomb16ActionPerformed
 
-    public void scissorSound(){
+    public void scissorSound() {
         SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
         soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\game play\\scissor.wav");
         soundEffectPlayer.play();
     }
-    public void shootSound(){
+
+    public void shootSound() {
         SoundEffectPlayer soundEffectPlayer = new SoundEffectPlayer();
         soundEffectPlayer.setFile(".\\src\\main\\resources\\Sound Effects\\game play\\shoot.wav");
         soundEffectPlayer.play();
@@ -1947,7 +1929,7 @@ public class SinglePlayerMap extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-System.out.println("Hi");
+        System.out.println("Hi");
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -2053,7 +2035,7 @@ System.out.println("Hi");
                 bombs[j].setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/other/winterdissabledbomb.jpg")));
             }
         }
-        mainTimer=100;
+        mainTimer = 100;
         Timer timer = new Timer();
         ScoreBoard scoreBoard = new ScoreBoard();
         TimerTask mainCountdown = new TimerTask() {
@@ -2146,9 +2128,9 @@ System.out.println("Hi");
         int m = swapingChars[12];
         int n = swapingChars[13];
         int o = swapingChars[14];
-        Integer y = new Integer(bomber+1);
+        Integer y = bomber + 1;
         bomberId.setText(y.toString());
-        System.out.println(bomber+1);
+        System.out.println(bomber + 1);
         Timer timer = new Timer();
         TimerTask phase1 = new TimerTask() {
             @Override
@@ -2259,7 +2241,7 @@ System.out.println("Hi");
                 if (i > 0) {
                     bombStatus3.setText(String.valueOf(i));
                 } else {
-                        bombStatus3.setText("XXX");
+                    bombStatus3.setText("XXX");
                     for (int i = 0; i <= 9; i++) {
                         wires[i + 30].setEnabled(false);
                     }
