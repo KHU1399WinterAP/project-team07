@@ -1,6 +1,6 @@
 
 # 💣 BOMBULLET 💣
-<img src="/src/main/resources/logo/logo.jpg" width="550" >
+<img src="/src/main/resources/logo/logo.jpg" width="525" >
 
 # Project-team07
 # About game
@@ -30,6 +30,9 @@ Here are some libraries that we used some of their methodes in our game
 * java.io
 
 * java.security
+
+# Teacher assistant
+* Bijan Easapour
 
 # Members
  ❇️ We are a four-member team who decided to build and expand this game as our university project, together
